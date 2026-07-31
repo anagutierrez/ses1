@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Semana de la Educación Superior 2026</title>
+<!-- Google Fonts: Ubuntu -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#fffbff",
+                        "secondary-fixed": "#ffdad5",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed-variant": "#723700",
+                        "tertiary": "#7c5800",
+                        "surface-container-low": "#fff8f1",
+                        "on-surface": "#141c24",
+                        "surface-bright": "#f7f9ff",
+                        "on-secondary-fixed": "#410001",
+                        "tertiary-fixed": "#ffdea8",
+                        "primary-fixed": "#ffdcc6",
+                        "on-tertiary-fixed": "#271900",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#29313a",
+                        "tertiary-fixed-dim": "#fabc3f",
+                        "surface-tint": "#ff8200",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#e9f1fd",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#dbe3ee",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#ffb785",
+                        "on-primary-fixed": "#301400",
+                        "on-tertiary-container": "#4e3600",
+                        "primary": "#ff8200",
+                        "on-surface-variant": "#574235",
+                        "background": "#f7f9ff",
+                        "surface": "#f7f9ff",
+                        "on-secondary-fixed-variant": "#930006",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#d3dbe6",
+                        "surface-container": "#fef0e4",
+                        "primary-container": "#ff8200",
+                        "surface-container-highest": "#dbe3ee",
+                        "on-primary-container": "#ffffff",
+                        "outline-variant": "#dec1af",
+                        "primary-fixed-dim": "#ffb785",
+                        "on-background": "#141c24",
+                        "tertiary-container": "#d39a1b",
+                        "on-tertiary-fixed-variant": "#5e4200",
+                        "secondary-fixed-dim": "#ffb4aa",
+                        "secondary": "#b51b17",
+                        "surface-container-high": "#fcead9",
+                        "secondary-container": "#d9372d",
+                        "outline": "#8b7263",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "xl": "80px",
+                        "sm": "12px",
+                        "base": "8px",
+                        "xs": "4px",
+                        "md": "24px",
+                        "lg": "48px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Ubuntu"],
+                        "body-lg": ["Ubuntu"],
+                        "body-md": ["Ubuntu"],
+                        "label-md": ["Ubuntu"],
+                        "headline-sm": ["Ubuntu"],
+                        "display-lg": ["Ubuntu"],
+                        "headline-md": ["Ubuntu"],
+                        "label-sm": ["Ubuntu"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .hero-pattern {
+            background-color: #FBBD40;
+            background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        .timeline-dot {
+            padding-left: 1.5rem;
+        }
+        .timeline-dot::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.75rem;
+            transform: translateX(-50%);
+            width: 18px;
+            height: 18px;
+            background-color: #ff8200;
+            border-radius: 50%;
+            border: 4px solid white;
+        }
+        .section-anchor {
+            scroll-margin-top: 80px;
+        }
+    </style>
+</head>
+<body class="font-ubuntu bg-surface text-on-surface">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-surface border-b border-outline-variant shadow-sm" data-purpose="main-navigation">
+<div class="container mx-auto px-4 md:px-margin-desktop py-2 md:py-3 flex justify-between items-center">
+<div class="flex items-center gap-2 md:gap-4">
+<div class="flex items-center gap-2 md:gap-4">
+<img alt="Gobierno de San Juan" class="h-12 md:h-24 w-auto object-contain mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALZGKpBBzQE2FL7u_A7GRn4qW4GS9l8bukBfzBAwt8JH-L7cEB_L74CHEpCDgfqat-FzyHNvqxaxgOHnY74pkj7-aE1TYLPd9PwRXgAAYHK2540S_AlgSOUzRpQ8Gh-R_BIwsHW-z2HU3nf_UPoxR8swUknM_RZHajlaFeBWinMPewrHYEdsvZFATCRNVrE9a-NVDQF2y12MZabUdknEuXL5tC0WGYa56BxHTBxSOdslcTkOcuFGbh0B1RufE_wEDgEuQ"/>
+<div class="w-px h-8 md:h-16 bg-outline-variant mx-1 md:mx-4"></div>
+<img alt="Semana de la Educación Superior" class="h-12 md:h-24 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNVE_OZrMLNJLkCXo3AIGXlp3g1hI7ofB-p9cR33bVnGw839RIdpmTInTdUOr2Ci_yPJYbBmhfuM_JS2yVHrZjQLBL1NJCVuvzg0zHT9cHkHX8XYPzQEnRO4TdzugR8EZgC7EN2f0KOjR60k0u0utkCqJhnY2UmT-ndy9KWPOuwrNDu42InhDm2Xsjvl-InySXsXshx_4l3Xf_D97qc1Rt7-lDXjIrUmDZ71vk11iWc--Nbzt6QtOICKmOe3g0a7ZQMFA"/>
+</div>
+</div>
+<!-- Desktop Nav -->
+<nav class="hidden lg:flex gap-8 items-center">
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#inicio">Inicio</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#eventos">Eventos</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#cronograma">Cronograma</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#instituciones">Instituciones</a>
+</nav>
+<!-- Mobile Menu Toggle -->
+<button class="lg:hidden p-2 text-primary focus:outline-none" id="mobile-menu-toggle">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+<!-- Mobile Nav Menu -->
+<div class="hidden lg:hidden bg-surface border-t border-outline-variant px-4 py-6 space-y-4 shadow-xl" id="mobile-menu">
+<a class="block font-label-md text-on-surface-variant hover:text-primary py-2" href="#inicio">Inicio</a>
+<a class="block font-label-md text-on-surface-variant hover:text-primary py-2" href="#eventos">Eventos</a>
+<a class="block font-label-md text-on-surface-variant hover:text-primary py-2" href="#cronograma">Cronograma</a>
+<a class="block font-label-md text-on-surface-variant hover:text-primary py-2" href="#instituciones">Instituciones</a>
+<a class="inline-block w-full text-center bg-primary text-on-primary px-6 py-3 rounded-xl shadow-md font-bold" href="#footer">Inscribirse</a>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<section class="hero-pattern py-12 md:py-20 lg:py-0 lg:min-h-[600px] flex items-center overflow-hidden section-anchor" id="inicio">
+<div class="container mx-auto px-4 md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+<!-- Left Side: Content -->
+<div class="text-center lg:text-left order-2 lg:order-1">
+<span class="inline-block px-3 py-1 bg-secondary text-white font-label-sm rounded-full mb-4 md:mb-6 animate-fade-in uppercase tracking-wider">¡Bienvenidos!</span>
+<h1 class="text-display-lg-mobile md:text-display-lg font-bold text-on-background mb-4 animate-fade-in leading-tight">
+                    "La educación superior abre caminos: <br class="hidden md:block"/>
+<span class="text-on-background">Formarse hoy, transformar mañana"</span>
+</h1>
+<p class="text-body-md md:text-body-lg text-on-surface-variant mb-8 md:mb-10 max-w-xl lg:mx-0 mx-auto animate-fade-in" style="animation-delay: 0.1s;">
+                    La mayor feria educativa de la región está por comenzar. ¡No pierdas tu lugar para conectar con las mejores instituciones!
+                </p>
+<!-- Countdown -->
+<div class="flex justify-center lg:justify-start gap-2 md:gap-4 animate-fade-in" id="countdown" style="animation-delay: 0.2s;">
+<div class="flex flex-col items-center bg-white/40 backdrop-blur-md p-2 md:p-4 rounded-xl w-16 md:w-24 shadow-sm border border-white/50">
+<span class="text-xl md:text-3xl font-bold text-on-background" id="days">00</span>
+<span class="text-[8px] md:text-xs uppercase font-medium opacity-70">Días</span>
+</div>
+<div class="flex flex-col items-center bg-white/40 backdrop-blur-md p-2 md:p-4 rounded-xl w-16 md:w-24 shadow-sm border border-white/50">
+<span class="text-xl md:text-3xl font-bold text-on-background" id="hours">00</span>
+<span class="text-[8px] md:text-xs uppercase font-medium opacity-70">Horas</span>
+</div>
+<div class="flex flex-col items-center bg-white/40 backdrop-blur-md p-2 md:p-4 rounded-xl w-16 md:w-24 shadow-sm border border-white/50">
+<span class="text-xl md:text-3xl font-bold text-on-background" id="minutes">00</span>
+<span class="text-[8px] md:text-xs uppercase font-medium opacity-70">Min</span>
+</div>
+<div class="flex flex-col items-center bg-white/40 backdrop-blur-md p-2 md:p-4 rounded-xl w-16 md:w-24 shadow-sm border border-white/50">
+<span class="text-xl md:text-3xl font-bold text-on-background" id="seconds">00</span>
+<span class="text-[8px] md:text-xs uppercase font-medium opacity-70">Seg</span>
+</div>
+</div>
+</div>
+<!-- Right Side: Card -->
+<div class="flex justify-center lg:justify-end animate-fade-in order-1 lg:order-2 mb-8 lg:mb-0" style="animation-delay: 0.3s;">
+<div class="bg-surface-container-lowest p-6 md:p-8 rounded-2xl shadow-2xl max-w-sm md:max-w-md w-full border border-outline-variant relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-secondary text-white text-[10px] font-bold px-4 py-1 rounded-bl-xl uppercase tracking-wider">Próximo Evento</div>
+<div class="flex items-center gap-2 mb-4">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<h2 class="text-secondary text-xs font-bold uppercase tracking-widest">Próximamente</h2>
+</div>
+<h3 class="text-xl md:text-2xl font-bold text-on-surface mb-2">Apertura Oficial</h3>
+<p class="text-on-surface-variant mb-6 text-sm leading-relaxed">Bienvenida a cargo de las autoridades del Ministerio de Educación y directivos de instituciones.</p>
+<div class="space-y-4">
+<div class="flex items-center text-sm text-on-surface-variant">
+<span class="material-symbols-outlined mr-3 text-primary">schedule</span>
+                            09:30 AM - 18 Agosto, 2026
+                        </div>
+<div class="flex items-center text-sm text-on-surface-variant">
+<span class="material-symbols-outlined mr-3 text-primary">location_on</span>
+                            Estadio Aldo Cantoni, San Juan.
+                        </div>
+</div>
+<a class="mt-8 w-full py-3 bg-primary text-on-primary rounded-xl font-bold hover:bg-secondary transition-all shadow-md flex items-center justify-center gap-2" href="oferta.html" target="_blank">
+                        Ver detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: FeaturedEvents (Bento Grid) -->
+<section class="py-12 md:py-20 bg-surface section-anchor" id="eventos">
+<div class="container mx-auto px-4 md:px-margin-desktop">
+<div class="flex justify-between items-end mb-8 md:mb-12">
+<div>
+<h2 class="text-primary text-xs md:text-sm font-bold uppercase tracking-widest mb-2">Descubre</h2>
+<h3 class="text-headline-sm md:text-headline-md font-bold text-on-surface">Eventos Destacados</h3>
+</div>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+<!-- Event Card 1 -->
+<div class="group cursor-pointer flex flex-col bg-surface-container-lowest p-3 rounded-2xl border border-outline-variant/30 shadow-sm hover:shadow-md transition-all">
+<div class="relative h-40 md:h-48 rounded-xl overflow-hidden mb-4">
+<img alt="Oferta Educativa 2027" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrNHmAKgHmlEZqi4w7cqIiBOyR-X_1zooe0sELLvdzVC4gfz4lqroidy5RhSBedr30N_YyrGvN0dgHHmXbsos7QV6QQAcK780wkxTx4XTidgLQo3iPHrEGPXflyGf2FYuRs7bITV0XUSwn10BKiPCztir5uR2QIlzpUTXtThrVxXKrO6IMifLRMVN0hyWiEedJXdewFao8Q326KMROkQHHmjFI10Djm3JSz97gafFghrX0uqDsgEkuZA"/>
+<div class="absolute top-3 left-3 bg-primary text-on-primary text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Institucional</div>
+</div>
+<h4 class="text-base font-bold group-hover:text-primary transition-colors line-clamp-1">Oferta Educativa de Educación Superior 2027.</h4>
+<p class="text-on-surface-variant text-xs mt-1 line-clamp-2">Descubre las carreras que forman parte de la oferta académica de educación superior disponible en la provincia de San Juan.</p>
+<a class="mt-auto pt-4 flex items-center justify-center gap-2 w-full py-2 bg-primary text-on-primary rounded-xl text-sm font-bold hover:bg-secondary transition-all" href="oferta.html" target="_blank">
+                        Ver detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Event Card 2 -->
+<div class="group cursor-pointer flex flex-col bg-surface-container-lowest p-3 rounded-2xl border border-outline-variant/30 shadow-sm hover:shadow-md transition-all">
+<div class="relative h-40 md:h-48 rounded-xl overflow-hidden mb-4">
+<img alt="Talleres Vocacionales" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNyiC5OHm_PHwhaMWBawzsANDexVZXxs7YgeTEVZ8wEcX7cfsKuDJsVU88F29izyAg5H4LQJNHk3v5x-z1DH9QaP7Ht78j3VRNBxNEFWh6OLrPJBLxpajXWnk6c9j_Kpu72azI51H92-YzNtKI5Mbw73IwVsrQWGNnvfZ4k4bBZWe4wP4YMf3TlG6meWUSdETqx3neBhC2YflI_PordjQfZUQR-f_X5PWHPnjuL28SpKuyTSE964_KoQ"/>
+<div class="absolute top-3 left-3 bg-secondary text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Orientación</div>
+</div>
+<h4 class="text-base font-bold group-hover:text-primary transition-colors line-clamp-1">Talleres de Exploración Vocacional Inicial</h4>
+<p class="text-on-surface-variant text-xs mt-1 line-clamp-2">Inicia una exploración vocacional que te orienten en la construcción de tu proyecto de vida.</p>
+<a class="mt-auto pt-4 flex items-center justify-center gap-2 w-full py-2 bg-primary text-on-primary rounded-xl text-sm font-bold hover:bg-secondary transition-all" href="ovo.html" target="_blank">
+                        Ver detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Event Card 3 -->
+<div class="group cursor-pointer flex flex-col bg-surface-container-lowest p-3 rounded-2xl border border-outline-variant/30 shadow-sm hover:shadow-md transition-all">
+<div class="relative h-40 md:h-48 rounded-xl overflow-hidden mb-4">
+<img alt="Conversatorio Técnico" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCELVeLLJhXPxcQbLdoVHFKdWmVAOxwjPe-fp7GCma7IutcjpPEugpW09cfksHVGJkTJOJtfT_djVF56-9yVh7Xju7pu8EuTHQQSjl8X23apuwS4I9WMzJJ5t471n-vIltGv-WoeVR_mh2TeKWx5-TqOAqD0ZQbsBEkoDqrs7nZiYJhUrhy19oLgqe7Tc9kjUO9EELvD9numtSjSkmkJF7sfxplSO5eeNnQ-4cIrD41aSTERd-1jHPYoA"/>
+<div class="absolute top-3 left-3 bg-tertiary-container text-on-tertiary-container text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Técnica</div>
+</div>
+<h4 class="text-base font-bold group-hover:text-primary transition-colors line-clamp-1">Conversatorio Semana de la Educación Superior</h4>
+<p class="text-on-surface-variant text-xs mt-1 line-clamp-2">Conversatorio con exposición inicial de una autoridad de la Unión Industrial, seguida de un espacio de diálogo abierto.</p>
+<a class="mt-auto pt-4 flex items-center justify-center gap-2 w-full py-2 bg-primary text-on-primary rounded-xl text-sm font-bold hover:bg-secondary transition-all" href="conversatorio.html" target="_blank">
+                        Ver detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Event Card 4 -->
+<div class="group cursor-pointer flex flex-col bg-surface-container-lowest p-3 rounded-2xl border border-outline-variant/30 shadow-sm hover:shadow-md transition-all">
+<div class="relative h-40 md:h-48 rounded-xl overflow-hidden mb-4">
+<img alt="Encuentro Formación Técnica" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0qzgqxbku30vBvu-n2bIVQZzeTxajO6MszXeX2DGU10mKF7pX8JDP_47WM7GS2a7RPr7c90CAQhmcvGduAh03fmVEfMTknvsnXweEYF3s4-ZehNTIzq2by7du_pwj3-DqMxdkS1gkYclBOfYvVnOnRkOC9pu2wf9_AFvGFqaG86r6pydFugN13dfOo3mGmaNULh0wDRvSyE96HBxc_1LAo7nDxTFykx-l2gwKsf0GAnxTb0_5YX3VwQ"/>
+<div class="absolute top-3 left-3 bg-primary text-on-primary text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Pedagógico</div>
+</div>
+<h4 class="text-base font-bold group-hover:text-primary transition-colors line-clamp-1">5° Encuentro de Investigación Pedagógicas</h4>
+<p class="text-on-surface-variant text-xs mt-1 line-clamp-2">Espacio de intercambio y reflexión para estudiantes avanzados y docentes de IES.</p>
+<a class="mt-auto pt-4 flex items-center justify-center gap-2 w-full py-2 bg-primary text-on-primary rounded-xl text-sm font-bold hover:bg-secondary transition-all" href="investigacion.html" target="_blank">
+                        Ver detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Event Card 5 -->
+<div class="group cursor-pointer flex flex-col bg-surface-container-lowest p-3 rounded-2xl border border-outline-variant/30 shadow-sm hover:shadow-md transition-all">
+<div class="relative h-40 md:h-48 rounded-xl overflow-hidden mb-4">
+<img alt="Encuentro Investigación" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8n3_5fwvSDx_Qcq9r0pylVziOFBuIpCYHrokpIg1TLPXiqGIAqKusW-nLD8jlIN3Kb1TubPyWv-JWgBVfYZD2frkkYtUeNWnU12BO8_EExcUhnGwN9IkzPO0oCB7LmTiKVE2UK4VrXis1pOu8t592wzjutAbsLqPDJ-d_HSwg80FyxoEEbA1iQZcwYM5fvK0PAnBNJ3VIth3bNUohOnQlFgC1Xp6_dTo7fKrjUdgh_ITO3g0mPSTenw"/>
+<div class="absolute top-3 left-3 bg-secondary text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Investigación</div>
+</div>
+<h4 class="text-base font-bold group-hover:text-primary transition-colors line-clamp-1">I Encuentro de Desarrollo Curricular</h4>
+<p class="text-on-surface-variant text-xs mt-1 line-clamp-2">Reflexión sobre los procesos de actualización de diseños curriculares.</p>
+<a class="mt-auto pt-4 flex items-center justify-center gap-2 w-full py-2 bg-primary text-on-primary rounded-xl text-sm font-bold hover:bg-secondary transition-all" href="curricular.html" target="_blank">
+                        Ver detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Event Card 6 -->
+<div class="group cursor-pointer flex flex-col bg-surface-container-lowest p-3 rounded-2xl border border-outline-variant/30 shadow-sm hover:shadow-md transition-all">
+<div class="relative h-40 md:h-48 rounded-xl overflow-hidden mb-4">
+<img alt="Desarrollo Curricular" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATfJFRbJ23o0usE0MzVeqCB9jDfrquWRFbj7ZnGZnfhY5Djws3-ooWKIHAMzjswurChMhX9npvTJQ51DUX4COBNiczmjI7CsmQLfqkJDjm-J8vwfVcuKb_wW67EztOQxm3n6RhPqXR_Z_G7Kdwc6FvsQf527uVa5uPI8FEhGoE2B5rzpQghIxuljft_2ifrYBlprAahxs9sncKZIrOM8t__QeW1ybHDPg8i9o5j_ZdOaV_Mu_dEE3eng"/>
+<div class="absolute top-3 left-3 bg-tertiary-container text-on-tertiary-container text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Currícula</div>
+</div>
+<h4 class="text-base font-bold group-hover:text-primary transition-colors line-clamp-1">II Jornada de Desarrollo Profesional Docente</h4>
+<p class="text-on-surface-variant text-xs mt-1 line-clamp-2">Intercambio sobre innovación pedagógica y prácticas educativas en ISFD.</p>
+<a class="mt-auto pt-4 flex items-center justify-center gap-2 w-full py-2 bg-primary text-on-primary rounded-xl text-sm font-bold hover:bg-secondary transition-all" href="desarrollo-curricular.html" target="_blank">
+                        Ver detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: FeaturedEvents -->
+<!-- BEGIN: Schedule -->
+<section class="py-12 md:py-20 bg-surface-container-low section-anchor" id="cronograma">
+<div class="container mx-auto px-4 md:px-margin-desktop">
+<div class="text-center mb-8 md:mb-16">
+<h2 class="text-headline-sm md:text-headline-md font-bold text-on-surface mb-4">Cronograma de Actividades</h2>
+<div class="w-16 h-1 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="max-w-4xl mx-auto">
+<!-- Tabs -->
+<div class="overflow-x-auto no-scrollbar mb-8 md:mb-12">
+<div class="flex min-w-max md:min-w-0 justify-start md:justify-center p-1 bg-surface-container rounded-full shadow-inner mx-auto max-w-fit" id="schedule-tabs">
+<button class="py-2 md:py-3 px-4 md:px-6 rounded-full bg-primary text-on-primary font-bold shadow-md text-xs md:text-sm transition-all active-tab" data-day="1">
+<span class="block">Día 1</span>
+<span class="block text-[8px] md:text-xs font-normal">18 de Agosto</span>
+</button>
+<button class="py-2 md:py-3 px-4 md:px-6 rounded-full text-on-surface-variant font-bold hover:bg-surface-container-high transition-all text-xs md:text-sm" data-day="2">
+<span class="block">Día 2</span>
+<span class="block text-[8px] md:text-xs font-normal">19 de Agosto</span>
+</button>
+<button class="py-2 md:py-3 px-4 md:px-6 rounded-full text-on-surface-variant font-bold hover:bg-surface-container-high transition-all text-xs md:text-sm" data-day="3">
+<span class="block">Día 3</span>
+<span class="block text-[8px] md:text-xs font-normal">20 de Agosto</span>
+</button>
+<button class="py-2 md:py-3 px-4 md:px-6 rounded-full text-on-surface-variant font-bold hover:bg-surface-container-high transition-all text-xs md:text-sm" data-day="4">
+<span class="block">Día 4</span>
+<span class="block text-[8px] md:text-xs font-normal">21 de Agosto</span>
+</button>
+</div>
+</div>
+<!-- Timeline -->
+<div class="relative border-l-2 border-primary/20 ml-2 md:ml-12 pl-6 md:pl-12 space-y-8 md:space-y-12" id="schedule-content">
+<!-- Day 1 Content -->
+<div class="schedule-day block" id="day-1">
+<div class="relative timeline-dot mb-8 md:mb-12">
+<span class="block text-primary font-bold text-sm md:text-lg mb-2">Mañana y Tarde de 9:30 a 17:00</span>
+<div class="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all">
+<h5 class="text-base md:text-xl font-bold mb-2">Oferta Educativa del Nivel Superior</h5>
+<p class="text-on-surface-variant text-xs md:text-base">Exposición completa de la oferta académica de nivel superior de la provincia.</p>
+<div class="mt-4 flex items-start text-[10px] md:text-xs font-bold text-secondary uppercase tracking-widest"><span class="material-symbols-outlined text-sm mr-2 shrink-0">location_on</span><span>Estadio cerrado Aldo Cantoni. Capital.</span></div>
+</div>
+</div>
+<div class="relative timeline-dot">
+<span class="block text-primary font-bold text-sm md:text-lg mb-2">Turnos Mañana y Tarde</span>
+<div class="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all">
+<h5 class="text-base md:text-xl font-bold mb-2">Orientación Vocacional</h5>
+<p class="text-on-surface-variant text-xs md:text-base">Talleres de exploración vocacional inicial. Espacio de acompañamiento para la elección de proyectos de vida.</p>
+<div class="mt-4 flex items-start text-[10px] md:text-xs font-bold text-secondary uppercase tracking-widest"><span class="material-symbols-outlined text-sm mr-2 shrink-0">location_on</span><span>ISFD Margarita Ferrá de Bartol. Capital</span></div>
+</div>
+</div>
+</div>
+<!-- Day 2 Content -->
+<div class="schedule-day hidden" id="day-2">
+<div class="relative timeline-dot mb-8 md:mb-12">
+<span class="block text-primary font-bold text-sm md:text-lg mb-2">Mañana y Tarde de 9:30 a 15:30</span>
+<div class="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all">
+<h5 class="text-base md:text-xl font-bold mb-2">Oferta Educativa del Nivel Superior</h5>
+<p class="text-on-surface-variant text-xs md:text-base">Exposición completa de la oferta académica de nivel superior de la provincia.</p>
+<div class="mt-4 flex items-start text-[10px] md:text-xs font-bold text-secondary uppercase tracking-widest"><span class="material-symbols-outlined text-sm mr-2 shrink-0">location_on</span><span>Estadio cerrado Aldo Cantoni. Capital.</span></div>
+</div>
+</div>
+<div class="relative timeline-dot mb-8 md:mb-12">
+<span class="block text-primary font-bold text-sm md:text-lg mb-2">Mañana y tarde a partir de las 9:00 hs.</span>
+<div class="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all">
+<h5 class="text-base md:text-xl font-bold mb-2">5° Encuentro de Experiencias de Investigación y Pedagógicas</h5>
+<p class="text-on-surface-variant text-xs md:text-base">Socialización de actividades realizadas en comunidades de formación.</p>
+<div class="mt-4 flex items-start text-[10px] md:text-xs font-bold text-secondary uppercase tracking-widest"><span class="material-symbols-outlined text-sm mr-2 shrink-0">location_on</span><span>I.S.F.D. SANTA MARÍA. Rivadavia.</span></div>
+</div>
+</div>
+<div class="relative timeline-dot">
+<span class="block text-primary font-bold text-sm md:text-lg mb-2">Siesta de 15:30 a 17:30 hs.</span>
+<div class="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all">
+<h5 class="text-base md:text-xl font-bold mb-2">Conversatorio Semana de la Educación Superior</h5>
+<p class="text-on-surface-variant text-xs md:text-base">"La Educación Técnica Superior frente a los desafíos del desarrollo socioproductivo".</p>
+<div class="mt-4 flex items-start text-[10px] md:text-xs font-bold text-secondary uppercase tracking-widest"><span class="material-symbols-outlined text-sm mr-2 shrink-0">location_on</span><span>Sala de Conferencias B</span></div>
+</div>
+</div>
+</div>
+<!-- Day 3 Content -->
+<div class="schedule-day hidden" id="day-3">
+<div class="relative timeline-dot mb-8 md:mb-12">
+<span class="block text-primary font-bold text-sm md:text-lg mb-2">Mañana y tarde de 8:30 a 15:30</span>
+<div class="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all">
+<h5 class="text-base md:text-xl font-bold mb-2">II Jornada de Desarrollo Profesional Docente</h5>
+<p class="text-on-surface-variant text-xs md:text-base">Espacio de formación e intercambio de experiencias pedagógicas entre instituciones.</p>
+<div class="mt-4 flex items-start text-[10px] md:text-xs font-bold text-secondary uppercase tracking-widest"><span class="material-symbols-outlined text-sm mr-2 shrink-0">location_on</span><span>I.S.F.D. SANTA MARÍA. UCC. Rivadavia</span></div>
+</div>
+</div>
+<div class="relative timeline-dot">
+<span class="block text-primary font-bold text-sm md:text-lg mb-2">Intermitente de 10:00 a 17:30 hs.</span>
+<div class="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all">
+<h5 class="text-base md:text-xl font-bold mb-2">I Encuentro de Desarrollo Curricular</h5>
+<p class="text-on-surface-variant text-xs md:text-base">Espacio académico destinado a la socialización sobre procesos de actualización curricular.</p>
+<div class="mt-4 flex items-start text-[10px] md:text-xs font-bold text-secondary uppercase tracking-widest"><span class="material-symbols-outlined text-sm mr-2 shrink-0">location_on</span><span>Sala de Conferencias B</span></div>
+</div>
+</div>
+</div>
+<!-- Day 4 Content -->
+<div class="schedule-day hidden" id="day-4">
+<div class="relative timeline-dot">
+<span class="block text-primary font-bold text-sm md:text-lg mb-2">Intermitente de 10:00 a 17:30 hs.</span>
+<div class="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all">
+<h5 class="text-base md:text-xl font-bold mb-2">I Encuentro de Desarrollo Curricular (Cierre)</h5>
+<p class="text-on-surface-variant text-xs md:text-base">Continuación de los procesos de actualización de los diseños curriculares jurisdiccionales.</p>
+<div class="mt-4 flex items-start text-[10px] md:text-xs font-bold text-secondary uppercase tracking-widest"><span class="material-symbols-outlined text-sm mr-2 shrink-0">location_on</span><span>I.S.F.D. SANTA MARÍA. Rivadavia</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Schedule -->
+<!-- BEGIN: InstitutionsGrid -->
+<section class="py-12 md:py-20 bg-surface section-anchor" id="instituciones">
+<div class="container mx-auto px-4 md:px-margin-desktop">
+<div class="text-center mb-8 md:mb-16">
+<h2 class="text-headline-sm md:text-headline-md font-bold text-on-surface mb-4">Instituciones de Educación Superior</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto text-sm md:text-base">Conocé los Institutos de Educación Superior de Gestión Estatal y Privada que forman parte de esta edición 2026.</p>
+</div>
+<div class="space-y-12">
+<!-- Gestión Estatal -->
+<div class="space-y-6">
+<div class="flex items-center gap-3 border-l-4 border-primary pl-4">
+<h4 class="text-lg md:text-xl font-bold text-primary">Institutos de Gestión Estatal</h4>
+</div>
+<h5 class="text-base md:text-lg font-bold text-on-surface-variant mb-4">Formación Docente</h5>
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4">
+<button class="bg-surface-container border border-outline-variant rounded-xl p-3 aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all group" onclick="window.open('https://enssarmiento-sjn.infd.edu.ar/sitio/','_blank')">
+<span class="text-[9px] md:text-[10px] uppercase font-bold text-center leading-tight">ENS Sarmiento</span>
+<a class="absolute bottom-1 right-1 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary" href="https://maps.app.goo.gl/obMYXgJsSnrvFsDk7" target="_blank"><span class="material-symbols-outlined text-xs md:text-sm">location_on</span></a>
+</button>
+<button class="bg-surface-container border border-outline-variant rounded-xl p-3 aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all group" onclick="window.open('https://pesmartinez-sjn.infd.edu.ar/sitio/','_blank')">
+<span class="text-[9px] md:text-[10px] uppercase font-bold text-center leading-tight">ISFD Silvino Martínez</span>
+<a class="absolute bottom-1 right-1 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary" href="https://maps.app.goo.gl/KUtap5cHsDTMdkzdA" target="_blank"><span class="material-symbols-outlined text-xs md:text-sm">location_on</span></a>
+</button>
+<button class="bg-surface-container border border-outline-variant rounded-xl p-3 aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all group" onclick="window.open('https://isef-sjn.infd.edu.ar/sitio/','_blank')">
+<span class="text-[9px] md:text-[10px] uppercase font-bold text-center leading-tight">ISEF</span>
+<a class="absolute bottom-1 right-1 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary" href="https://maps.app.goo.gl/777crQmADwBLjc7ZA" target="_blank"><span class="material-symbols-outlined text-xs md:text-sm">location_on</span></a>
+</button>
+<button class="bg-surface-container border border-outline-variant rounded-xl p-3 aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all group" onclick="window.open('https://www.google.com/maps?q=Estados+Unidos+y+Gral+Paz+Capital+San+Juan','_blank')">
+<span class="text-[9px] md:text-[10px] uppercase font-bold text-center leading-tight">ENS San Martín</span>
+<a class="absolute bottom-1 right-1 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary" href="#" target="_blank"><span class="material-symbols-outlined text-xs md:text-sm">location_on</span></a>
+</button>
+<button class="bg-surface-container border border-outline-variant rounded-xl p-3 aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all group" onclick="window.open('https://www.google.com/maps?q=Calle+9+de+Julio+964(S)+Caucete+San+Juan','_blank')">
+<span class="text-[9px] md:text-[10px] uppercase font-bold text-center leading-tight">ENS Manuel Belgrano</span>
+<a class="absolute bottom-1 right-1 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary" href="#" target="_blank"><span class="material-symbols-outlined text-xs md:text-sm">location_on</span></a>
+</button>
+<button class="bg-surface-container border border-outline-variant rounded-xl p-3 aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all group" onclick="window.open('https://www.google.com/maps?q=Colegio+Superior+N1+Fuerza+Aerea+Argentina+San+Juan','_blank')">
+<span class="text-[9px] md:text-[10px] uppercase font-bold text-center leading-tight">Col. Sup. Nº1 FAA</span>
+<a class="absolute bottom-1 right-1 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary" href="#" target="_blank"><span class="material-symbols-outlined text-xs md:text-sm">location_on</span></a>
+</button>
+</div>
+<h5 class="text-base md:text-lg font-bold text-on-surface-variant mt-8 mb-4">Formación Técnica</h5>
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4">
+<button class="bg-surface-container border border-outline-variant rounded-xl p-3 aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all group" onclick="window.open('https://ifdsarmiento.edu.ar/','_blank')">
+<span class="text-[9px] md:text-[10px] uppercase font-bold text-center leading-tight">IST Sarmiento</span>
+<a class="absolute bottom-1 right-1 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary" href="#" target="_blank"><span class="material-symbols-outlined text-xs md:text-sm">location_on</span></a>
+</button>
+<button class="bg-surface-container border border-outline-variant rounded-xl p-3 aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all group" onclick="window.open('http://www.ifdsarmiento.edu.ar/','_blank')">
+<span class="text-[9px] md:text-[10px] uppercase font-bold text-center leading-tight">CENT Nº18</span>
+<a class="absolute bottom-1 right-1 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary" href="#" target="_blank"><span class="material-symbols-outlined text-xs md:text-sm">location_on</span></a>
+</button>
+<button class="bg-surface-container border border-outline-variant rounded-xl p-3 aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all group">
+<span class="text-[9px] md:text-[10px] uppercase font-bold text-center leading-tight">IST Angaco</span>
+<a class="absolute bottom-1 right-1 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary" href="#" target="_blank"><span class="material-symbols-outlined text-xs md:text-sm">location_on</span></a>
+</button>
+<button class="bg-surface-container border border-outline-variant rounded-xl p-3 aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all group">
+<span class="text-[9px] md:text-[10px] uppercase font-bold text-center leading-tight">IST Valle Fértil</span>
+<a class="absolute bottom-1 right-1 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary" href="#" target="_blank"><span class="material-symbols-outlined text-xs md:text-sm">location_on</span></a>
+</button>
+<button class="bg-surface-container border border-outline-variant rounded-xl p-3 aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all group">
+<span class="text-[9px] md:text-[10px] uppercase font-bold text-center leading-tight">IST Enología</span>
+<a class="absolute bottom-1 right-1 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary" href="#" target="_blank"><span class="material-symbols-outlined text-xs md:text-sm">location_on</span></a>
+</button>
+<button class="bg-surface-container border border-outline-variant rounded-xl p-3 aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all group">
+<span class="text-[9px] md:text-[10px] uppercase font-bold text-center leading-tight">IST Seguridad Pública</span>
+<a class="absolute bottom-1 right-1 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary" href="#" target="_blank"><span class="material-symbols-outlined text-xs md:text-sm">location_on</span></a>
+</button>
+</div>
+</div>
+<!-- Gestión Privada -->
+<div class="space-y-6">
+<div class="flex items-center gap-3 border-l-4 border-secondary pl-4">
+<h4 class="text-lg md:text-xl font-bold text-secondary">Institutos de Gestión Privada</h4>
+</div>
+<h5 class="text-base md:text-lg font-bold text-on-surface-variant mb-4">Formación Docente y Técnica</h5>
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4">
+<button class="bg-surface-container border border-outline-variant rounded-xl p-3 aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all group" onclick="window.open('https://ifdsarmiento.edu.ar/','_blank')">
+<span class="text-[9px] md:text-[10px] uppercase font-bold text-center leading-tight">ISPE</span>
+<a class="absolute bottom-1 right-1 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary" href="https://maps.app.goo.gl/2E7Cx8qwmqTzQqJm9" target="_blank"><span class="material-symbols-outlined text-xs md:text-sm">location_on</span></a>
+</button>
+<button class="bg-surface-container border border-outline-variant rounded-xl p-3 aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all group" onclick="window.open('https://maps.app.goo.gl/jJ5nJ57dAJDyaaHQ6','_blank')">
+<span class="text-[9px] md:text-[10px] uppercase font-bold text-center leading-tight">ISFD Santa María</span>
+<a class="absolute bottom-1 right-1 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary" href="#" target="_blank"><span class="material-symbols-outlined text-xs md:text-sm">location_on</span></a>
+</button>
+<button class="bg-surface-container border border-outline-variant rounded-xl p-3 aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all group" onclick="window.open('https://www.google.com/maps?q=Santa+Fe+Oeste+136+5402+San+Juan','_blank')">
+<span class="text-[9px] md:text-[10px] uppercase font-bold text-center leading-tight">ISFD ASIC</span>
+<a class="absolute bottom-1 right-1 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary" href="#" target="_blank"><span class="material-symbols-outlined text-xs md:text-sm">location_on</span></a>
+</button>
+<button class="bg-surface-container border border-outline-variant rounded-xl p-3 aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all group">
+<span class="text-[9px] md:text-[10px] uppercase font-bold text-center leading-tight">ISES</span>
+<a class="absolute bottom-1 right-1 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary" href="#" target="_blank"><span class="material-symbols-outlined text-xs md:text-sm">location_on</span></a>
+</button>
+<button class="bg-surface-container border border-outline-variant rounded-xl p-3 aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all group">
+<span class="text-[9px] md:text-[10px] uppercase font-bold text-center leading-tight">ISRI</span>
+<a class="absolute bottom-1 right-1 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary" href="#" target="_blank"><span class="material-symbols-outlined text-xs md:text-sm">location_on</span></a>
+</button>
+<button class="bg-surface-container border border-outline-variant rounded-xl p-3 aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all group">
+<span class="text-[9px] md:text-[10px] uppercase font-bold text-center leading-tight">CIICAP</span>
+<a class="absolute bottom-1 right-1 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary" href="#" target="_blank"><span class="material-symbols-outlined text-xs md:text-sm">location_on</span></a>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: InstitutionsGrid -->
+<!-- BEGIN: Footer -->
+<footer class="bg-inverse-surface text-on-primary py-12 md:py-16 section-anchor" id="footer">
+<div class="container mx-auto px-4 md:px-margin-desktop">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12">
+<div class="col-span-1">
+<img alt="Logo SES Blanco" class="h-10 md:h-12 w-auto brightness-0 invert mb-6 opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZNmP26bSCAnj7KM04zCNYRkjdZTqcIwzhCDyB8FhbdcYyXwx8rmH9b8UoAIA4WwImfswOHbA7uibgZKX6QV0yIjZCmmZqgnw5Un1N9o43sOGn1B9ltapCuj_lzHQTFqVn2bFUrvcJkSBTOIuOYCDgkeCs_mVhh7TH6OjqEQWdh3gNl9PKLiydkyc-rOvNgNnRw01hcfqhfvz2tz8mFpcenaeJjmSkQuzlSmvbpzIRaGyL23RuENVKWANIsFHFGjqky_0"/>
+<p class="text-inverse-on-surface text-sm leading-relaxed opacity-70">
+                    Transformando el acceso a la educación superior a través de la información y la conectividad regional.
+                </p>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4 md:mb-6 text-primary-fixed">Enlaces Rápidos</h4>
+<ul class="space-y-3 md:space-y-4 text-inverse-on-surface text-sm opacity-70">
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#inicio">Sobre el Evento</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#cronograma">Cronograma</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#instituciones">Instituciones</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#sede">Sede</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4 md:mb-6 text-primary-fixed">Contacto</h4>
+<ul class="space-y-3 md:space-y-4 text-inverse-on-surface text-sm opacity-70">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed text-lg">mail</span>
+                        contacto@ses2026.com
+                    </li>
+<li class="flex items-center gap-3" id="sede">
+<span class="material-symbols-outlined text-primary-fixed text-lg">location_on</span>
+                        Av. Libertador Gral. San Martín, San Juan
+                    </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed text-lg">call</span>
+                        +54 (264) 555-0123
+                    </li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4 md:mb-6 text-primary-fixed">Síguenos</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-all" href="#">
+<span class="sr-only">Facebook</span>
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-all" href="#">
+<span class="sr-only">Instagram</span>
+<span class="material-symbols-outlined">camera</span>
+</a>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-white/10 text-center text-inverse-on-surface text-[10px] md:text-xs opacity-50">
+<p class="">© 2026 Semana de la Educación Superior - Ministerio de Educación. Todos los derechos reservados.</p>
+</div>
+</div>
+<div class="h-16 md:hidden"></div> <!-- Spacer for mobile nav -->
+</footer>
+<!-- END: Footer -->
+<!-- Mobile Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-2 pb-safe bg-surface border-t border-outline-variant shadow-lg md:hidden">
+<a class="flex flex-col items-center justify-center text-primary px-3 py-1" href="#inicio">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[9px] font-bold">Inicio</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="#eventos">
+<span class="material-symbols-outlined">search</span>
+<span class="text-[9px] font-bold">Explorar</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="#cronograma">
+<span class="material-symbols-outlined">event_note</span>
+<span class="text-[9px] font-bold">Agenda</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="#footer">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[9px] font-bold">Perfil</span>
+</a>
+</nav>
+<script>
+    // Countdown Logic
+    const targetDate = new Date('August 18, 2026 08:00:00').getTime();
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const difference = targetDate - now;
+
+        if (difference < 0) return;
+
+        const d = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const s = Math.floor((difference % (1000 * 60)) / 1000);
+
+        document.getElementById('days').innerText = d.toString().padStart(2, '0');
+        document.getElementById('hours').innerText = h.toString().padStart(2, '0');
+        document.getElementById('minutes').innerText = m.toString().padStart(2, '0');
+        document.getElementById('seconds').innerText = s.toString().padStart(2, '0');
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Mobile Menu Toggle Logic
+    const menuBtn = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if(menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuBtn.querySelector('.material-symbols-outlined');
+            icon.innerText = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+        });
+
+        // Close menu on click outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+                menuBtn.querySelector('.material-symbols-outlined').innerText = 'menu';
+            }
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuBtn.querySelector('.material-symbols-outlined').innerText = 'menu';
+            });
+        });
+    }
+
+    // Schedule Tabs Logic
+    const tabButtons = document.querySelectorAll('#schedule-tabs button');
+    const dayContents = document.querySelectorAll('.schedule-day');
+
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const targetDay = button.getAttribute('data-day');
+
+            tabButtons.forEach(btn => {
+                btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-md');
+                btn.classList.add('text-on-surface-variant', 'hover:bg-surface-container-high');
+            });
+            button.classList.add('bg-primary', 'text-on-primary', 'shadow-md');
+            button.classList.remove('text-on-surface-variant', 'hover:bg-surface-container-high');
+
+            dayContents.forEach(content => {
+                if (content.id === `day-${targetDay}`) {
+                    content.classList.remove('hidden');
+                    content.classList.add('block', 'animate-fade-in');
+                } else {
+                    content.classList.add('hidden');
+                    content.classList.remove('block', 'animate-fade-in');
+                }
+            });
+        });
+    });
+</script>
+</body></html>

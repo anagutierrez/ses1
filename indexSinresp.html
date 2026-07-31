@@ -1,0 +1,783 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Semana de la Educación Superior 2026</title>
+<!-- Google Fonts: Ubuntu -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#fffbff",
+                        "secondary-fixed": "#ffdad5",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed-variant": "#723700",
+                        "tertiary": "#7c5800",
+                        "surface-container-low": "#fff8f1",
+                        "on-surface": "#141c24",
+                        "surface-bright": "#f7f9ff",
+                        "on-secondary-fixed": "#410001",
+                        "tertiary-fixed": "#ffdea8",
+                        "primary-fixed": "#ffdcc6",
+                        "on-tertiary-fixed": "#271900",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#29313a",
+                        "tertiary-fixed-dim": "#fabc3f",
+                        "surface-tint": "#ff8200",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#e9f1fd",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#dbe3ee",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#ffb785",
+                        "on-primary-fixed": "#301400",
+                        "on-tertiary-container": "#4e3600",
+                        "primary": "#ff8200",
+                        "on-surface-variant": "#574235",
+                        "background": "#f7f9ff",
+                        "surface": "#f7f9ff",
+                        "on-secondary-fixed-variant": "#930006",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#d3dbe6",
+                        "surface-container": "#fef0e4",
+                        "primary-container": "#ff8200",
+                        "surface-container-highest": "#dbe3ee",
+                        "on-primary-container": "#ffffff",
+                        "outline-variant": "#dec1af",
+                        "primary-fixed-dim": "#ffb785",
+                        "on-background": "#141c24",
+                        "tertiary-container": "#d39a1b",
+                        "on-tertiary-fixed-variant": "#5e4200",
+                        "secondary-fixed-dim": "#ffb4aa",
+                        "secondary": "#b51b17",
+                        "surface-container-high": "#fcead9",
+                        "secondary-container": "#d9372d",
+                        "outline": "#8b7263",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "xl": "80px",
+                        "sm": "12px",
+                        "base": "8px",
+                        "xs": "4px",
+                        "md": "24px",
+                        "lg": "48px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Ubuntu"],
+                        "body-lg": ["Ubuntu"],
+                        "body-md": ["Ubuntu"],
+                        "label-md": ["Ubuntu"],
+                        "headline-sm": ["Ubuntu"],
+                        "display-lg": ["Ubuntu"],
+                        "headline-md": ["Ubuntu"],
+                        "label-sm": ["Ubuntu"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .hero-pattern {
+            background-color: #FBBD40;
+            background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        .timeline-dot {
+            padding-left: 1.5rem;
+        }
+        .timeline-dot::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.75rem;
+            transform: translateX(-50%);
+            width: 18px;
+            height: 18px;
+            background-color: #ff8200;
+            border-radius: 50%;
+            border: 4px solid white;
+        }
+        .section-anchor {
+            scroll-margin-top: 96px;
+        }
+    </style>
+</head>
+<body class="font-ubuntu bg-surface text-on-surface">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-surface border-b border-outline-variant shadow-sm" data-purpose="main-navigation">
+<div class="container mx-auto px-4 md:px-margin-desktop py-3 flex justify-between items-center">
+<div class="flex items-center gap-4">
+    <button class="md:hidden p-2 text-primary active:scale-95 transition-transform" onclick="toggleDrawer()">
+        <span class="material-symbols-outlined">menu</span></button>
+        <div class="flex items-center gap-4">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuALZGKpBBzQE2FL7u_A7GRn4qW4GS9l8bukBfzBAwt8JH-L7cEB_L74CHEpCDgfqat-FzyHNvqxaxgOHnY74pkj7-aE1TYLPd9PwRXgAAYHK2540S_AlgSOUzRpQ8Gh-R_BIwsHW-z2HU3nf_UPoxR8swUknM_RZHajlaFeBWinMPewrHYEdsvZFATCRNVrE9a-NVDQF2y12MZabUdknEuXL5tC0WGYa56BxHTBxSOdslcTkOcuFGbh0B1RufE_wEDgEuQ" alt="Gobierno de San Juan" class="h-24 w-auto object-contain mix-blend-multiply">
+            <div class="w-px h-16 bg-outline-variant mx-4"></div>
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNVE_OZrMLNJLkCXo3AIGXlp3g1hI7ofB-p9cR33bVnGw839RIdpmTInTdUOr2Ci_yPJYbBmhfuM_JS2yVHrZjQLBL1NJCVuvzg0zHT9cHkHX8XYPzQEnRO4TdzugR8EZgC7EN2f0KOjR60k0u0utkCqJhnY2UmT-ndy9KWPOuwrNDu42InhDm2Xsjvl-InySXsXshx_4l3Xf_D97qc1Rt7-lDXjIrUmDZ71vk11iWc--Nbzt6QtOICKmOe3g0a7ZQMFA" alt="Semana de la Educación Superior" class="h-24 w-auto object-contain">
+        </div>
+    </div>
+
+<!-- Desktop Nav -->
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#inicio">Inicio</a>
+<a class="text-primary font-label-md text-label-md border-b-2 border-primary-container pb-1" href="#eventos">Eventos</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#cronograma">Cronograma</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#instituciones">Instituciones</a>
+
+</nav>
+<!-- Mobile Menu Toggle -->
+<button class="lg:hidden p-2 text-primary" id="mobile-menu-toggle">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+<!-- Mobile Nav Menu (Hidden by default) -->
+<div class="hidden lg:hidden bg-surface border-t border-outline-variant px-4 py-6 space-y-4" id="mobile-menu">
+<a class="block font-label-md hover:text-primary" href="#inicio">Inicio</a>
+<a class="block font-label-md hover:text-primary" href="#eventos">Eventos</a>
+<a class="block font-label-md hover:text-primary" href="#cronograma">Cronograma</a>
+<a class="block font-label-md hover:text-primary" href="#instituciones">Instituciones</a>
+<a class="inline-block bg-primary text-on-primary px-6 py-2 rounded-full shadow-md" href="#footer">Inscribirse</a>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<section class="hero-pattern py-12 md:py-20 lg:py-0 lg:h-[600px] flex items-center overflow-hidden section-anchor" id="inicio">
+<div class="container mx-auto px-4 md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<!-- Left Side: Content -->
+<div class="text-center lg:text-left">
+<span class="inline-block px-3 py-1 bg-secondary text-white font-label-sm rounded-full mb-6 animate-fade-in uppercase tracking-wider">¡Bienvenidos!</span>
+<h1 class="text-display-lg-mobile md:text-display-lg font-bold text-on-background mb-4 animate-fade-in leading-tight">
+                    "La educación superior abre caminos: <br>
+<span class="text-on-background">Formarse hoy, transformar mañana"</span>
+</h1>
+<p class="text-body-lg text-on-surface-variant mb-10 max-w-xl lg:mx-0 mx-auto animate-fade-in" style="animation-delay: 0.1s;">
+                    La mayor feria educativa de la región está por comenzar. ¡No pierdas tu lugar para conectar con las mejores instituciones!
+                </p>
+<!-- Countdown -->
+<div class="flex justify-center lg:justify-start gap-2 md:gap-4 animate-fade-in" id="countdown" style="animation-delay: 0.2s;">
+<div class="flex flex-col items-center bg-white/40 backdrop-blur-md p-3 md:p-4 rounded-xl w-20 md:w-24 shadow-sm border border-white/50">
+<span class="text-2xl md:text-3xl font-bold text-on-background" id="days">78</span>
+<span class="text-[10px] md:text-xs uppercase font-medium opacity-70">Días</span>
+</div>
+<div class="flex flex-col items-center bg-white/40 backdrop-blur-md p-3 md:p-4 rounded-xl w-20 md:w-24 shadow-sm border border-white/50">
+<span class="text-2xl md:text-3xl font-bold text-on-background" id="hours">08</span>
+<span class="text-[10px] md:text-xs uppercase font-medium opacity-70">Horas</span>
+</div>
+<div class="flex flex-col items-center bg-white/40 backdrop-blur-md p-3 md:p-4 rounded-xl w-20 md:w-24 shadow-sm border border-white/50">
+<span class="text-2xl md:text-3xl font-bold text-on-background" id="minutes">05</span>
+<span class="text-[10px] md:text-xs uppercase font-medium opacity-70">Min</span>
+</div>
+<div class="flex flex-col items-center bg-white/40 backdrop-blur-md p-3 md:p-4 rounded-xl w-20 md:w-24 shadow-sm border border-white/50">
+<span class="text-2xl md:text-3xl font-bold text-on-background" id="seconds">08</span>
+<span class="text-[10px] md:text-xs uppercase font-medium opacity-70">Seg</span>
+</div>
+</div>
+</div>
+<!-- Right Side: Card -->
+<div class="flex justify-center lg:justify-end animate-fade-in" style="animation-delay: 0.3s;">
+<div class="bg-surface-container-lowest p-6 md:p-8 rounded-2xl shadow-2xl max-w-md w-full border border-outline-variant relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-secondary text-white text-[10px] font-bold px-4 py-1 rounded-bl-xl uppercase tracking-wider">Próximo Evento</div>
+<div class="flex items-center gap-2 mb-4">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<h2 class="text-secondary text-xs font-bold uppercase tracking-widest">Próximamente</h2>
+</div>
+<h3 class="text-2xl font-bold text-on-surface mb-2">Apertura Oficial</h3>
+<p class="text-on-surface-variant mb-6 text-sm leading-relaxed">Bienvenida a cargo de las autoridades del Ministerio de Educación y directivos de instituciones.</p>
+<div class="space-y-4">
+<div class="flex items-center text-sm text-on-surface-variant">
+<span class="material-symbols-outlined mr-3 text-primary">schedule</span>
+                            09:30 AM - 18 Agosto, 2026
+                        </div>
+<div class="flex items-center text-sm text-on-surface-variant">
+<span class="material-symbols-outlined mr-3 text-primary">location_on</span>
+                            Estadio Aldo Cantoni, San Juan.
+                        </div>
+</div>
+<a href="oferta.html" target="_blank" class="mt-8 w-full py-3 bg-primary text-on-primary rounded-xl font-bold hover:bg-secondary transition-all shadow-md flex items-center justify-center gap-2">
+                        Ver detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: FeaturedEvents (Bento Grid) -->
+<section class="py-16 md:py-20 bg-surface section-anchor" id="eventos">
+<div class="container mx-auto px-4 md:px-margin-desktop">
+<div class="flex justify-between items-end mb-10 md:mb-12">
+<div>
+<h2 class="text-primary text-sm font-bold uppercase tracking-widest mb-2">Descubre</h2>
+<h3 class="text-headline-md md:text-headline-md font-bold text-on-surface">Eventos Destacados</h3>
+</div>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8">
+<!-- Event Card 1: Featured -->
+<div class="group cursor-pointer flex flex-col">
+<div class="relative h-40 md:h-48 rounded-2xl overflow-hidden mb-3 shadow-md border border-outline-variant/30">
+<img alt="Oferta Educativa 2027" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrNHmAKgHmlEZqi4w7cqIiBOyR-X_1zooe0sELLvdzVC4gfz4lqroidy5RhSBedr30N_YyrGvN0dgHHmXbsos7QV6QQAcK780wkxTx4XTidgLQo3iPHrEGPXflyGf2FYuRs7bITV0XUSwn10BKiPCztir5uR2QIlzpUTXtThrVxXKrO6IMifLRMVN0hyWiEedJXdewFao8Q326KMROkQHHmjFI10Djm3JSz97gafFghrX0uqDsgEkuZA">
+<div class="absolute top-3 left-3 bg-primary text-on-primary text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Institucional</div>
+</div>
+<h4 class="text-base font-bold group-hover:text-primary transition-colors line-clamp-1">Oferta Educativa de Educación Superior 2027.</h4>
+<p class="text-on-surface-variant text-xs mt-1 line-clamp-2">Descubre las carreras que forman parte de la oferta académica de educación superior disponible en la provincia de San Juan.</p>
+<a href="oferta.html" target="_blank" class="mt-8 w-full py-3 bg-primary text-on-primary rounded-xl font-bold hover:bg-secondary transition-all shadow-md flex items-center justify-center gap-2">
+                        Ver detalles del evento <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Event Card 2 -->
+<div class="md:col-span-1 group cursor-pointer flex flex-col">
+<div class="relative h-40 md:h-48 rounded-2xl overflow-hidden mb-3 shadow-md border border-outline-variant/30">
+<img alt="Talleres Vocacionales" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNyiC5OHm_PHwhaMWBawzsANDexVZXxs7YgeTEVZ8wEcX7cfsKuDJsVU88F29izyAg5H4LQJNHk3v5x-z1DH9QaP7Ht78j3VRNBxNEFWh6OLrPJBLxpajXWnk6c9j_Kpu72azI51H92-YzNtKI5Mbw73IwVsrQWGNnvfZ4k4bBZWe4wP4YMf3TlG6meWUSdETqx3neBhC2YflI_PordjQfZUQR-f_X5PWHPnjuL28SpKuyTSE964_KoQ">
+<div class="absolute top-3 left-3 bg-secondary text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Orientación</div>
+</div>
+<h4 class="text-base font-bold group-hover:text-primary transition-colors line-clamp-1">Talleres de Exploración Vocacional Inicial</h4>
+<p class="text-on-surface-variant text-xs mt-1 line-clamp-2">Inicia una exploración vocacional que te orienten en la construcción de tu proyecto de vida.</p>
+<a href="ovo.html" target="_blank" class="mt-8 w-full py-3 bg-primary text-on-primary rounded-xl font-bold hover:bg-secondary transition-all shadow-md flex items-center justify-center gap-2">
+                        Ver detalles del evento <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Event Card 3 -->
+<div class="md:col-span-1 group cursor-pointer flex flex-col">
+<div class="relative h-40 md:h-48 rounded-2xl overflow-hidden mb-3 shadow-md border border-outline-variant/30">
+<img alt="Conversatorio Técnico" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCELVeLLJhXPxcQbLdoVHFKdWmVAOxwjPe-fp7GCma7IutcjpPEugpW09cfksHVGJkTJOJtfT_djVF56-9yVh7Xju7pu8EuTHQQSjl8X23apuwS4I9WMzJJ5t471n-vIltGv-WoeVR_mh2TeKWx5-TqOAqD0ZQbsBEkoDqrs7nZiYJhUrhy19oLgqe7Tc9kjUO9EELvD9numtSjSkmkJF7sfxplSO5eeNnQ-4cIrD41aSTERd-1jHPYoA">
+<div class="absolute top-3 left-3 bg-tertiary-container text-on-tertiary-container text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Técnica</div>
+</div>
+<h4 class="text-base font-bold group-hover:text-primary transition-colors line-clamp-1">Conversatorio Semana de la Educación Superior</h4>
+<p class="text-on-surface-variant text-xs mt-1 line-clamp-2">Conversatorio con exposición inicial de una autoridad de la Unión Industrial, seguida de un
+espacio de diálogo abierto e intercambio con los participantes.</p>
+<a href="conversatorio.html" target="_blank" class="mt-8 w-full py-3 bg-primary text-on-primary rounded-xl font-bold hover:bg-secondary transition-all shadow-md flex items-center justify-center gap-2">
+                        Ver detalles del evento <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Event Card 4 -->
+<div class="md:col-span-1 group cursor-pointer flex flex-col">
+<div class="relative h-40 md:h-48 rounded-2xl overflow-hidden mb-3 shadow-md border border-outline-variant/30">
+<img alt="Encuentro Formación Técnica" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0qzgqxbku30vBvu-n2bIVQZzeTxajO6MszXeX2DGU10mKF7pX8JDP_47WM7GS2a7RPr7c90CAQhmcvGduAh03fmVEfMTknvsnXweEYF3s4-ZehNTIzq2by7du_pwj3-DqMxdkS1gkYclBOfYvVnOnRkOC9pu2wf9_AFvGFqaG86r6pydFugN13dfOo3mGmaNULh0wDRvSyE96HBxc_1LAo7nDxTFykx-l2gwKsf0GAnxTb0_5YX3VwQ">
+<div class="absolute top-3 left-3 bg-primary text-on-primary text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Pedagógico</div>
+</div>
+<h4 class="text-base font-bold group-hover:text-primary transition-colors line-clamp-1">5° Encuentro de Investigación y Experiencias Pedagógicas</h4>
+<p class="text-on-surface-variant text-xs mt-1 line-clamp-2">Espacio de intercambio y reflexión, destinado a estudiantes avanzados de Educación Superior y Docentes de Institutos de Educación Superior.</p>
+<a href="investigacion.html" target="_blank" class="mt-8 w-full py-3 bg-primary text-on-primary rounded-xl font-bold hover:bg-secondary transition-all shadow-md flex items-center justify-center gap-2">
+                        Ver detalles del evento <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Event Card 5 -->
+<div class="md:col-span-1 group cursor-pointer flex flex-col">
+<div class="relative h-40 md:h-48 rounded-2xl overflow-hidden mb-3 shadow-md border border-outline-variant/30">
+<img alt="Encuentro Investigación" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8n3_5fwvSDx_Qcq9r0pylVziOFBuIpCYHrokpIg1TLPXiqGIAqKusW-nLD8jlIN3Kb1TubPyWv-JWgBVfYZD2frkkYtUeNWnU12BO8_EExcUhnGwN9IkzPO0oCB7LmTiKVE2UK4VrXis1pOu8t592wzjutAbsLqPDJ-d_HSwg80FyxoEEbA1iQZcwYM5fvK0PAnBNJ3VIth3bNUohOnQlFgC1Xp6_dTo7fKrjUdgh_ITO3g0mPSTenw">
+<div class="absolute top-3 left-3 bg-secondary text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Investigación</div>
+</div>
+<h4 class="text-base font-bold group-hover:text-primary transition-colors line-clamp-1">I Encuentro de Desarrollo Curricular</h4>
+<p class="text-on-surface-variant text-xs mt-1 line-clamp-2">Espacio de intercambio y reflexión, destinado a estudiantes avanzados de Educación Superior y Docentes de Institutos de Educación Superior.</p>
+<a href="curricular.html" target="_blank" class="mt-8 w-full py-3 bg-primary text-on-primary rounded-xl font-bold hover:bg-secondary transition-all shadow-md flex items-center justify-center gap-2">
+                        Ver detalles del evento <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Event Card 6 -->
+<div class="md:col-span-1 group cursor-pointer flex flex-col">
+<div class="relative h-40 md:h-48 rounded-2xl overflow-hidden mb-3 shadow-md border border-outline-variant/30">
+<img alt="Desarrollo Curricular" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATfJFRbJ23o0usE0MzVeqCB9jDfrquWRFbj7ZnGZnfhY5Djws3-ooWKIHAMzjswurChMhX9npvTJQ51DUX4COBNiczmjI7CsmQLfqkJDjm-J8vwfVcuKb_wW67EztOQxm3n6RhPqXR_Z_G7Kdwc6FvsQf527uVa5uPI8FEhGoE2B5rzpQghIxuljft_2ifrYBlprAahxs9sncKZIrOM8t__QeW1ybHDPg8i9o5j_ZdOaV_Mu_dEE3eng">
+<div class="absolute top-3 left-3 bg-tertiary-container text-on-tertiary-container text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Currícula</div>
+</div>
+<h4 class="text-base font-bold group-hover:text-primary transition-colors line-clamp-1">II Jornada de Desarrollo Profesional Docente</h4>
+<p class="text-on-surface-variant text-xs mt-1 line-clamp-2">Este encuentro destinado a la socialización, intercambio y reflexión sobre experiencias, innovación pedagógica y prácticas educativas
+desarrolladas en los Institutos Superiores de Formación Docente de la provincia de San Juan durante 2025-2026.</p>
+<a href="desarrollo-curricular.html" target="_blank" class="mt-8 w-full py-3 bg-primary text-on-primary rounded-xl font-bold hover:bg-secondary transition-all shadow-md flex items-center justify-center gap-2">
+                        Ver detalles del evento <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Event Card 7 -->
+<!--
+<div class="md:col-span-1 group cursor-pointer flex flex-col">
+<div class="relative h-40 md:h-48 rounded-2xl overflow-hidden mb-3 shadow-md border border-outline-variant/30">
+<img alt="Desarrollo Docente" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL099URz6A60htqH5Bc-jih_AhIpMNg8EK8P-lsO6VknGjcv7jD4sgfmlnrBgE3SL1MbbNs67Pw4zzBrOBciGdvAU1OcEGR_sdLrjD-DgqcWWJuwq34KgDpAPgsPhED-ofjzFdmvlHPm2axaxbE_mjFLmbo8dKSuQt5qZTjSyiOziZyiIMYXSj5jYzNCqjSvhqplBDBAbHPXKj2ESw8EzjqSesoOFrn2in5nwp6lQ_EcAraIH21MXQnw">
+<div class="absolute top-3 left-3 bg-primary text-on-primary text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Docentes</div>
+</div>
+<h4 class="text-base font-bold group-hover:text-primary transition-colors line-clamp-1">Jornada Docente</h4>
+<a href="jornada-docente.html" target="_blank" class="mt-8 w-full py-3 bg-primary text-on-primary rounded-xl font-bold hover:bg-secondary transition-all shadow-md flex items-center justify-center gap-2">
+                        Ver detalles del evento <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+-->
+</div>
+</div>
+</section>
+<!-- END: FeaturedEvents -->
+<!-- BEGIN: Schedule -->
+<section class="py-16 md:py-20 bg-surface-container-low section-anchor" id="cronograma">
+<div class="container mx-auto px-4 md:px-margin-desktop">
+<div class="text-center mb-12 md:mb-16">
+<h2 class="text-headline-md md:text-headline-md font-bold text-on-surface mb-4">Cronograma de Actividades</h2>
+<div class="w-16 h-1 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="max-w-4xl mx-auto">
+<!-- Tabs -->
+<div class="flex justify-center p-1 bg-surface-container rounded-full mb-10 md:mb-12 shadow-inner max-w-2xl mx-auto" id="schedule-tabs">
+<button class="flex-1 py-3 px-4 rounded-full bg-primary text-on-primary font-bold shadow-md text-xs md:text-sm transition-all active-tab leading-tight" data-day="1"><span class="block">Día 1</span><span class="block text-[10px] md:text-xs font-normal">18 de Agosto</span></button>
+<button class="flex-1 py-3 px-4 rounded-full text-on-surface-variant font-bold hover:bg-surface-container-high transition-all text-xs md:text-sm leading-tight" data-day="2"><span class="block">Día 2</span><span class="block text-[10px] md:text-xs font-normal">19 de Agosto</span></button>
+<button class="flex-1 py-3 px-4 rounded-full text-on-surface-variant font-bold hover:bg-surface-container-high transition-all text-xs md:text-sm leading-tight" data-day="3"><span class="block">Día 3</span><span class="block text-[10px] md:text-xs font-normal">20 de Agosto</span></button>
+<button class="flex-1 py-3 px-4 rounded-full text-on-surface-variant font-bold hover:bg-surface-container-high transition-all text-xs md:text-sm leading-tight" data-day="4"><span class="block">Día 4</span><span class="block text-[10px] md:text-xs font-normal">21 de Agosto</span></button>
+</div>
+<!-- Timeline -->
+<div class="relative border-l-2 border-primary/20 ml-6 md:ml-12 md:pl-12 space-y-10 md:space-y-12 pl-12" id="schedule-content">
+<!-- Day 1 Content -->
+<div class="schedule-day block" id="day-1">
+<div class="relative timeline-dot mb-10 md:mb-12">
+<span class="block text-primary font-bold text-base md:text-lg mb-2">Mañana y Tarde de 9:30 a 17:00</span>
+<div class="bg-white p-6 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all">
+<h5 class="text-lg md:text-xl font-bold mb-2">Oferta Educativa del Nivel Superior</h5>
+<p class="text-on-surface-variant text-sm md:text-base">Exposición completa de la oferta académica de nivel superior de la provincia.</p>
+<div class="mt-4 flex items-start text-xs font-bold text-secondary uppercase tracking-widest"><span class="material-symbols-outlined text-sm mr-2">location_on</span><span>Estadio cerrado Aldo Cantoni. Calle San Luis 1300 Oeste. Capital.</span></div>
+</div>
+</div>
+<div class="relative timeline-dot">
+<span class="block text-primary font-bold text-base md:text-lg mb-2">Turnos Mañana y Tarde </span>
+<div class="bg-white p-6 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all">
+<h5 class="text-lg md:text-xl font-bold mb-2"> Orientación Vocacional</h5>
+<p class="text-on-surface-variant text-sm md:text-base">Talleres de exploración vocaional inicial.Espacio de acompañamiento para la elección de proyectos de vida y carreras.
+</p>
+<div class="mt-4 flex items-start text-xs font-bold text-secondary uppercase tracking-widest"><span class="material-symbols-outlined text-sm mr-2">location_on</span><span>ISFD Margarita Ferrá de Bartol. Calle San Luis 27 Oeste. Capital</span></div>
+</div>
+</div>
+</div>
+<!-- Day 2 Content -->
+<div class="schedule-day hidden" id="day-2">
+<div class="relative timeline-dot mb-10 md:mb-12">
+<span class="block text-primary font-bold text-base md:text-lg mb-2">Mañana y Tarde de 9:30 a 15:30</span>
+<div class="bg-white p-6 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all">
+<h5 class="text-lg md:text-xl font-bold mb-2">Oferta Educativa del Nivel Superior</h5>
+<p class="text-on-surface-variant text-sm md:text-base">Exposición completa de la oferta académica de nivel superior de la provincia.</p>
+<div class="mt-4 flex items-start text-xs font-bold text-secondary uppercase tracking-widest"><span class="material-symbols-outlined text-sm mr-2">location_on</span><span>Estadio cerrado Aldo Cantoni. Calle San Luis 1300 Oeste. Capital.</span></div>
+</div>
+</div>
+<div class="relative timeline-dot mb-10 md:mb-12">
+<span class="block text-primary font-bold text-base md:text-lg mb-2">Mañana y tarde a partir de las 9:00 hs.</span>
+<div class="bg-white p-6 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all">
+<h5 class="text-lg md:text-xl font-bold mb-2">5° Encuentro de Experiencias de Investigación y Pedagógicas en Institutos
+Superiores de Formación Docente y Técnica de la Provincia de San Juan</h5>
+<p class="text-on-surface-variant text-sm md:text-base">Socialización de actividades realizadas en comunidades Formación Docente y Técnica.
+<br> Presentación del libro: ”Investigar para Transformar Redes de conocimientoEduca ción en Comunidad”. Compilación del 4° Encuentro de Experiencias
+Pedagógicas y de Investigación.</p>
+<div class="mt-4 flex items-start text-xs font-bold text-secondary uppercase tracking-widest"><span class="material-symbols-outlined text-sm mr-2">location_on</span><span>I.S.F.D. SANTA MARÍA. UCC. Av. Dr. Ignacio A. de la Roza 1516 (Oeste), Rivadavia</span></div>
+</div>
+</div>
+<div class="relative timeline-dot mb-10 md:mb-12">
+    <span class="block text-primary font-bold text-base md:text-lg mb-2">Siesta de 15:30 a 17:30 hs.</span>
+<div class="bg-white p-6 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all">
+<h5 class="text-lg md:text-xl font-bold mb-2">Conversatorio Semana de la Educación Superior</h5>
+<p class="text-on-surface-variant text-sm md:text-base">La temática a abordar será: "La Educación Técnica Superior frente a los desafíos del desarrollo socioproductivo". Se realiará exposición inicial de una autoridad de la Unión Industrial, seguida de un
+espacio de diálogo abierto e intercambio con los participantes.</p>
+<div class="mt-4 flex items-start text-xs font-bold text-secondary uppercase tracking-widest"><span class="material-symbols-outlined text-sm mr-2">location_on</span><span>Sala de Conferencias B</span></div>
+</div>
+</div>
+</div>
+<!-- Day 3 Content -->
+<div class="schedule-day hidden" id="day-3">
+<div class="relative timeline-dot mb-10 md:mb-12">
+<span class="block text-primary font-bold text-base md:text-lg mb-2">Mañana y tarde de 8:30 a 15:30</span>
+<div class="bg-white p-6 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all">
+<h5 class="text-lg md:text-xl font-bold mb-2">II Jornada de Desarrollo Profesional Docente</h5>
+<p class="text-on-surface-variant text-sm md:text-base">Espacio de formación, intercambio y socialización de experiencias pedagógicas. Se espera favorecer la Formación Docente Continua y la construcción de redes de trabajo entre las instituciones de la provincia.
+</p>
+<div class="mt-4 flex items-start text-xs font-bold text-secondary uppercase tracking-widest"><span class="material-symbols-outlined text-sm mr-2">location_on</span><span>I.S.F.D. SANTA MARÍA. UCC. Av. Dr. Ignacio A. de la Roza 1516 (Oeste), Rivadavia</span></div>
+</div>
+</div>
+<div class="relative timeline-dot mb-10 md:mb-12"> 
+<span class="block text-primary font-bold text-base md:text-lg mb-2">Mañana y tarde de 10:00 a 11:00 hs y de 14:30 a 17:30</span>
+<div class="bg-white p-6 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all">
+<h5 class="text-lg md:text-xl font-bold mb-2">I Encuentro de Desarrollo Curricular "Innovación curricular para una educación que transforma” </h5>
+<p class="text-on-surface-variant text-sm md:text-base">Este encuentro constituye un espacio académico destinado a la socialización, intercambio y reflexión sobre los procesos de actualización de los diseños curriculares jurisdiccionales a partir de la sanción de la Res. CFE Nº 476/24, con el propósito de visibilizar el trabajo realizado y sostenido por el Área de Desarrollo Curricular en la provincia.</p>
+<div class="mt-4 flex items-start text-xs font-bold text-secondary uppercase tracking-widest"><span class="material-symbols-outlined text-sm mr-2">location_on</span><span>Sala de Conferencias B</span></div>
+</div>
+</div>
+</div>
+<!-- Day 4 Content -->
+<div class="schedule-day hidden" id="day-4">
+<div class="relative timeline-dot mb-10 md:mb-12"> 
+<span class="block text-primary font-bold text-base md:text-lg mb-2">Mañana y tarde de 10:00 a 11:00 hs y de 14:30 a 17:30</span>
+<div class="bg-white p-6 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all">
+<h5 class="text-lg md:text-xl font-bold mb-2">I Encuentro de Desarrollo Curricular "Innovación curricular para una educación que transforma” </h5>
+<p class="text-on-surface-variant text-sm md:text-base">Este encuentro constituye un espacio académico destinado a la socialización, intercambio y reflexión sobre los procesos de actualización de los diseños curriculares jurisdiccionales a partir de la sanción de la Res. CFE Nº 476/24, con el propósito de visibilizar el trabajo realizado y sostenido por el Área de Desarrollo Curricular en la provincia.</p>
+<div class="mt-4 flex items-start text-xs font-bold text-secondary uppercase tracking-widest"><span class="material-symbols-outlined text-sm mr-2">location_on</span><span>I.S.F.D. SANTA MARÍA. UCC. Av. Dr. Ignacio A. de la Roza 1516 (Oeste), Rivadavia</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Schedule -->
+<!-- BEGIN: InstitutionsGrid -->
+<section class="py-16 md:py-20 bg-surface section-anchor" id="instituciones">
+<div class="container mx-auto px-4 md:px-margin-desktop">
+<div class="text-center mb-12 md:mb-16">
+<h2 class="text-headline-md md:text-headline-md font-bold text-on-surface mb-4">Instituciones de Educcación Superior</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto text-sm md:text-base">Conocé los Institutos de Educación Superior de Gestión Estatal y Privada que forman parte de esta edición 2026.</p>
+</div>
+<div class="space-y-12">
+<div class="space-y-6">
+<h4 class="text-xl font-bold text-primary border-l-4 border-primary pl-4">Institutos de Gestión Estatal</h4>
+<h2 class="text-headline-md md:text-leftline-md font-bold text-on-surface mb-4">Institutos de Formación Docente</h2>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6 items-center justify-items-center">
+<button type="button" onclick="window.open('https://enssarmiento-sjn.infd.edu.ar/sitio/','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">ENS Sarmiento</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-colors" href="https://maps.app.goo.gl/obMYXgJsSnrvFsDk7" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://pesmartinez-sjn.infd.edu.ar/sitio/','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">ISFD Silvino Martínez</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-colors" href="https://maps.app.goo.gl/KUtap5cHsDTMdkzdA" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://isef-sjn.infd.edu.ar/sitio/','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">ISEF</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-colors" href="https://maps.app.goo.gl/777crQmADwBLjc7ZA" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=Estados+Unidos+y+Gral+Paz+Capital+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">ENS San Martín</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-colors" href="https://www.google.com/maps?q=Estados+Unidos+y+Gral+Paz+Capital+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=Calle+9+de+Julio+964(S)+Caucete+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">ENS Manuel Belgrano</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-colors" href="https://www.google.com/maps?q=Calle+9+de+Julio+964(S)+Caucete+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=Colegio+Superior+N1+Fuerza+Aerea+Argentina+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">Col. Sup. Nº1 FAA</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-colors" href="https://www.google.com/maps?q=Colegio+Superior+N1+Fuerza+Aerea+Argentina+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=Av+Mendoza+1475(S)+Villa+Krause+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">Col. Sup. Rawson</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-colors" href="https://www.google.com/maps?q=Av+Mendoza+1475(S)+Villa+Krause+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=Calle+Mendoza+y+San+Luis+Capital+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">INES Carmen Peñaloza</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-colors" href="https://www.google.com/maps?q=Calle+Mendoza+y+San+Luis+Capital+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=ENS+Fray+Justo+Oro+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">ENS Fray Justo Oro</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-colors" href="https://www.google.com/maps?q=ENS+Fray+Justo+Oro+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+</div>
+
+<h2 class="text-headline-md md:text-leftline-md font-bold text-on-surface mb-4">Institutos de Formación Técnica</h2>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6 items-center justify-items-center">
+<!-- Cards start -->
+ <button type="button" onclick="window.open('https://ifdsarmiento.edu.ar/','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+    <span class="text-[10px] uppercase font-bold tracking-tighter">ISPE</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="https://maps.app.goo.gl/2E7Cx8qwmqTzQqJm9" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=Calle+General+Paz+1049+(O)+-+Capital+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">IST Sarmiento</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-colors" href="https://www.google.com/maps?q=Calle+General+Paz+1049+(O)+-+Capital+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<div class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<div>
+    <span class="text-[10px] uppercase font-bold tracking-tighter" href="http://www.ifdsarmiento.edu.ar/">CENT Nº18</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-colors" href="https://www.google.com/maps?q=CENT+N18+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</div>
+</div>
+<div class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">IST Angaco</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-colors" href="https://www.google.com/maps?q=Calle+Nacional+y+Leandro+Alem+Angaco+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</div>
+<div class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">IST Valle Fértil</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-colors" href="https://www.google.com/maps?q=Calle+Guemes+1150+Villa+San+Agustin+Valle+Fertil" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</div>
+<div class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">IST Enología</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-colors" href="https://www.google.com/maps?q=Calle+25+de+Mayo+1057+(O)+Capital+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</div>
+<div class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">IST San Martín</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-colors" href="https://www.google.com/maps?q=Calle+Rawson+y+Domingo+Savio+San+Martin+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</div>
+<div class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">IST San Isidro</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-colors" href="https://www.google.com/maps?q=San+Isidro+San+Martin+Escuela+Larrea+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</div>
+<div class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">IST Seguridad Pública</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-colors" href="https://www.google.com/maps?q=Benavidez+7500+(O)+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</div>
+<div class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">IST Ullum</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-colors" href="https://www.google.com/maps?q=Valentin+Ruiz+SN+Villa+Ibanez+Ullum" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</div>
+<div class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">IST Bibliotecología</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-primary hover:bg-primary hover:text-on-primary transition-colors" href="https://www.google.com/maps?q=Av+Alem+y+Av+Libertador+San+Martin+Capital+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</div></div></div>
+<div class="space-y-6">
+<h4 class="text-xl font-bold text-secondary border-l-4 border-secondary pl-4">Institutos de Gestión Privada</h4>
+<h2 class="text-headline-md md:text-leftline-md font-bold text-on-surface mb-4">Institutos de Formación Técnica</h2>
+<div class="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6 items-center justify-items-center">
+<button type="button" onclick="window.open('https://ifdsarmiento.edu.ar/','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+    <span class="text-[10px] uppercase font-bold tracking-tighter">ISPE</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="https://maps.app.goo.gl/2E7Cx8qwmqTzQqJm9" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://maps.app.goo.gl/jJ5nJ57dAJDyaaHQ6','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">ISFD Santa María</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="https://www.google.com/maps?q=Av+I+De+La+Roza+Oeste+1516+5400+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=Santa+Fe+Oeste+136+5402+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">ISFD ASIC</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="https://www.google.com/maps?q=Santa+Fe+Oeste+136+5402+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=Av+Presidente+Roca+SN+Barreal+Calingasta+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">Inst. San Buenaventura</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="https://www.google.com/maps?q=Av+Presidente+Roca+SN+Barreal+Calingasta+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=Mitre+344+oeste+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">ISFD Isadora Duncan</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="https://www.google.com/maps?q=Mitre+344+oeste+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=San+Luis+Oeste+247+5400+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">ISFD Ana Pavlova</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="https://www.google.com/maps?q=San+Luis+Oeste+247+5400+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=Bernardo+de+Monteagudo+Norte+902+5400+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">ISFD Amadeus</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="https://www.google.com/maps?q=Bernardo+de+Monteagudo+Norte+902+5400+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=Francisco+N+Laprida+Oeste+1599+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">Marina Vilte</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="https://www.google.com/maps?q=Francisco+N+Laprida+Oeste+1599+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=Catamarca+Sur+147+5400+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">ISFD Crecer</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="https://www.google.com/maps?q=Catamarca+Sur+147+5400+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=Juan+de+Echegaray+511+5460+San+Jose+de+Jachal+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">Inst. Pbro. Farías</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="https://www.google.com/maps?q=Juan+de+Echegaray+511+5460+San+Jose+de+Jachal+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=Jose+Ignacio+de+la+Roza+Este+766+5400+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">CIICAP</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="https://www.google.com/maps?q=Jose+Ignacio+de+la+Roza+Este+766+5400+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=Av+Espana+Norte+309+5400+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">Inst. Sagrado Corazón</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="https://www.google.com/maps?q=Av+Espana+Norte+309+5400+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+</div>
+<h2 class="text-headline-md md:text-leftline-md font-bold text-on-surface mb-4">Institutos de Formación Técnica</h2>
+<div class="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6 items-center justify-items-center">
+<button type="button" onclick="window.open('https://www.google.com/maps?q=B+Rivadavia+Oeste+512+5400+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">ISES</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="https://www.google.com/maps?q=B+Rivadavia+Oeste+512+5400+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=Antonino+Aberastain+Sur+22+5402+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">ISRI</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="https://www.google.com/maps?q=Antonino+Aberastain+Sur+22+5402+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=Caseros+Norte+34+5400+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">Vida Silvestre</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="https://www.google.com/maps?q=Caseros+Norte+34+5400+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=Berutti+Norte+1362+Rivadavia+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">Ambiente y Desarrollo</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="https://www.google.com/maps?q=Berutti+Norte+1362+Rivadavia+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=Av+Guillermo+Rawson+Sur+471+5402+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">Inst. San Nicolás Bari</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="https://www.google.com/maps?q=Av+Guillermo+Rawson+Sur+471+5402+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=Calle+Segovia+SN+Villa+del+Salvador+Angaco+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">Inst. Ntra. Sra. Carmen</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="https://www.google.com/maps?q=Calle+Segovia+SN+Villa+del+Salvador+Angaco+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=Santiago+del+Estero+Sur+510+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">Inst. Sup. Cuyano</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="https://www.google.com/maps?q=Santiago+del+Estero+Sur+510+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=Gral+Acha+Sur+426+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">Inst. Néstor Gahona</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="https://www.google.com/maps?q=Gral+Acha+Sur+426+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+<button type="button" onclick="window.open('https://www.google.com/maps?q=San+Luis+Oeste+537+5400+San+Juan','_blank')" class="bg-surface-container border border-outline-variant rounded-xl p-4 w-full aspect-video flex flex-col items-center justify-center relative hover:bg-surface-container-high transition-all cursor-pointer text-center group">
+<span class="text-[10px] uppercase font-bold tracking-tighter">Inst. Sup. Cervantes</span>
+<a class="absolute bottom-2 right-2 p-1 rounded-full text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="https://www.google.com/maps?q=San+Luis+Oeste+537+5400+San+Juan" target="_blank"><span class="material-symbols-outlined text-sm">location_on</span></a>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: InstitutionsGrid -->
+<!-- BEGIN: Footer -->
+<footer class="bg-inverse-surface text-on-primary py-12 md:py-16 section-anchor" id="footer">
+<div class="container mx-auto px-4 md:px-margin-desktop">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1">
+<img alt="Logo SES Blanco" class="h-12 w-auto brightness-0 invert mb-6 opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZNmP26bSCAnj7KM04zCNYRkjdZTqcIwzhCDyB8FhbdcYyXwx8rmH9b8UoAIA4WwImfswOHbA7uibgZKX6QV0yIjZCmmZqgnw5Un1N9o43sOGn1B9ltapCuj_lzHQTFqVn2bFUrvcJkSBTOIuOYCDgkeCs_mVhh7TH6OjqEQWdh3gNl9PKLiydkyc-rOvNgNnRw01hcfqhfvz2tz8mFpcenaeJjmSkQuzlSmvbpzIRaGyL23RuENVKWANIsFHFGjqky_0">
+<p class="text-inverse-on-surface text-sm leading-relaxed opacity-70">
+                    Transformando el acceso a la educación superior a través de la información y la conectividad regional.
+                </p>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-6 text-primary-fixed">Enlaces Rápidos</h4>
+<ul class="space-y-4 text-inverse-on-surface text-sm opacity-70">
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#inicio">Sobre el Evento</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#cronograma">Cronograma</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#instituciones">Instituciones</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#sede">Sede</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-6 text-primary-fixed">Contacto</h4>
+<ul class="space-y-4 text-inverse-on-surface text-sm opacity-70">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed text-lg">mail</span>
+                        contacto@ses2026.com
+                    </li>
+<li id="sede" class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed text-lg">location_on</span>
+                        Av. Libertador Gral. San Martín, San Juan
+                    </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed text-lg">call</span>
+                        +54 (264) 555-0123
+                    </li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-6 text-primary-fixed">Síguenos</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-all" href="#">
+<span class="sr-only">Facebook</span>
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-all" href="#">
+<span class="sr-only">Instagram</span>
+<span class="material-symbols-outlined">camera</span>
+</a>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-white/10 text-center text-inverse-on-surface text-xs opacity-50">
+<p class="">© 2026 Semana de la Educación Superior - Ministerio de Educación. Todos los derechos reservados.</p>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+<!-- Mobile Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-safe bg-surface border-t border-outline-variant shadow-lg md:hidden">
+<a class="flex flex-col items-center justify-center text-primary px-4 py-1" href="#inicio">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-bold">Inicio</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1" href="#eventos">
+<span class="material-symbols-outlined">search</span>
+<span class="text-[10px] font-bold">Explorar</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1" href="#cronograma">
+<span class="material-symbols-outlined">event_note</span>
+<span class="text-[10px] font-bold">Agenda</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1" href="#footer">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-bold">Perfil</span>
+</a>
+</nav>
+<script>
+    // Countdown Logic
+    const targetDate = new Date('August 18, 2026 08:00:00').getTime();
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const difference = targetDate - now;
+
+        if (difference < 0) return;
+
+        const d = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const s = Math.floor((difference % (1000 * 60)) / 1000);
+
+        document.getElementById('days').innerText = d.toString().padStart(2, '0');
+        document.getElementById('hours').innerText = h.toString().padStart(2, '0');
+        document.getElementById('minutes').innerText = m.toString().padStart(2, '0');
+        document.getElementById('seconds').innerText = s.toString().padStart(2, '0');
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Mobile Menu Toggle Logic
+    const menuBtn = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if(menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuBtn.querySelector('.material-symbols-outlined');
+            icon.innerText = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuBtn.querySelector('.material-symbols-outlined').innerText = 'menu';
+            });
+        });
+    }
+
+    // Schedule Tabs Logic
+    const tabButtons = document.querySelectorAll('#schedule-tabs button');
+    const dayContents = document.querySelectorAll('.schedule-day');
+
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const targetDay = button.getAttribute('data-day');
+
+            tabButtons.forEach(btn => {
+                btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-md');
+                btn.classList.add('text-on-surface-variant', 'hover:bg-surface-container-high');
+            });
+            button.classList.add('bg-primary', 'text-on-primary', 'shadow-md');
+            button.classList.remove('text-on-surface-variant', 'hover:bg-surface-container-high');
+
+            dayContents.forEach(content => {
+                if (content.id === `day-${targetDay}`) {
+                    content.classList.remove('hidden');
+                    content.classList.add('block', 'animate-fade-in');
+                } else {
+                    content.classList.add('hidden');
+                    content.classList.remove('block', 'animate-fade-in');
+                }
+            });
+        });
+    });
+</script>
+
+
+</body></html>
