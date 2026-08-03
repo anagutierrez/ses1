@@ -92,7 +92,17 @@
                         "display-lg": ["Ubuntu"],
                         "headline-md": ["Ubuntu"],
                         "label-sm": ["Ubuntu"]
-                    }
+                    },
+                    "fontSize": {
+                    "display-lg-mobile": ["28px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "700"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}]
+            }
                 },
             },
         }
@@ -137,11 +147,11 @@
 <!-- BEGIN: MainHeader -->
 <header class="sticky top-0 z-50 bg-surface border-b border-outline-variant shadow-sm" data-purpose="main-navigation">
 <div class="container mx-auto px-4 md:px-margin-desktop py-2 md:py-3 flex justify-between items-center">
+<div class="flex items-center gap-2 md:gap-2">
 <div class="flex items-center gap-2 md:gap-4">
-<div class="flex items-center gap-2 md:gap-4">
-<img alt="Gobierno de San Juan" class="h-12 md:h-24 w-auto object-contain mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALZGKpBBzQE2FL7u_A7GRn4qW4GS9l8bukBfzBAwt8JH-L7cEB_L74CHEpCDgfqat-FzyHNvqxaxgOHnY74pkj7-aE1TYLPd9PwRXgAAYHK2540S_AlgSOUzRpQ8Gh-R_BIwsHW-z2HU3nf_UPoxR8swUknM_RZHajlaFeBWinMPewrHYEdsvZFATCRNVrE9a-NVDQF2y12MZabUdknEuXL5tC0WGYa56BxHTBxSOdslcTkOcuFGbh0B1RufE_wEDgEuQ"/>
+<img alt="Gobierno de San Juan" class="h-12 md:h-24 w-auto object-contain mix-blend-multiply" src="imagenes/logo_gobierno.png"/>
 <div class="w-px h-8 md:h-16 bg-outline-variant mx-1 md:mx-4"></div>
-<img alt="Semana de la Educación Superior" class="h-12 md:h-24 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNVE_OZrMLNJLkCXo3AIGXlp3g1hI7ofB-p9cR33bVnGw839RIdpmTInTdUOr2Ci_yPJYbBmhfuM_JS2yVHrZjQLBL1NJCVuvzg0zHT9cHkHX8XYPzQEnRO4TdzugR8EZgC7EN2f0KOjR60k0u0utkCqJhnY2UmT-ndy9KWPOuwrNDu42InhDm2Xsjvl-InySXsXshx_4l3Xf_D97qc1Rt7-lDXjIrUmDZ71vk11iWc--Nbzt6QtOICKmOe3g0a7ZQMFA"/>
+<img alt="Semana de la Educación Superior" class="h-12 md:h-24 w-auto object-contain" src="imagenes/SES.png"/>
 </div>
 </div>
 <!-- Desktop Nav -->
@@ -208,8 +218,8 @@
 <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
 <h2 class="text-secondary text-xs font-bold uppercase tracking-widest">Próximamente</h2>
 </div>
-<h3 class="text-xl md:text-2xl font-bold text-on-surface mb-2">Apertura Oficial</h3>
-<p class="text-on-surface-variant mb-6 text-sm leading-relaxed">Bienvenida a cargo de las autoridades del Ministerio de Educación y directivos de instituciones.</p>
+<h3  class="text-headline-sm md:text-headline-md font-bold text-on-surface mb-4">Apertura Oficial</h3>
+<p class="font-label-md text-sm md:text-base leading-relaxed mb-4">Bienvenida a cargo de las autoridades del Ministerio de Educación y directivos de instituciones.</p>
 <div class="space-y-4">
 <div class="flex items-center text-sm text-on-surface-variant">
 <span class="material-symbols-outlined mr-3 text-primary">schedule</span>
@@ -270,7 +280,7 @@
 <img alt="Conversatorio Técnico" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCELVeLLJhXPxcQbLdoVHFKdWmVAOxwjPe-fp7GCma7IutcjpPEugpW09cfksHVGJkTJOJtfT_djVF56-9yVh7Xju7pu8EuTHQQSjl8X23apuwS4I9WMzJJ5t471n-vIltGv-WoeVR_mh2TeKWx5-TqOAqD0ZQbsBEkoDqrs7nZiYJhUrhy19oLgqe7Tc9kjUO9EELvD9numtSjSkmkJF7sfxplSO5eeNnQ-4cIrD41aSTERd-1jHPYoA"/>
 <div class="absolute top-3 left-3 bg-tertiary-container text-on-tertiary-container text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Técnica</div>
 </div>
-<h4 class="text-base font-bold group-hover:text-primary transition-colors line-clamp-1">Conversatorio Semana de la Educación Superior</h4>
+<h4 class="text-base font-bold group-hover:text-primary transition-colors line-clamp-1">Primer Conversatorio de Institutos Superiores Técnicos</h4>
 <p class="text-on-surface-variant text-xs mt-1 line-clamp-2">Conversatorio con exposición inicial de una autoridad de la Unión Industrial, seguida de un espacio de diálogo abierto.</p>
 <a class="mt-auto pt-4 flex items-center justify-center gap-2 w-full py-2 bg-primary text-on-primary rounded-xl text-sm font-bold hover:bg-secondary transition-all" href="conversatorio.html" target="_blank">
                         Ver detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
@@ -308,7 +318,7 @@
 </div>
 <h4 class="text-base font-bold group-hover:text-primary transition-colors line-clamp-1">II Jornada de Desarrollo Profesional Docente</h4>
 <p class="text-on-surface-variant text-xs mt-1 line-clamp-2">Intercambio sobre innovación pedagógica y prácticas educativas en ISFD.</p>
-<a class="mt-auto pt-4 flex items-center justify-center gap-2 w-full py-2 bg-primary text-on-primary rounded-xl text-sm font-bold hover:bg-secondary transition-all" href="desarrollo-curricular.html" target="_blank">
+<a class="mt-auto pt-4 flex items-center justify-center gap-2 w-full py-2 bg-primary text-on-primary rounded-xl text-sm font-bold hover:bg-secondary transition-all" href="profesional.html" target="_blank">
                         Ver detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </a>
 </div>
@@ -351,7 +361,7 @@
 <div class="schedule-day block" id="day-1">
 <div class="relative timeline-dot mb-8 md:mb-12">
 <span class="block text-primary font-bold text-sm md:text-lg mb-2">Mañana y Tarde de 9:30 a 17:00</span>
-<div class="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all">
+<div class="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all" href="oferta.html" target="_blank">
 <h5 class="text-base md:text-xl font-bold mb-2">Oferta Educativa del Nivel Superior</h5>
 <p class="text-on-surface-variant text-xs md:text-base">Exposición completa de la oferta académica de nivel superior de la provincia.</p>
 <div class="mt-4 flex items-start text-[10px] md:text-xs font-bold text-secondary uppercase tracking-widest"><span class="material-symbols-outlined text-sm mr-2 shrink-0">location_on</span><span>Estadio cerrado Aldo Cantoni. Capital.</span></div>
@@ -537,10 +547,10 @@
 <footer class="bg-inverse-surface text-on-primary py-12 md:py-16 section-anchor" id="footer">
 <div class="container mx-auto px-4 md:px-margin-desktop">
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12">
-<div class="col-span-1">
-<img alt="Logo SES Blanco" class="h-10 md:h-12 w-auto brightness-0 invert mb-6 opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZNmP26bSCAnj7KM04zCNYRkjdZTqcIwzhCDyB8FhbdcYyXwx8rmH9b8UoAIA4WwImfswOHbA7uibgZKX6QV0yIjZCmmZqgnw5Un1N9o43sOGn1B9ltapCuj_lzHQTFqVn2bFUrvcJkSBTOIuOYCDgkeCs_mVhh7TH6OjqEQWdh3gNl9PKLiydkyc-rOvNgNnRw01hcfqhfvz2tz8mFpcenaeJjmSkQuzlSmvbpzIRaGyL23RuENVKWANIsFHFGjqky_0"/>
+<div class="col-span-1 lg:col-span-2">
+<img alt="Logo SES Blanco" class="h-24 md:h-32 w-auto max-w-[320px] brightness-0 invert mb-6 opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZNmP26bSCAnj7KM04zCNYRkjdZTqcIwzhCDyB8FhbdcYyXwx8rmH9b8UoAIA4WwImfswOHbA7uibgZKX6QV0yIjZCmmZqgnw5Un1N9o43sOGn1B9ltapCuj_lzHQTFqVn2bFUrvcJkSBTOIuOYCDgkeCs_mVhh7TH6OjqEQWdh3gNl9PKLiydkyc-rOvNgNnRw01hcfqhfvz2tz8mFpcenaeJjmSkQuzlSmvbpzIRaGyL23RuENVKWANIsFHFGjqky_0"/>
 <p class="text-inverse-on-surface text-sm leading-relaxed opacity-70">
-                    Transformando el acceso a la educación superior a través de la información y la conectividad regional.
+                    La Semana de la Educación Superior se posiciona como un dispositivo integral, que articula formación, investigación y proyección del nivel superior, contribuyendo al desarrollo educativo y socio-productivo de la provincia.
                 </p>
 </div>
 <div>
@@ -561,15 +571,15 @@
                     </li>
 <li class="flex items-center gap-3" id="sede">
 <span class="material-symbols-outlined text-primary-fixed text-lg">location_on</span>
-                        Av. Libertador Gral. San Martín, San Juan
+                       Centro Cívico 
                     </li>
 <li class="flex items-center gap-3">
 <span class="material-symbols-outlined text-primary-fixed text-lg">call</span>
-                        +54 (264) 555-0123
+                        Av. Libertador Gral. San Martín, San Juan
                     </li>
 </ul>
 </div>
-<div>
+<!-- <div>
 <h4 class="text-lg font-bold mb-4 md:mb-6 text-primary-fixed">Síguenos</h4>
 <div class="flex gap-4">
 <a class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition-all" href="#">
@@ -587,7 +597,7 @@
 <p class="">© 2026 Semana de la Educación Superior - Ministerio de Educación. Todos los derechos reservados.</p>
 </div>
 </div>
-<div class="h-16 md:hidden"></div> <!-- Spacer for mobile nav -->
+<div class="h-16 md:hidden"></div>  Spacer for mobile nav -->
 </footer>
 <!-- END: Footer -->
 <!-- Mobile Navigation Bar -->

@@ -51,13 +51,13 @@ colors:
 typography:
   display-lg:
     fontFamily: Ubuntu
-    fontSize: 48px
+    fontSize: 68px
     fontWeight: '700'
     lineHeight: 56px
     letterSpacing: -0.02em
   display-lg-mobile:
     fontFamily: Ubuntu
-    fontSize: 32px
+    fontSize: 52px
     fontWeight: '700'
     lineHeight: 40px
     letterSpacing: -0.01em

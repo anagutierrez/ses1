@@ -74,7 +74,7 @@
                     "sm": "12px",
                     "margin-desktop": "64px",
                     "xs": "4px",
-                    "xl": "40px",
+                    "xl": "80px",
                     "base": "8px"
             },
             "fontFamily": {
@@ -145,23 +145,23 @@
 <span class="material-symbols-outlined">menu</span>
 </button>
 <div class="flex items-center">
-    <img alt="Gobierno de San Juan" class="h-12 sm:h-16 md:h-16 lg:h-24 w-auto object-contain" src="imagenes/logo_gobierno.png">
+<img alt="Gobierno de San Juan" class="h-12 sm:h-16 md:h-16 lg:h-24 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALZGKpBBzQE2FL7u_A7GRn4qW4GS9l8bukBfzBAwt8JH-L7cEB_L74CHEpCDgfqat-FzyHNvqxaxgOHnY74pkj7-aE1TYLPd9PwRXgAAYHK2540S_AlgSOUzRpQ8Gh-R_BIwsHW-z2HU3nf_UPoxR8swUknM_RZHajlaFeBWinMPewrHYEdsvZFATCRNVrE9a-NVDQF2y12MZabUdknEuXL5tC0WGYa56BxHTBxSOdslcTkOcuFGbh0B1RufE_wEDgEuQ">
 <div class="w-px h-8 sm:h-10 md:h-10 lg:h-16 bg-outline-variant mx-2 md:mx-4"></div>
 <img alt="Semana de la Educación Superior" class="h-12 sm:h-16 md:h-16 lg:h-24 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNVE_OZrMLNJLkCXo3AIGXlp3g1hI7ofB-p9cR33bVnGw839RIdpmTInTdUOr2Ci_yPJYbBmhfuM_JS2yVHrZjQLBL1NJCVuvzg0zHT9cHkHX8XYPzQEnRO4TdzugR8EZgC7EN2f0KOjR60k0u0utkCqJhnY2UmT-ndy9KWPOuwrNDu42InhDm2Xsjvl-InySXsXshx_4l3Xf_D97qc1Rt7-lDXjIrUmDZ71vk11iWc--Nbzt6QtOICKmOe3g0a7ZQMFA">
 </div>
 </div>
 <nav class="hidden md:flex gap-4 lg:gap-8 items-center md:gap-4">
-<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors text-sm lg:text-label-md" href="index.html">Volver a Inicio</a>
-<!--<a class="text-primary font-label-md border-b-2 border-primary-container pb-1 text-sm lg:text-label-md" href="#">Eventos</a>
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors text-sm lg:text-label-md" href="index.html">Inicio</a>
+<a class="text-primary font-label-md border-b-2 border-primary-container pb-1 text-sm lg:text-label-md" href="#">Eventos</a>
 <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors text-sm lg:text-label-md" href="#">Cronograma</a>
-<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors text-sm lg:text-label-md" href="#">Instituciones</a>-->
+<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors text-sm lg:text-label-md" href="#">Instituciones</a>
 </nav>
 </header>
 <!-- Navigation Drawer (Mobile) -->
 <div class="fixed inset-0 bg-black/40 z-[55] hidden transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
 <aside class="fixed inset-y-0 left-0 w-80 z-[60] rounded-r-xl bg-surface-container-low transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col py-6" id="nav-drawer">
 <div class="px-6 mb-8 flex justify-between items-center">
-<span class="font-headline-sm text-headline-sm font-black text-primary">Educación Superior</span>
+<span class="font-headline-sm text-headline-sm font-black text-primary">Primer Conversatorio de Institutos Superiores Técnicos</span>
 <button onclick="toggleDrawer()"><span class="material-symbols-outlined">close</span></button>
 </div>
 <div class="flex flex-col gap-2">
@@ -184,20 +184,42 @@
 </div>
 </aside>
 <main class="pb-24 md:pb-0 pt-24 sm:pt-28 md:pt-32">
+<!-- Sticky Sub-Nav -->
+<nav class="sticky z-40 bg-tertiary-fixed text-on-tertiary-fixed py-3 px-margin-mobile md:px-margin-desktop border-b border-outline-variant shadow-sm flex justify-center gap-4 md:gap-8 font-label-md text-xs md:text-sm" style="background-color: #FBDD40; top: 80px; @media (min-width: 768px) { top: 128px; }">
+<a class="hover:text-primary transition-colors whitespace-nowrap" href="#agenda">Agenda de Actividades</a>
+<a class="hover:text-primary transition-colors whitespace-nowrap" href="#material">Material de Consulta</a>
+</nav>
 <!-- Hero Section -->
-<section class="relative min-h-[420px] md:min-h-[480px] flex items-center overflow-hidden bg-surface-container-lowest">
-<div class="container mx-auto px-4 md:px-8 relative z-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center py-8 md:py-4">
+<section class="relative min-h-[420px] md:min-h-[480px] flex items-center overflow-hidden bg-surface-container-lowest" id="agenda">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center opacity-10" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCELVeLLJhXPxcQbLdoVHFKdWmVAOxwjPe-fp7GCma7IutcjpPEugpW09cfksHVGJkTJOJtfT_djVF56-9yVh7Xju7pu8EuTHQQSjl8X23apuwS4I9WMzJJ5t471n-vIltGv-WoeVR_mh2TeKWx5-TqOAqD0ZQbsBEkoDqrs7nZiYJhUrhy19oLgqe7Tc9kjUO9EELvD9numtSjSkmkJF7sfxplSO5eeNnQ-4cIrD41aSTERd-1jHPYoA')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest/80 to-transparent"></div>
+</div>
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop relative z-10 grid grid-cols-1 md:grid-cols-2 gap-gutter items-center py-12 md:py-0 md:px-12">
 <div class="space-y-6 text-center md:text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-primary-fixed text-on-primary-fixed rounded-full mx-auto md:mx-0">
+<span class="material-symbols-outlined text-[18px]">engineering</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Formación Técnica</span>
+</div>
 <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary leading-tight md:text-headline-md">
-                        OFERTA EDUCATIVA <br><span class="text-on-background">2027</span>
+                        <span class="text-on-background">PRIMER</span> <br>Conversatorio de Institutos Superiores Técnicos 
 </h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mx-auto md:mx-0">
-                        Descubre las oportunidades académicas que transformarán tu futuro profesional. Conocé los institutos de gestión estatal y privaday programas que ofrecen. Podrás charlar profesionales y estudiantes avanzados de las carreras que te interesan.           </p>
+                        Este conversatorio propone generar un espacio de intercambio entre representantes de la Unión Industrial, equipos directivos, coordinadores de carrera, coordinadores de Prácticas Profesionalizantes, coordinadores de Vinculación con el Sector Socioproductivo y docentes de los ISFT, con el propósito de reflexionar sobre los perfiles profesionales, las competencias y las capacidades que hoy requiere el sector productivo, favoreciendo una mayor articulación entre la oferta formativa y las necesidades del entorno.
+                    </p>
+<!--<div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 pt-4">
+<button class="bg-primary-container text-white px-8 py-4 rounded-xl font-bold hover:scale-105 active:scale-95 transition-all shadow-md">
+                            Registrarme ahora
+                        </button>
+<button class="border border-primary-container text-primary-container px-8 py-4 rounded-xl font-bold hover:bg-primary-container/10 transition-all">
+                            Ver Mapa de Sedes
+                        </button>
+</div>-->
 </div>
 <div class="hidden md:block relative">
-<div class="relative w-full max-w-[320px] mx-auto aspect-square rounded-full border-2 border-primary/20 p-4">
+<div class="relative w-full aspect-square rounded-full border-4 border-primary/20 p-8">
 <div class="w-full h-full rounded-full overflow-hidden shadow-2xl">
-<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrNHmAKgHmlEZqi4w7cqIiBOyR-X_1zooe0sELLvdzVC4gfz4lqroidy5RhSBedr30N_YyrGvN0dgHHmXbsos7QV6QQAcK780wkxTx4XTidgLQo3iPHrEGPXflyGf2FYuRs7bITV0XUSwn10BKiPCztir5uR2QIlzpUTXtThrVxXKrO6IMifLRMVN0hyWiEedJXdewFao8Q326KMROkQHHmjFI10Djm3JSz97gafFghrX0uqDsgEkuZA">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCELVeLLJhXPxcQbLdoVHFKdWmVAOxwjPe-fp7GCma7IutcjpPEugpW09cfksHVGJkTJOJtfT_djVF56-9yVh7Xju7pu8EuTHQQSjl8X23apuwS4I9WMzJJ5t471n-vIltGv-WoeVR_mh2TeKWx5-TqOAqD0ZQbsBEkoDqrs7nZiYJhUrhy19oLgqe7Tc9kjUO9EELvD9numtSjSkmkJF7sfxplSO5eeNnQ-4cIrD41aSTERd-1jHPYoA">
 </div>
 <div class="absolute top-0 right-0 bg-white p-4 shadow-lg rounded-xl border border-outline-variant flex items-center gap-3 animate-bounce">
 <span class="material-symbols-outlined text-primary">trending_up</span>
@@ -210,8 +232,8 @@
 </div>
 </div>
 </section>
-<!-- Agenda Section -->
-<section class="py-xl bg-white relative" id="agenda">
+ <!--Agenda Section -->
+<section class="py-xl bg-white relative" id="material">
 <div class="container mx-auto px-margin-mobile md:px-margin-desktop md:px-12">
 <div class="text-center mb-16 px-4">
 <h2 class="font-headline-md text-headline-md text-primary mb-4">Agenda de Actividades</h2>
@@ -223,7 +245,7 @@
 <!-- Timeline Line -->
 <div class="timeline-line absolute inset-0 pointer-events-none"></div>
 <!-- Activities -->
-<div class="space-y-12 py-4 sm:py-8">
+<div class="space-y-12">
 <!-- Day 1 Header -->
 <div class="relative z-10 flex justify-center mb-8">
 <span class="bg-secondary-container text-white px-6 py-2 rounded-full font-bold shadow-md text-center">Día 1: Apertura y Muestra</span>
@@ -231,15 +253,15 @@
 <!-- Activity Item 1 -->
 <div class="relative flex flex-col md:flex-row items-center gap-8 group">
 <div class="md:w-1/2 md:text-right hidden md:block">
-<div class="text-primary font-bold text-xl">08:00 AM - 10:00 AM</div>
-<div class="text-on-surface-variant font-label-md">Estadio Aldo Cantoni</div>
+<div class="text-primary font-bold text-xl">08:30 AM - 10:00 AM</div>
+<div class="text-on-surface-variant font-label-md">Auditorio Principal "A"</div>
 </div>
 <div class="relative z-10 w-10 h-10 bg-white border-4 border-primary rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
 <div class="w-2 h-2 bg-primary rounded-full"></div>
 </div>
 <div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant hover:border-primary-container transition-colors shadow-sm bg-tertiary-fixed-dim" style="background-color: #FBDD40;">
-<div class="md:hidden text-primary font-bold mb-2">08:00 AM - 10:30 AM. Estadio Aldo Cantoni.</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Recepción de expositores. Armado de Stand.</h3>
+<div class="md:hidden text-primary font-bold mb-2">08:30 AM - 10:00 AM. Auditorio Principal "A".</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Recepción de expositores</h3>
 <p class="text-on-surface-variant mb-0 font-body-md">Convocatoria e ingreso de las delegaciones de los institutos expositores para la puesta a punto de sus espacios.</p>
 </div>
 </div>
@@ -253,115 +275,39 @@
 <div class="w-2 h-2 bg-primary rounded-full"></div>
 </div>
 <div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant hover:border-primary-container transition-colors shadow-sm bg-tertiary-fixed-dim" style="background-color: #FBDD40;">
-<div class="md:hidden text-primary font-bold mb-2">11:00 AM. Estadio Aldo Cantoni.</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Ingreso del público.</h3>
+<div class="md:hidden text-primary font-bold mb-2">11:00 AM - 11:30 AM. Estadio Aldo Cantoni.</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Acto Protocolar de Apertura</h3>
+<p class="text-on-surface-variant mb-0 font-body-md">Corte de cinta oficial, palabras de bienvenida a cargo de las autoridades, punto artístico e ingreso de público.</p>
 </div>
 </div>
 <!-- Activity Item 3 -->
 <div class="relative flex flex-col md:flex-row items-center gap-8 group">
 <div class="md:w-1/2 md:text-right hidden md:block">
-<div class="text-primary font-bold text-xl">12:00 AM </div>
-<div class="text-on-surface-variant font-label-md">Estadio Aldo Cantoni</div>
+<div class="text-primary font-bold text-xl">11:30 AM - 14:00 PM</div>
+<div class="text-on-surface-variant font-label-md">Zona de Networking</div>
 </div>
 <div class="relative z-10 w-10 h-10 bg-white border-4 border-primary rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
 <div class="w-2 h-2 bg-primary rounded-full"></div>
 </div>
 <div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant hover:border-primary-container transition-colors shadow-sm bg-tertiary-fixed-dim" style="background-color: #FBDD40;">
-<div class="md:hidden text-primary font-bold mb-2">12:00 AM </div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Acto Protocolar de Apertura:</h3>
-<p class="text-on-surface-variant mb-0 font-body-md">Corte de cinta oficial, palabras debienvenida a cargo de las autoridades correspondiente, punto artístico</p>
-</div>
-</div>
-<!-- Activity Item 4 -->
-<div class="relative flex flex-col md:flex-row-reverse items-center gap-8 group">
-<div class="md:w-1/2 md:text-left hidden md:block">
-<div class="text-primary font-bold text-xl">12:30 AM - 14:00 PM</div>
-<div class="text-on-surface-variant font-label-md">Estadio Aldo Cantoni</div>
-</div>
-<div class="relative z-10 w-10 h-10 bg-white border-4 border-primary rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
-<div class="w-2 h-2 bg-primary rounded-full"></div>
-</div>
-<div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant hover:border-primary-container transition-colors shadow-sm bg-tertiary-fixed-dim" style="background-color: #FBDD40;">
-<div class="md:hidden text-primary font-bold mb-2">12:30 AM. a 14:00 PM - Estadio Aldo Cantoni.</div>
+<div class="md:hidden text-primary font-bold mb-2">11:30 AM - 14:00 PM. Zona de Networking.</div>
 <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Oferta académica</h3>
-<p class="text-on-surface-variant mb-0 font-body-md"> Feria de ofertas académica y atención al público.</p>
+<p class="text-on-surface-variant mb-0 font-body-md">Exposición y Orientación Vocacional: Continuación de la feria de ofertas académicas y atención al público.</p>
 </div>
 </div>
 <div class="relative z-10 flex justify-center py-4">
 <div class="flex flex-col items-center justify-center px-5 py-3 rounded-full border border-primary/20 bg-primary/5 text-center">
 <span class="text-primary font-bold text-xs md:text-sm uppercase tracking-[0.2em] leading-tight">14:00 PM a 15:00 PM</span>
-<span class="text-primary font-semibold text-[10px] md:text-xs uppercase tracking-[0.2em] leading-tight mt-1">Intervalo Institucional: presentaciones culturales.</span>
-</div>
-</div>
-<!-- Activity Item 5 -->
-<div class="relative flex flex-col md:flex-row items-center gap-8 group">
-<div class="md:w-1/2 md:text-right hidden md:block">
-<div class="text-primary font-bold text-xl">15:00 PM a 17:00 PM </div>
-<div class="text-on-surface-variant font-label-md">Estadio Aldo Cantoni</div>
-</div>
-<div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant hover:border-primary-container transition-colors shadow-sm bg-tertiary-fixed-dim" style="background-color: #FBDD40;">
-<div class="md:hidden text-primary font-bold mb-2">15:00 PM a 17:00 PM </div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Oferta académica</h3>
-<p class="text-on-surface-variant mb-0 font-body-md">Continuación de la Feria de ofertas académica y atención al público.</p>
-</div>
-</div>
-<div class="relative z-10 flex justify-center py-8">
-<div class="flex flex-col items-center justify-center px-5 py-3 rounded-full border border-primary/20 bg-primary/5 text-center">
-<span class="text-primary font-bold text-xs md:text-sm uppercase tracking-[0.2em] leading-tight">17:00 PM a 17:30 PM</span>
-<span class="text-primary font-semibold text-[10px] md:text-xs uppercase tracking-[0.2em] leading-tight mt-1">Intervalo Institucional: presentaciones culturales.</span>
-</div>
-</div>
-<!-- Activity Item 6 -->
-<div class="relative flex flex-col md:flex-row-reverse items-center gap-8 group">
-<div class="md:w-1/2 md:text-left hidden md:block">
-<div class="text-primary font-bold text-xl">17:30 PM - 18:00 PM</div>
-<div class="text-on-surface-variant font-label-md">Estadio Aldo Cantoni</div>
-</div>
-<div class="relative z-10 w-10 h-10 bg-white border-4 border-primary rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
-<div class="w-2 h-2 bg-primary rounded-full"></div>
-</div>
-<div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant hover:border-primary-container transition-colors shadow-sm bg-tertiary-fixed-dim" style="background-color: #FBDD40;">
-<div class="md:hidden text-primary font-bold mb-2">17:30 PM - 18:00 PM. Estadio Aldo Cantoni.</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Cierre de Jornada.</h3>
-<p class="text-on-surface-variant mb-0 font-body-md">Cierre ordenado de los stands y finalización de las actividades del primer día.</p>
-</div>
+<span class="text-primary font-semibold text-[10px] md:text-xs uppercase tracking-[0.2em] leading-tight mt-1">Intervalo Institucional</span>
 </div>
 </div>
 <!-- Day 2 Header -->
-<div class="relative z-10 flex justify-center mb-8 py-8">
+<div class="relative z-10 flex justify-center mb-8">
 <span class="bg-secondary-container text-white px-6 py-2 rounded-full font-bold shadow-md text-center">Día 2: Continuación de la Oferta</span>
 </div>
-<!-- Activity Item 1 -->
-<div class="relative flex flex-col md:flex-row items-center gap-8 group">
-<div class="md:w-1/2 md:text-right hidden md:block">
-<div class="text-primary font-bold text-xl">08:00 AM</div>
-<div class="text-on-surface-variant font-label-md">Estadio Aldo Cantoni</div>
-</div>
-<div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant hover:border-primary-container transition-colors shadow-sm bg-tertiary-fixed-dim" style="background-color: #FBDD40;">
-<div class="md:hidden text-primary font-bold mb-2">08:00 AM. Estadio Aldo Cantoni.</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Recepción de expositores</h3>
-<p class="text-on-surface-variant mb-0 font-body-md">Convocatoria e ingreso de las delegaciones de los institutos expositores para la puesta a punto de sus espacios.</p>
-</div>
-</div>
-<!-- Activity Item 2 -->
 <div class="relative flex flex-col md:flex-row-reverse items-center gap-8 group">
 <div class="md:w-1/2 md:text-left hidden md:block">
-<div class="text-primary font-bold text-xl">08:30 AM </div>
-<div class="text-on-surface-variant font-label-md">Estadio Aldo Cantoni</div>
-</div>
-<div class="relative z-10 w-10 h-10 bg-white border-4 border-primary rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
-<div class="w-2 h-2 bg-primary rounded-full"></div>
-</div>
-<div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant hover:border-primary-container transition-colors shadow-sm bg-tertiary-fixed-dim" style="background-color: #FBDD40;">
-<div class="md:hidden text-primary font-bold mb-2">08:30 AM. Estadio Aldo Cantoni.</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Apertura de las instalaciones.</h3>
-<p class="text-on-surface-variant mb-0 font-body-md">Cita previa para los institutos expositores y preparación de stands.</p>
-</div>
-</div>
-<!-- Activity Item 3 -->
-<div class="relative flex flex-col md:flex-row items-center gap-8 group">
-<div class="md:w-1/2 md:text-right hidden md:block">
-<div class="text-primary font-bold text-xl">09:00 AM - 11:00 AM.</div>
+<div class="text-primary font-bold text-xl">09:00 AM - 11:00 AM</div>
 <div class="text-on-surface-variant font-label-md">Estadio Aldo Cantoni</div>
 </div>
 <div class="relative z-10 w-10 h-10 bg-white border-4 border-primary rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
@@ -370,50 +316,28 @@
 <div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant hover:border-primary-container transition-colors shadow-sm bg-tertiary-fixed-dim" style="background-color: #FBDD40;">
 <div class="md:hidden text-primary font-bold mb-2">09:00 AM - 11:00 AM. Estadio Aldo Cantoni.</div>
 <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Oferta académica</h3>
-<p class="text-on-surface-variant mb-0 font-body-md">Inicio de la atención al público en la segunda jornada.</p>
+<p class="text-on-surface-variant mb-0 font-body-md">Inicio de la atención al público en la segunda jornada de la feria educativa.</p>
 </div>
 </div>
-<div class="relative z-10 flex justify-center py-8">
-<div class="flex flex-col items-center justify-center px-5 py-3 rounded-full border border-primary/20 bg-primary/5 text-center">
-<span class="text-primary font-bold text-xs md:text-sm uppercase tracking-[0.2em] leading-tight">11:00 AM a 12:00 AM</span>
-<span class="text-primary font-semibold text-[10px] md:text-xs uppercase tracking-[0.2em] leading-tight mt-1">Intervalo Institucional: presentaciones culturales.</span>
-</div>
-</div>
-<!-- Activity Item 4 -->
-<div class="relative flex flex-col md:flex-row-reverse items-center gap-8 group">
-<div class="md:w-1/2 md:text-left hidden md:block">
-<div class="text-primary font-bold text-xl">12:00 AM - 14:30 AM</div>
-<div class="text-on-surface-variant font-label-md">Estadio Aldo Cantoni</div>
-</div>
-<div class="relative z-10 w-10 h-10 bg-white border-4 border-primary rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
-<div class="w-2 h-2 bg-primary rounded-full"></div>
-</div>
-<div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant hover:border-primary-container transition-colors shadow-sm bg-tertiary-fixed-dim" style="background-color: #FBDD40;">
-<div class="md:hidden text-primary font-bold mb-2">12:00 AM - 14:30 PM. Estadio Aldo Cantoni.</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Oferta académica</h3>
-<p class="text-on-surface-variant mb-0 font-body-md">Continuación de la feria educativa y atención al público.</p>
-</div>
-</div>
-<!-- Activity Item 5 -->
 <div class="relative flex flex-col md:flex-row items-center gap-8 group">
 <div class="md:w-1/2 md:text-right hidden md:block">
-<div class="text-primary font-bold text-xl">14:30 PM - 15:00 PM.</div>
+<div class="text-primary font-bold text-xl">16:00 PM</div>
 <div class="text-on-surface-variant font-label-md">Estadio Aldo Cantoni</div>
 </div>
 <div class="relative z-10 w-10 h-10 bg-white border-4 border-primary rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
 <div class="w-2 h-2 bg-primary rounded-full"></div>
 </div>
 <div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant hover:border-primary-container transition-colors shadow-sm bg-tertiary-fixed-dim" style="background-color: #FBDD40;">
-<div class="md:hidden text-primary font-bold mb-2">14:30 PM - 15:00 PM. Estadio Aldo Cantoni.</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Cierre de la Oferta Educativa 2027</h3>
-<p class="text-on-surface-variant mb-0 font-body-md">Cierre y retiro de la totalidad de las estructuras e infraestructura de la exposición.</p>
+<div class="md:hidden text-primary font-bold mb-2">16:00 PM. Estadio Aldo Cantoni.</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Clausura y Desarmado</h3>
+<p class="text-on-surface-variant mb-0 font-body-md">Cierre definitivo de la Oferta Educativa 2027 y retiro de infraestructura.</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- Material de Consulta Section 
+<!-- Material de Consulta Section -->
 <section class="py-xl bg-tertiary-fixed" style="background-color: #FBDD40;">
 <div class="container mx-auto px-margin-mobile md:px-margin-desktop md:px-12">
 <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
@@ -429,8 +353,8 @@
 </button>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:grid-cols-2">
- Resource Card 1 -->
-<!--<div class="bg-white p-6 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+<!-- Resource Card 1 -->
+<div class="bg-white p-6 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
 <div>
 <div class="w-12 h-12 bg-red-50 text-red-600 rounded-lg flex items-center justify-center mb-4">
 <span class="material-symbols-outlined text-3xl">picture_as_pdf</span>
@@ -445,7 +369,7 @@
 </button>
 </div>
 </div>
- Resource Card 2 
+<!-- Resource Card 2 -->
 <div class="bg-white p-6 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
 <div>
 <div class="w-12 h-12 bg-tertiary-container/20 text-tertiary rounded-lg flex items-center justify-center mb-4"><span class="material-symbols-outlined text-3xl">play_circle</span></div>
@@ -457,7 +381,7 @@
 <button class="p-2 rounded-full hover:bg-tertiary-container/20 text-tertiary transition-colors"><span class="material-symbols-outlined">open_in_new</span></button>
 </div>
 </div>
-Resource Card 3 
+<!-- Resource Card 3 -->
 <div class="bg-white p-6 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
 <div>
 <div class="w-12 h-12 bg-green-50 text-green-600 rounded-lg flex items-center justify-center mb-4">
@@ -473,7 +397,7 @@ Resource Card 3
 </button>
 </div>
 </div>
-Resource Card 4 
+<!-- Resource Card 4 -->
 <div class="bg-white p-6 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
 <div>
 <div class="w-12 h-12 bg-orange-50 text-orange-600 rounded-lg flex items-center justify-center mb-4">
@@ -491,8 +415,8 @@ Resource Card 4
 </div>
 </div>
 </div>
-</section>-->
-<!-- Newsletter / CTA 
+</section>
+<!-- Newsletter / CTA -->
 <section class="py-xl bg-[#D02E29] relative overflow-hidden">
 <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
 <div class="absolute bottom-0 left-0 w-96 h-96 bg-white/10 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
@@ -505,43 +429,61 @@ Resource Card 4
 </form>
 </div>
 </section>
-</main>-->
+</main>
 <!-- Footer -->
-<footer class="bg-inverse-surface text-on-primary py-12 md:py-16 section-anchor" id="footer">
-<div class="container mx-auto px-4 md:px-margin-desktop">
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12">
-<div class="col-span-1 lg:col-span-2">
-<img alt="Logo SES Blanco" class="h-24 md:h-32 w-auto max-w-[320px] brightness-0 invert mb-6 opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZNmP26bSCAnj7KM04zCNYRkjdZTqcIwzhCDyB8FhbdcYyXwx8rmH9b8UoAIA4WwImfswOHbA7uibgZKX6QV0yIjZCmmZqgnw5Un1N9o43sOGn1B9ltapCuj_lzHQTFqVn2bFUrvcJkSBTOIuOYCDgkeCs_mVhh7TH6OjqEQWdh3gNl9PKLiydkyc-rOvNgNnRw01hcfqhfvz2tz8mFpcenaeJjmSkQuzlSmvbpzIRaGyL23RuENVKWANIsFHFGjqky_0"/>
-<p class="text-inverse-on-surface text-sm leading-relaxed opacity-70">
-                    La Semana de la Educación Superior se posiciona como un dispositivo integral, que articula formación, investigación y proyección del nivel superior, contribuyendo al desarrollo educativo y socio-productivo de la provincia.
-                </p>
+<footer class="bg-inverse-surface text-inverse-on-surface pt-16 pb-8">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-16">
+<div class="col-span-1 text-center md:text-left">
+<div class="font-headline-sm text-headline-sm font-black text-white mb-6">Horizon Academic</div>
+<p class="text-surface-variant text-sm mb-6">Promoviendo el acceso equitativo a la educación superior de calidad.</p>
+<div class="flex gap-4 justify-center md:justify-start">
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl text-white">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl text-white">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-xl text-white">mail</span>
+</a>
 </div>
-<div>
-<h4 class="text-lg font-bold mb-4 md:mb-6 text-primary-fixed">Enlaces Rápidos</h4>
-<ul class="space-y-3 md:space-y-4 text-inverse-on-surface text-sm opacity-70">
-<li class=""><a class="hover:text-primary-fixed transition-colors" href="#inicio">Sobre el Evento</a></li>
-<li class=""><a class="hover:text-primary-fixed transition-colors" href="#cronograma">Cronograma</a></li>
-<li class=""><a class="hover:text-primary-fixed transition-colors" href="#instituciones">Instituciones</a></li>
-<li class=""><a class="hover:text-primary-fixed transition-colors" href="#sede">Sede</a></li>
+</div>
+<div class="text-center md:text-left">
+<h5 class="font-bold mb-6 text-white uppercase text-xs tracking-widest">Navegación</h5>
+<ul class="space-y-4 text-sm text-surface-variant">
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Cronograma</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Universidades</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Preguntas Frecuentes</a></li>
 </ul>
 </div>
-<div>
-<h4 class="text-lg font-bold mb-4 md:mb-6 text-primary-fixed">Contacto</h4>
-<ul class="space-y-3 md:space-y-4 text-inverse-on-surface text-sm opacity-70">
-<li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary-fixed text-lg">mail</span>
-                        contacto@ses2026.com
-                    </li>
-<li class="flex items-center gap-3" id="sede">
-<span class="material-symbols-outlined text-primary-fixed text-lg">location_on</span>
-                       Centro Cívico 
-                    </li>
-<li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary-fixed text-lg">call</span>
-                        Av. Libertador Gral. San Martín, San Juan
-                    </li>
+<div class="text-center md:text-left">
+<h5 class="font-bold mb-6 text-white uppercase text-xs tracking-widest">Soporte</h5>
+<ul class="space-y-4 text-sm text-surface-variant">
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Centro de Ayuda</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Contacto</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Términos</a></li>
 </ul>
 </div>
+<div class="text-center md:text-left">
+<h5 class="font-bold mb-6 text-white uppercase text-xs tracking-widest">Ubicación</h5>
+<div class="text-sm text-surface-variant space-y-4">
+<div class="flex gap-2 justify-center md:justify-start">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="">San Juan, Argentina</span>
+</div>
+<div class="flex gap-2 justify-center md:justify-start">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<span class="">Lun - Vie: 8:00 - 18:00</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-white/10 text-center text-xs text-surface-variant">
+<p class="">© 2026 Semana de Educación Superior. Todos los derechos reservados.</p>
+</div>
+</div>
+</footer>
 <!-- Bottom Navigation (Mobile Only) -->
 <nav class="md:hidden fixed bottom-0 left-0 w-full z-50 bg-surface flex justify-around items-center px-4 py-3 border-t border-outline-variant shadow-lg">
 <a class="flex flex-col items-center justify-center text-on-surface-variant px-5 py-1" href="index.html">

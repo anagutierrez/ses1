@@ -1,531 +1,549 @@
-<!DOCTYPE html><html class="light" lang="es" style=""><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Semana Educación Superior 2026 | Oferta Educativa</title>
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>5° Encuentro de Experiencias de Investigación y Pedagógicas | SES</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700;800&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<!-- Tailwind Configuration -->
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "surface-container-low": "#edf4ff",
-                    "secondary-container": "#d9372d",
-                    "outline": "#8b7263",
-                    "on-surface-variant": "#574235",
-                    "inverse-surface": "#29313a",
-                    "surface-container-high": "#e1e9f4",
-                    "primary-container": "#D02E29",
-                    "on-tertiary": "#ffffff",
-                    "tertiary-fixed-dim": "#fabc3f",
-                    "primary": "#D02E29",
-                    "on-tertiary-container": "#4e3600",
-                    "inverse-on-surface": "#e9f1fd",
-                    "on-error-container": "#93000a",
-                    "on-primary-fixed-variant": "#930006",
-                    "on-tertiary-fixed-variant": "#5e4200",
-                    "surface-bright": "#f7f9ff",
-                    "surface": "#f7f9ff",
-                    "surface-container-highest": "#dbe3ee",
-                    "outline-variant": "#dec1af",
-                    "primary-fixed": "#ffdad5",
-                    "surface-container-lowest": "#ffffff",
-                    "on-background": "#141c24",
-                    "surface-variant": "#dbe3ee",
-                    "on-error": "#ffffff",
-                    "primary-fixed-dim": "#ffb4aa",
-                    "secondary": "#b51b17",
-                    "error-container": "#ffdad6",
-                    "on-primary": "#ffffff",
-                    "on-secondary-fixed-variant": "#930006",
-                    "on-tertiary-fixed": "#271900",
-                    "on-secondary-container": "#fffbff",
-                    "tertiary": "#7c5800",
-                    "tertiary-fixed": "#ffdea8",
-                    "background": "#f7f9ff",
-                    "surface-dim": "#d3dbe6",
-                    "secondary-fixed": "#ffdad5",
-                    "inverse-primary": "#ffb4aa",
-                    "on-secondary-fixed": "#410001",
-                    "on-primary-fixed": "#410001",
-                    "surface-tint": "#D02E29",
-                    "error": "#ba1a1a",
-                    "on-primary-container": "#ffffff",
-                    "on-secondary": "#ffffff",
-                    "surface-container": "#e7effa",
-                    "secondary-fixed-dim": "#ffb4aa",
-                    "tertiary-container": "#d39a1b",
-                    "on-surface": "#141c24"
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#ffdad5",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#d39a1b",
+                        "surface-tint": "#954a00",
+                        "on-primary-container": "#5f2c00",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface": "#f7f9ff",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#29313a",
+                        "tertiary": "#7c5800",
+                        "inverse-on-surface": "#e9f1fd",
+                        "outline": "#8b7263",
+                        "on-background": "#141c24",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#574235",
+                        "tertiary-fixed": "#ffdea8",
+                        "primary-fixed-dim": "#ffb785",
+                        "surface-variant": "#dbe3ee",
+                        "primary-fixed": "#ffdcc6",
+                        "on-tertiary-fixed-variant": "#5e4200",
+                        "on-primary-fixed": "#301400",
+                        "on-primary-fixed-variant": "#723700",
+                        "primary": "#954a00",
+                        "outline-variant": "#dec1af",
+                        "tertiary-fixed-dim": "#fabc3f",
+                        "secondary": "#b51b17",
+                        "surface-container-highest": "#dbe3ee",
+                        "surface-bright": "#f7f9ff",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#e7effa",
+                        "on-primary": "#ffffff",
+                        "inverse-primary": "#ffb785",
+                        "on-surface": "#141c24",
+                        "primary-container": "#ff8200",
+                        "background": "#f7f9ff",
+                        "on-tertiary-fixed": "#271900",
+                        "on-secondary-fixed": "#410001",
+                        "surface-container-high": "#e1e9f4",
+                        "surface-dim": "#d3dbe6",
+                        "on-tertiary-container": "#4e3600",
+                        "secondary-fixed-dim": "#ffb4aa",
+                        "secondary-container": "#d9372d",
+                        "on-secondary-fixed-variant": "#930006",
+                        "surface-container-low": "#edf4ff",
+                        "on-secondary-container": "#fffbff",
+                        "brand-yellow": "#FBDD40",
+                        "brand-red": "#D02E29"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "lg": "48px",
+                        "margin-desktop": "64px",
+                        "md": "24px",
+                        "xs": "4px",
+                        "sm": "12px",
+                        "xl": "80px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Ubuntu"],
+                        "label-md": ["Ubuntu"],
+                        "headline-md": ["Ubuntu"],
+                        "body-lg": ["Ubuntu"],
+                        "headline-sm": ["Ubuntu"],
+                        "display-lg-mobile": ["Ubuntu"],
+                        "display-lg": ["Ubuntu"],
+                        "body-md": ["Ubuntu"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "700"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                },
             },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "spacing": {
-                    "margin-mobile": "16px",
-                    "lg": "48px",
-                    "md": "24px",
-                    "gutter": "24px",
-                    "sm": "12px",
-                    "margin-desktop": "64px",
-                    "xs": "4px",
-                    "xl": "80px",
-                    "base": "8px"
-            },
-            "fontFamily": {
-                    "headline-md": ["Ubuntu"],
-                    "label-sm": ["Ubuntu"],
-                    "display-lg-mobile": ["Ubuntu"],
-                    "headline-sm": ["Ubuntu"],
-                    "body-lg": ["Ubuntu"],
-                    "label-md": ["Ubuntu"],
-                    "display-lg": ["Ubuntu"],
-                    "body-md": ["Ubuntu"]
-            },
-            "fontSize": {
-                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
-                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
-                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
-                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
-                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                    "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "700"}],
-                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
-            }
-          },
-        },
-      }
+        }
     </script>
 <style>
-        body {
-            font-family: 'Ubuntu', sans-serif;
-            background-color: #f7f9ff;
-            color: #141c24;
-            scroll-behavior: smooth;
-        }
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(8px);
-        }
         .bento-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-template-columns: repeat(12, 1fr);
             gap: 24px;
         }
-        .timeline-line::before {
-            content: '';
-            position: absolute;
-            left: 20px;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: #dec1af;
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
         }
-        @media (min-width: 768px) {
-            .timeline-line::before {
-                left: 50%;
-                margin-left: -1px;
-            }
+        /* Mobile menu specific */
+        #mobile-menu.active {
+            display: flex;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
         }
     </style>
 </head>
-<body class="overflow-x-hidden">
-<!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile bg-surface border-b border-outline-variant transition-all duration-300 py-2 md:py-4 md:px-12 md:px-8" id="main-header">
+<body class="bg-background font-body-md text-on-surface overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 bg-surface border-b border-outline-variant shadow-sm" data-purpose="main-navigation">
+<div class="container mx-auto px-4 md:px-margin-desktop py-2 md:py-3 flex justify-between items-center">
 <div class="flex items-center gap-2 md:gap-4">
-<button class="md:hidden p-2 text-primary active:scale-95 transition-transform" onclick="toggleDrawer()">
+<div class="flex items-center gap-2 md:gap-4">
+<img alt="Gobierno de San Juan" class="h-12 md:h-24 w-auto object-contain mix-blend-multiply" src="imagenes/logo_gobierno.png"/>
+<div class="w-px h-8 md:h-16 bg-outline-variant mx-1 md:mx-4"></div>
+<img alt="Semana de la Educación Superior" class="h-12 md:h-24 w-auto object-contain" src="imagenes/SES.png"/>
+</div>
+</div>
+<!-- Desktop Nav -->
+<nav class="hidden lg:flex gap-8 items-center">
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="index.html">Inicio</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#proposito">Propósito</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#presentacion-libro">Presentación Libro</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#agenda">Agenda</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#sede">Sede</a>
+</nav>
+<!-- Mobile Menu Toggle -->
+<button class="lg:hidden p-2 text-primary focus:outline-none" id="mobile-menu-toggle">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+<!-- Mobile Nav Menu -->
+<div class="hidden lg:hidden bg-surface border-t border-outline-variant px-4 py-6 space-y-4 shadow-xl" id="mobile-menu">
+<a class="block font-label-md text-on-surface-variant hover:text-primary py-2" href="index.html">Inicio</a>
+<a class="block font-label-md text-on-surface-variant hover:text-primary py-2" href="#proposito">Propósitos</a>
+<a class="block font-label-md text-on-surface-variant hover:text-primary py-2" href="#presentacion-libro">Presentación del Libro</a>
+<a class="block font-label-md text-on-surface-variant hover:text-primary py-2" href="#agenda">Agenda</a>
+<a class="block font-label-md text-on-surface-variant hover:text-primary py-2" href="#sede">Sede</a>
+<a class="inline-block w-full text-center bg-primary text-on-primary px-6 py-3 rounded-xl shadow-md font-bold" href="#footer">Inscribirse</a>
+</div>
+</header>
+<!-- Desktop Nav 
+<nav class="hidden lg:flex gap-md items-center">
+<a class="font-label-md text-label-md uppercase tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#proposito">Propósito</a>
+<a class="font-label-md text-label-md uppercase tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#hoja-de-ruta">Hoja de Ruta</a>
+<a class="font-label-md text-label-md uppercase tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#agenda">Agenda</a>
+<a class="font-label-md text-label-md uppercase tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#ubicacion">Ubicación</a>
+<button class="text-on-primary px-6 py-2 rounded-xl font-label-md uppercase tracking-widest cursor-pointer active:opacity-80 transition-all bg-brand-red">Inscribirse</button>
+</nav>-->
+<!-- Mobile Menu Toggle -->
+<button class="lg:hidden p-2 text-on-surface-variant" id="menu-toggle">
 <span class="material-symbols-outlined">menu</span>
 </button>
-<div class="flex items-center">
-<img alt="Gobierno de San Juan" class="h-12 sm:h-16 md:h-16 lg:h-24 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALZGKpBBzQE2FL7u_A7GRn4qW4GS9l8bukBfzBAwt8JH-L7cEB_L74CHEpCDgfqat-FzyHNvqxaxgOHnY74pkj7-aE1TYLPd9PwRXgAAYHK2540S_AlgSOUzRpQ8Gh-R_BIwsHW-z2HU3nf_UPoxR8swUknM_RZHajlaFeBWinMPewrHYEdsvZFATCRNVrE9a-NVDQF2y12MZabUdknEuXL5tC0WGYa56BxHTBxSOdslcTkOcuFGbh0B1RufE_wEDgEuQ">
-<div class="w-px h-8 sm:h-10 md:h-10 lg:h-16 bg-outline-variant mx-2 md:mx-4"></div>
-<img alt="Semana de la Educación Superior" class="h-12 sm:h-16 md:h-16 lg:h-24 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNVE_OZrMLNJLkCXo3AIGXlp3g1hI7ofB-p9cR33bVnGw839RIdpmTInTdUOr2Ci_yPJYbBmhfuM_JS2yVHrZjQLBL1NJCVuvzg0zHT9cHkHX8XYPzQEnRO4TdzugR8EZgC7EN2f0KOjR60k0u0utkCqJhnY2UmT-ndy9KWPOuwrNDu42InhDm2Xsjvl-InySXsXshx_4l3Xf_D97qc1Rt7-lDXjIrUmDZ71vk11iWc--Nbzt6QtOICKmOe3g0a7ZQMFA">
-</div>
-</div>
-<nav class="hidden md:flex gap-4 lg:gap-8 items-center md:gap-4">
-<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors text-sm lg:text-label-md" href="index.html">Inicio</a>
-<a class="text-primary font-label-md border-b-2 border-primary-container pb-1 text-sm lg:text-label-md" href="#">Eventos</a>
-<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors text-sm lg:text-label-md" href="#">Cronograma</a>
-<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors text-sm lg:text-label-md" href="#">Instituciones</a>
-</nav>
 </header>
-<!-- Navigation Drawer (Mobile) -->
-<div class="fixed inset-0 bg-black/40 z-[55] hidden transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
-<aside class="fixed inset-y-0 left-0 w-80 z-[60] rounded-r-xl bg-surface-container-low transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col py-6" id="nav-drawer">
-<div class="px-6 mb-8 flex justify-between items-center">
-<span class="font-headline-sm text-headline-sm font-black text-primary">Educación Superior</span>
-<button onclick="toggleDrawer()"><span class="material-symbols-outlined">close</span></button>
-</div>
-<div class="flex flex-col gap-2">
-<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="index.html">
-<span class="material-symbols-outlined">home</span>
-<span class="font-label-md text-label-md">Inicio</span>
-</a>
-<a class="flex items-center gap-4 bg-primary-container text-on-primary-container rounded-full px-4 py-3 mx-2" href="#">
-<span class="material-symbols-outlined">calendar_today</span>
-<span class="font-label-md text-label-md">Eventos</span>
-</a>
-<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#">
-<span class="material-symbols-outlined">schedule</span>
-<span class="font-label-md text-label-md">Cronograma</span>
-</a>
-<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#">
-<span class="material-symbols-outlined">account_balance</span>
-<span class="font-label-md text-label-md">Instituciones</span>
-</a>
-</div>
-</aside>
-<main class="pb-24 md:pb-0 pt-24 sm:pt-28 md:pt-32">
-<!-- Sticky Sub-Nav -->
-<nav class="sticky z-40 bg-tertiary-fixed text-on-tertiary-fixed py-3 px-margin-mobile md:px-margin-desktop border-b border-outline-variant shadow-sm flex justify-center gap-4 md:gap-8 font-label-md text-xs md:text-sm" style="background-color: #FBDD40; top: 80px; @media (min-width: 768px) { top: 128px; }">
-<a class="hover:text-primary transition-colors whitespace-nowrap" href="#agenda">Agenda de Actividades</a>
-<a class="hover:text-primary transition-colors whitespace-nowrap" href="#material">Material de Consulta</a>
-</nav>
+<main>
 <!-- Hero Section -->
-<section class="relative min-h-[500px] md:min-h-[614px] flex items-center overflow-hidden bg-surface-container-lowest" id="agenda">
-<div class="absolute inset-0 z-0">
-<div class="w-full h-full bg-cover bg-center opacity-10" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCQWWFOlcjRbqFr5ka0Or6cXn1kvqmslxshHT6d-ejTl8R6zpO37Zbk0btJ-JEmg_RvonqWSq1bm41Ye7oNaeKH9p9sUTGvelXRPrevdUSKHBXUEyxGdcELhOQiuNTfo3L98c_-E3aR5u11PIONknGAUpfeTvM8p1f_gyPbZfinhwlesA0c_Q-sbkUwu9yrBd09Z6jl93xP_zfYnjc_WwOMz0--1b6FPWYvj89nIPlqcKvEmcBzXmf2sQ')"></div>
-<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest/80 to-transparent"></div>
+<section class="relative min-h-fit md:min-h-[716px] flex items-center bg-surface-container-lowest overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop grid lg:grid-cols-2 gap-md md:gap-xl items-center relative z-10 py-lg md:py-xl">
+<div class="space-y-md text-center lg:text-left order-2 lg:order-1">
+<div class="inline-flex items-center gap-sm bg-primary-container/10 px-4 py-1 rounded-full border border-primary-container/20">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">calendar_today</span>
+<span class="font-label-md text-primary text-xs md:text-sm">20 de agosto de 2026</span>
 </div>
-<div class="container mx-auto px-margin-mobile md:px-margin-desktop relative z-10 grid grid-cols-1 md:grid-cols-2 gap-gutter items-center py-12 md:py-0 md:px-12">
-<div class="space-y-6 text-center md:text-left">
-<div class="inline-flex items-center gap-2 px-3 py-1 bg-primary-fixed text-on-primary-fixed rounded-full mx-auto md:mx-0">
-<span class="material-symbols-outlined text-[18px]">school</span>
-<span class="font-label-md text-label-md uppercase tracking-wider">Admisiones 2027</span>
-</div>
-<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary leading-tight md:text-headline-md">
-                        OFERTA EDUCATIVA <br><span class="text-on-background">2027</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-background leading-tight md:leading-none">
+                    5° Encuentro de Experiencias de <span class="text-primary">Investigación y Pedagógicas</span>
 </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mx-auto md:mx-0">
-                        Descubre las oportunidades académicas que transformarán tu futuro profesional. Conéctate con las mejores universidades y explora programas innovadores.
+<p class="font-body-md md:font-body-lg text-on-surface-variant max-w-xl mx-auto lg:mx-0">
+                    Un espacio federal para el fortalecimiento de los Institutos Superiores de Formación Docente y Técnica de la Provincia de San Juan.
+                </p>
+<div class="flex flex-col gap-sm border-l-4 pl-md py-2 text-left max-w-sm mx-auto lg:mx-0 border-brand-red">
+<p class="font-label-md text-on-surface uppercase tracking-tighter opacity-70">Organizan</p>
+<p class="font-body-md font-bold text-on-surface">Dirección de Educación Superior &amp; Dirección de Educación Privada</p>
+</div>
+<div class="flex flex-col sm:flex-row flex-wrap gap-md pt-sm justify-center lg:justify-start">
+<button class="bg-brand-red text-white px-xl py-4 rounded-xl font-label-md uppercase tracking-widest hover:scale-105 transition-transform shadow-lg w-full sm:w-auto">Inscribirse ahora</button>
+<button class="border-2 border-outline-variant text-on-surface-variant px-xl py-4 rounded-xl font-label-md uppercase tracking-widest hover:bg-surface-container transition-colors w-full sm:w-auto">Descargar Programa</button>
+</div>
+</div>
+<div class="relative group order-1 lg:order-2">
+<div class="absolute -inset-4 bg-brand-yellow/20 rounded-xl blur-2xl group-hover:bg-brand-yellow/30 transition-all"></div>
+<img alt="Educadores y alumnos en laboratorio" class="relative w-full aspect-[4/3] object-cover rounded-xl shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3vfC1I3-Z5cmqEFgF0QV9sUqtKzaoGE7ZQGzTc7LpofrxSsagGcyZ-n9-11HvE4vXht7qGp6Nrqwv_Jvceph9aY-3Bx3LTHa19cb3HcMimNLLha-LKU3eKPpR-GxtFILSupytNvQIqVK9Yzr-n2zgAPkYJDcTQ2WUIo1CHlb7yWeEDCwsqZM6B4knOBPJkG1GcCoSbL68kHJSzS5eKJRpNl4764Vx0h5Mw9YeQ2Ff3D1vFqmgMW0MHg"/>
+</div>
+</div>
+</section>
+<!-- Purpose Section -->
+<section class="py-lg md:py-xl bg-surface" id="proposito">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col lg:grid lg:grid-cols-12 gap-md md:gap-md lg:gap-md">
+<div class="lg:col-span-8 bg-white p-md md:p-lg rounded-xl border border-outline-variant relative overflow-hidden">
+<div class="absolute top-0 right-0 p-lg opacity-5 hidden md:block">
+<span class="material-symbols-outlined text-[120px]">school</span>
+</div>
+<h2 class="font-headline-md text-headline-sm md:text-headline-md text-primary mb-md">Propósito del Encuentro</h2>
+<p class="font-body-md text-on-surface-variant leading-relaxed mb-md">
+                        Este encuentro busca consolidar una red provincial de conocimiento donde las prácticas pedagógicas y los resultados de investigación se traduzcan en políticas educativas concretas. Fomentamos el diálogo crítico entre pares para transformar la formación docente y técnica desde el aula hacia el sistema.
                     </p>
-<div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 pt-4">
-<button class="bg-primary-container text-white px-8 py-4 rounded-xl font-bold hover:scale-105 active:scale-95 transition-all shadow-md">
-                            Registrarme ahora
-                        </button>
-<button class="border border-primary-container text-primary-container px-8 py-4 rounded-xl font-bold hover:bg-primary-container/10 transition-all">
-                            Ver Mapa de Sedes
-                        </button>
+<div class="flex flex-wrap gap-md">
+<div class="flex items-center gap-sm">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<span class="font-label-md text-xs md:text-sm">Innovación Pedagógica</span>
+</div>
+<div class="flex items-center gap-sm">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<span class="font-label-md text-xs md:text-sm">Redes de Conocimiento</span>
+</div>
+<div class="flex items-center gap-sm">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<span class="font-label-md text-xs md:text-sm">Políticas de Formación</span>
 </div>
 </div>
-<div class="hidden md:block relative">
-<div class="relative w-full aspect-square rounded-full border-4 border-primary/20 p-8">
-<div class="w-full h-full rounded-full overflow-hidden shadow-2xl">
-<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg-A705xIPa4yju6AXSlAQdAYlJeD6a1zLq7C4w6BA-mxlrgQAJi8GuQfl5ZsLKc31Xo8wjnY2iB9H5gjrCZLhY946p55wzhmpgxZA_Olpgx1gejNLgDN7kSGV_lqSDxV-miMumpUTbgGSnu6kQXSLX-t3iJmgEG9gc8rPEsWrxbyic1fdjCFMF-AScZJZeL4KVfrMaYtEr_VzhLiVyOWNQyXTe8EfG_1PmXjCqilBgA0snqtyB1vsEA">
 </div>
-<div class="absolute top-0 right-0 bg-white p-4 shadow-lg rounded-xl border border-outline-variant flex items-center gap-3 animate-bounce">
-<span class="material-symbols-outlined text-primary">trending_up</span>
-<div>
-<div class="text-xs text-on-surface-variant">Tu futuro</div>
-<div class="font-bold text-primary">empieza hoy!</div>
+<div class="lg:col-span-4 bg-brand-yellow p-md md:p-lg rounded-xl flex flex-col justify-center">
+<h3 class="font-headline-sm text-on-background mb-sm">Destinatarios</h3>
+<ul class="space-y-sm">
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary mt-1">groups</span>
+<span class="font-body-md font-medium">Docentes de Educación Superior de ISFD / ISFT</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary mt-1">person_book</span>
+<span class="font-body-md font-medium">Estudiantes de Ciclo Avanzado</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-primary mt-1">manage_accounts</span>
+<span class="font-body-md font-medium">Equipos Directivos y Técnicos</span>
+</li>
+</ul>
 </div>
 </div>
+</div>
+</section>
+<!-- Book Presentation Section -->
+<section class="py-lg md:py-xl bg-white relative" id="presentacion-libro">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col lg:flex-row items-center gap-lg md:gap-xl rounded-xl p-md md:p-lg border-2 border-brand-yellow/30 shadow-inner bg-surface">
+<div class="w-full lg:w-1/3 flex justify-center">
+<div class="relative w-48 h-64 md:w-64 md:h-80 bg-white rounded-lg shadow-2xl transform lg:-rotate-3 hover:rotate-0 transition-transform duration-500 overflow-hidden border border-outline-variant">
+<div class="h-2 w-full bg-brand-red"></div>
+<div class="p-md text-center flex flex-col h-full justify-between">
+<span class="material-symbols-outlined text-primary text-[32px] md:text-[48px]">menu_book</span>
+<h4 class="font-headline-sm text-sm md:text-xl text-on-background leading-tight text-center">Investigar para Transformar</h4>
+<p class="text-[8px] md:text-[10px] uppercase tracking-widest opacity-50">Redes de conocimiento, Educación en Comunidad</p>
+<div class="bg-brand-yellow h-1 w-12 mx-auto"></div>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-2/3 space-y-md text-center lg:text-left">
+<div class="inline-block bg-primary text-white px-4 py-1 rounded-full text-[10px] md:text-label-sm uppercase font-bold">Destacado</div>
+<h2 class="font-display-lg-mobile text-display-lg-mobile text-on-background">Presentación del Libro Académico</h2>
+<h3 class="font-headline-sm text-primary italic text-lg md:text-2xl">'Investigar para Transformar: Redes de conocimiento, Educación en Comunidad'</h3>
+<p class="font-body-md md:font-body-lg text-on-surface-variant">
+                        Esta obra es una compilación exhaustiva del 4° Encuentro de Experiencias Pedagógicas y de Investigación. Recoge las voces, desafíos y propuestas de cientos de educadores sanjuaninos en su labor diaria por una educación de calidad.
+                    </p>
+<button class="flex items-center gap-sm text-primary font-bold border-b-2 border-primary pb-1 hover:gap-md transition-all mx-auto lg:mx-0">
+                        Conocer a los autores <span class="material-symbols-outlined">arrow_forward</span>
+</button>
 </div>
 </div>
 </div>
 </section>
 <!-- Agenda Section -->
-<section class="py-xl bg-white relative" id="material">
-<div class="container mx-auto px-margin-mobile md:px-margin-desktop md:px-12">
-<div class="text-center mb-16 px-4">
-<h2 class="font-headline-md text-headline-md text-primary mb-4">Agenda de Actividades</h2>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
-                        Cronograma detallado de conferencias, talleres y ferias de orientación programadas para la Semana de Educación Superior.
-                    </p>
+<section class="py-lg md:py-xl bg-surface-container-lowest" id="agenda">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-lg md:mb-xl">
+<h2 class="font-headline-md text-headline-sm md:text-headline-md text-on-background">Agenda del Evento</h2>
+<p class="text-on-surface-variant font-label-md text-xs md:text-sm uppercase tracking-widest mt-2">Cronograma de Actividades 2026</p>
+<div class="w-24 h-1 bg-brand-yellow mx-auto mt-sm"></div>
 </div>
-<div class="relative max-w-4xl mx-auto px-4 sm:px-6">
-<!-- Timeline Line -->
-<div class="timeline-line absolute inset-0 pointer-events-none"></div>
-<!-- Activities -->
-<div class="space-y-12">
-<!-- Day 1 Header -->
-<div class="relative z-10 flex justify-center mb-8">
-<span class="bg-secondary-container text-white px-6 py-2 rounded-full font-bold shadow-md text-center">Día 1: Apertura y Muestra</span>
+<div class="relative max-w-4xl mx-auto py-md">
+<!-- Central Line -->
+<div class="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-brand-red"></div>
+<div class="space-y-8 md:space-y-12">
+<!-- 08:30 Hs: Acreditaciones -->
+<div class="relative flex flex-col md:flex-row items-center md:justify-between w-full">
+<div class="hidden md:block w-[45%]"></div>
+<div class="z-10 bg-brand-red w-8 h-8 rounded-full border-4 border-white flex items-center justify-center absolute left-0 md:left-1/2 md:transform md:-translate-x-1/2">
+<div class="w-2 h-2 bg-white rounded-full"></div>
 </div>
-<!-- Activity Item 1 -->
-<div class="relative flex flex-col md:flex-row items-center gap-8 group">
-<div class="md:w-1/2 md:text-right hidden md:block">
-<div class="text-primary font-bold text-xl">08:30 AM - 10:00 AM</div>
-<div class="text-on-surface-variant font-label-md">Auditorio Principal "A"</div>
-</div>
-<div class="relative z-10 w-10 h-10 bg-white border-4 border-primary rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
-<div class="w-2 h-2 bg-primary rounded-full"></div>
-</div>
-<div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant hover:border-primary-container transition-colors shadow-sm bg-tertiary-fixed-dim" style="background-color: #FBDD40;">
-<div class="md:hidden text-primary font-bold mb-2">08:30 AM - 10:00 AM. Auditorio Principal "A".</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Recepción de expositores</h3>
-<p class="text-on-surface-variant mb-0 font-body-md">Convocatoria e ingreso de las delegaciones de los institutos expositores para la puesta a punto de sus espacios.</p>
+<div class="w-full md:w-[45%] pl-12 md:pl-0">
+<div class="bg-white p-4 md:p-6 rounded-xl border border-outline-variant shadow-sm">
+<span class="font-headline-sm text-primary font-bold text-lg md:text-2xl">08:30 <span class="text-label-sm font-normal opacity-70">Hs</span></span>
+<h4 class="font-headline-sm text-base md:text-xl text-on-background mt-1">Acreditaciones</h4>
+<p class="text-on-surface-variant text-sm md:text-body-md mt-2">Ingreso de participantes y entrega de materiales.</p>
 </div>
 </div>
-<!-- Activity Item 2 -->
-<div class="relative flex flex-col md:flex-row-reverse items-center gap-8 group">
-<div class="md:w-1/2 md:text-left hidden md:block">
-<div class="text-primary font-bold text-xl">11:00 AM - 11:30 AM</div>
-<div class="text-on-surface-variant font-label-md">Estadio Aldo Cantoni</div>
 </div>
-<div class="relative z-10 w-10 h-10 bg-white border-4 border-primary rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
-<div class="w-2 h-2 bg-primary rounded-full"></div>
-</div>
-<div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant hover:border-primary-container transition-colors shadow-sm bg-tertiary-fixed-dim" style="background-color: #FBDD40;">
-<div class="md:hidden text-primary font-bold mb-2">11:00 AM - 11:30 AM. Estadio Aldo Cantoni.</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Acto Protocolar de Apertura</h3>
-<p class="text-on-surface-variant mb-0 font-body-md">Corte de cinta oficial, palabras de bienvenida a cargo de las autoridades, punto artístico e ingreso de público.</p>
+<!-- 09:00 a 09:30 Hs: Apertura -->
+<div class="relative flex flex-col md:flex-row items-center md:justify-between w-full">
+<div class="w-full md:w-[45%] md:pr-12 pl-12 md:pl-0 order-2 md:order-1">
+<div class="bg-brand-yellow p-4 md:p-6 rounded-xl shadow-sm border border-brand-yellow/20">
+<span class="font-headline-sm text-on-background font-bold text-lg md:text-2xl">09:00 - 09:30 <span class="text-label-sm font-normal opacity-70">Hs</span></span>
+<h4 class="font-headline-sm text-base md:text-xl text-on-background mt-1">Apertura: Palabras de bienvenida</h4>
+<p class="text-on-surface-variant text-sm md:text-body-md mt-2 italic font-medium mb-1">Presentación del libro: 'Investigar para Transformar Redes de conocimiento Educación en Comunidad'.</p>
+<p class="text-on-surface-variant text-sm md:text-body-md">Compilación del 4º Encuentro de Experiencias Pedagógicas y de Investigación.</p>
 </div>
 </div>
-<!-- Activity Item 3 -->
-<div class="relative flex flex-col md:flex-row items-center gap-8 group">
-<div class="md:w-1/2 md:text-right hidden md:block">
-<div class="text-primary font-bold text-xl">11:30 AM - 14:00 PM</div>
-<div class="text-on-surface-variant font-label-md">Zona de Networking</div>
+<div class="z-10 bg-brand-red w-8 h-8 rounded-full border-4 border-white flex items-center justify-center absolute left-0 md:left-1/2 md:transform md:-translate-x-1/2 order-1 md:order-2">
+<div class="w-2 h-2 bg-white rounded-full"></div>
 </div>
-<div class="relative z-10 w-10 h-10 bg-white border-4 border-primary rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
-<div class="w-2 h-2 bg-primary rounded-full"></div>
+<div class="hidden md:block w-[45%] order-3"></div>
 </div>
-<div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant hover:border-primary-container transition-colors shadow-sm bg-tertiary-fixed-dim" style="background-color: #FBDD40;">
-<div class="md:hidden text-primary font-bold mb-2">11:30 AM - 14:00 PM. Zona de Networking.</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Oferta académica</h3>
-<p class="text-on-surface-variant mb-0 font-body-md">Exposición y Orientación Vocacional: Continuación de la feria de ofertas académicas y atención al público.</p>
+<!-- 09:30 a 10:15 Hs: Conversatorio Central -->
+<div class="relative flex flex-col md:flex-row items-center md:justify-between w-full">
+<div class="hidden md:block w-[45%]"></div>
+<div class="z-10 bg-brand-red w-8 h-8 rounded-full border-4 border-white flex items-center justify-center absolute left-0 md:left-1/2 md:transform md:-translate-x-1/2">
+<div class="w-2 h-2 bg-white rounded-full"></div>
 </div>
-</div>
-<div class="relative z-10 flex justify-center py-4">
-<div class="flex flex-col items-center justify-center px-5 py-3 rounded-full border border-primary/20 bg-primary/5 text-center">
-<span class="text-primary font-bold text-xs md:text-sm uppercase tracking-[0.2em] leading-tight">14:00 PM a 15:00 PM</span>
-<span class="text-primary font-semibold text-[10px] md:text-xs uppercase tracking-[0.2em] leading-tight mt-1">Intervalo Institucional</span>
+<div class="w-full md:w-[45%] pl-12 md:pl-0">
+<div class="bg-brand-red p-4 md:p-6 rounded-xl shadow-lg text-white">
+<span class="font-headline-sm font-bold text-lg md:text-2xl">09:30 - 10:15 <span class="text-label-sm font-normal opacity-70">Hs</span></span>
+<h4 class="font-headline-sm text-base md:text-xl font-bold mt-1 uppercase tracking-wide">Conversatorio: Prof. Martin Conrado Müller</h4>
+<p class="text-sm md:text-body-md mt-2 opacity-90">Director Ejecutivo del Instituto Nacional de Formación Docente (INFD). Tema: 'Los desafíos federales de la formación docente y las políticas nacionales para el sistema formador'.</p>
 </div>
 </div>
-<!-- Day 2 Header -->
-<div class="relative z-10 flex justify-center mb-8">
-<span class="bg-secondary-container text-white px-6 py-2 rounded-full font-bold shadow-md text-center">Día 2: Continuación de la Oferta</span>
 </div>
-<div class="relative flex flex-col md:flex-row-reverse items-center gap-8 group">
-<div class="md:w-1/2 md:text-left hidden md:block">
-<div class="text-primary font-bold text-xl">09:00 AM - 11:00 AM</div>
-<div class="text-on-surface-variant font-label-md">Estadio Aldo Cantoni</div>
+<!-- 10:15 a 10:30 Hs: Break -->
+<div class="relative flex flex-col md:flex-row items-center md:justify-center w-full">
+<div class="z-10 bg-brand-red w-8 h-8 rounded-full border-4 border-white flex items-center justify-center absolute left-0 md:left-1/2 md:transform md:-translate-x-1/2">
+<div class="w-2 h-2 bg-white rounded-full"></div>
 </div>
-<div class="relative z-10 w-10 h-10 bg-white border-4 border-primary rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
-<div class="w-2 h-2 bg-primary rounded-full"></div>
-</div>
-<div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant hover:border-primary-container transition-colors shadow-sm bg-tertiary-fixed-dim" style="background-color: #FBDD40;">
-<div class="md:hidden text-primary font-bold mb-2">09:00 AM - 11:00 AM. Estadio Aldo Cantoni.</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Oferta académica</h3>
-<p class="text-on-surface-variant mb-0 font-body-md">Inicio de la atención al público en la segunda jornada de la feria educativa.</p>
+<div class="flex items-center gap-sm px-6 py-2 rounded-full border border-outline-variant/30 ml-12 md:ml-0 bg-surface-container-low">
+<span class="material-symbols-outlined text-on-surface-variant text-sm md:text-base">coffee</span>
+<span class="font-label-md text-on-surface-variant uppercase tracking-widest text-[10px] md:text-xs">10:15 - 10:30 Hs | Break / Breve receso</span>
 </div>
 </div>
-<div class="relative flex flex-col md:flex-row items-center gap-8 group">
-<div class="md:w-1/2 md:text-right hidden md:block">
-<div class="text-primary font-bold text-xl">16:00 PM</div>
-<div class="text-on-surface-variant font-label-md">Estadio Aldo Cantoni</div>
+<!-- 10:30 a 13:00 Hs: Mesas de Trabajo -->
+<div class="relative flex flex-col md:flex-row items-center md:justify-between w-full">
+<div class="w-full md:w-[45%] md:pr-12 pl-12 md:pl-0 order-2 md:order-1">
+<div class="bg-white p-4 md:p-6 rounded-xl border border-outline-variant shadow-sm">
+<span class="font-headline-sm text-primary font-bold text-lg md:text-2xl">10:30 - 13:00 <span class="text-label-sm font-normal opacity-70">Hs</span></span>
+<h4 class="font-headline-sm text-base md:text-xl text-on-background mt-1">Mesas de trabajo: Investigación y Diálogo</h4>
+<p class="text-on-surface-variant text-sm md:text-body-md mt-2">Presentación de Proyectos de Investigación en desarrollo y finalizados (2025/2026). Espacio de diálogo y reflexión crítica sobre el sentido de la investigación educativa.</p>
 </div>
-<div class="relative z-10 w-10 h-10 bg-white border-4 border-primary rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
-<div class="w-2 h-2 bg-primary rounded-full"></div>
 </div>
-<div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant hover:border-primary-container transition-colors shadow-sm bg-tertiary-fixed-dim" style="background-color: #FBDD40;">
-<div class="md:hidden text-primary font-bold mb-2">16:00 PM. Estadio Aldo Cantoni.</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Clausura y Desarmado</h3>
-<p class="text-on-surface-variant mb-0 font-body-md">Cierre definitivo de la Oferta Educativa 2027 y retiro de infraestructura.</p>
+<div class="z-10 bg-brand-red w-8 h-8 rounded-full border-4 border-white flex items-center justify-center absolute left-0 md:left-1/2 md:transform md:-translate-x-1/2 order-1 md:order-2">
+<div class="w-2 h-2 bg-white rounded-full"></div>
 </div>
+<div class="hidden md:block w-[45%] order-3"></div>
+</div>
+<!-- 13:00 a 14:00 Hs: Almuerzo -->
+<div class="relative flex flex-col md:flex-row items-center md:justify-center w-full">
+<div class="z-10 bg-brand-red w-8 h-8 rounded-full border-4 border-white flex items-center justify-center absolute left-0 md:left-1/2 md:transform md:-translate-x-1/2">
+<div class="w-2 h-2 bg-white rounded-full"></div>
+</div>
+<div class="flex items-center gap-sm px-6 py-2 rounded-full border border-outline-variant/30 ml-12 md:ml-0 bg-surface-container-low">
+<span class="material-symbols-outlined text-on-surface-variant text-sm md:text-base">restaurant</span>
+<span class="font-label-md text-on-surface-variant uppercase tracking-widest text-[10px] md:text-xs">13:00 - 14:00 Hs | Receso para Almuerzo</span>
+</div>
+</div>
+<!-- 14:00 a 17:00 Hs: Socialización -->
+<div class="relative flex flex-col md:flex-row items-center md:justify-between w-full">
+<div class="hidden md:block w-[45%]"></div>
+<div class="z-10 bg-brand-red w-8 h-8 rounded-full border-4 border-white flex items-center justify-center absolute left-0 md:left-1/2 md:transform md:-translate-x-1/2">
+<div class="w-2 h-2 bg-white rounded-full"></div>
+</div>
+<div class="w-full md:w-[45%] pl-12 md:pl-0">
+<div class="bg-brand-yellow p-4 md:p-6 rounded-xl shadow-sm border border-brand-yellow/20">
+<span class="font-headline-sm text-on-background font-bold text-lg md:text-2xl">14:00 - 17:00 <span class="text-label-sm font-normal opacity-70">Hs</span></span>
+<h4 class="font-headline-sm text-base md:text-xl text-on-background mt-1">Socialización e Intercambio</h4>
+<p class="text-on-surface-variant text-sm md:text-body-md mt-2">Presentación de Experiencias Pedagógicas en comunidades de aprendizaje. Comunidades de trabajo estudiantil, narrativas y propuestas innovadoras. Intercambio entre instituciones y equipos docentes.</p>
+</div>
+</div>
+</div>
+<!-- 17:00 Hs: Cierre -->
+<div class="relative flex flex-col md:flex-row items-center md:justify-between w-full">
+<div class="w-full md:w-[45%] md:pr-12 pl-12 md:pl-0 order-2 md:order-1">
+<div class="bg-white p-4 md:p-6 rounded-xl border border-outline-variant shadow-sm">
+<span class="font-headline-sm text-primary font-bold text-lg md:text-2xl">17:00 <span class="text-label-sm font-normal opacity-70">Hs</span></span>
+<h4 class="font-headline-sm text-base md:text-xl text-on-background mt-1 font-bold">Cierre del Encuentro</h4>
+</div>
+</div>
+<div class="z-10 bg-brand-red w-8 h-8 rounded-full border-4 border-white flex items-center justify-center absolute left-0 md:left-1/2 md:transform md:-translate-x-1/2 order-1 md:order-2">
+<div class="w-2 h-2 bg-white rounded-full"></div>
+</div>
+<div class="hidden md:block w-[45%] order-3"></div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- Material de Consulta Section -->
-<section class="py-xl bg-tertiary-fixed" style="background-color: #FBDD40;">
-<div class="container mx-auto px-margin-mobile md:px-margin-desktop md:px-12">
-<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-<div class="text-center md:text-left">
-<h2 class="font-headline-md text-headline-md text-primary mb-4">Material de Consulta</h2>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
-                            Accede a todos los recursos digitales, guías de estudio y grabaciones de las sesiones.
+<!-- Sede Section -->
+<section class="py-lg md:py-xl bg-surface-container-high overflow-hidden" id="sede">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop grid lg:grid-cols-2 gap-lg md:gap-xl items-center">
+<div class="space-y-md text-center lg:text-left">
+<h2 class="font-display-lg-mobile text-on-background">Lugar del Encuentro</h2>
+<div class="space-y-sm text-left">
+<div class="flex items-start gap-md">
+<div class="p-3 rounded-lg text-white bg-brand-red min-w-fit">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-lg md:text-xl">ISFD 'Santa María'</h4>
+<p class="text-on-surface-variant text-sm md:text-base">Universidad Católica de Cuyo</p>
+<p class="font-body-md mt-sm text-sm md:text-base">Av. José Ignacio de la Roza 1516 (O), San Juan.</p>
+</div>
+</div>
+<div class="flex items-start gap-md pt-sm">
+<div class="bg-brand-yellow p-3 rounded-lg text-on-background min-w-fit">
+<span class="material-symbols-outlined">info</span>
+</div>
+<p class="text-on-surface-variant font-body-md text-sm md:text-base">
+                            La sede cuenta con estacionamiento y es de fácil acceso mediante transporte público. El evento se realizará en los Salones B y C del Edificio Central.
                         </p>
 </div>
-<button class="text-primary font-bold flex items-center justify-center gap-2 group">
-                        Ver todo el repositorio
-                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</button>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:grid-cols-2">
-<!-- Resource Card 1 -->
-<div class="bg-white p-6 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
-<div>
-<div class="w-12 h-12 bg-red-50 text-red-600 rounded-lg flex items-center justify-center mb-4">
-<span class="material-symbols-outlined text-3xl">picture_as_pdf</span>
-</div>
-<h4 class="font-bold text-lg mb-2">Guía de Carreras 2027</h4>
-<p class="text-sm text-on-surface-variant mb-4">Catálogo completo de programas de pregrado y requisitos de ingreso.</p>
-</div>
-<div class="flex items-center justify-between mt-auto">
-<span class="text-xs text-outline font-medium">PDF • 12.4 MB</span>
-<button class="p-2 rounded-full hover:bg-red-50 text-red-600 transition-colors">
-<span class="material-symbols-outlined">download</span>
-</button>
 </div>
 </div>
-<!-- Resource Card 2 -->
-<div class="bg-white p-6 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
-<div>
-<div class="w-12 h-12 bg-tertiary-container/20 text-tertiary rounded-lg flex items-center justify-center mb-4"><span class="material-symbols-outlined text-3xl">play_circle</span></div>
-<h4 class="font-bold text-lg mb-2">Charla: Orientación</h4>
-<p class="text-sm text-on-surface-variant mb-4">Video interactivo con consejos de psicólogos expertos.</p>
+<div class="relative h-[250px] md:h-[400px] rounded-xl overflow-hidden shadow-xl border border-outline-variant">
+<div class="absolute inset-0 z-0">
+<img alt="Sede ISFD Santa María" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLbpbQ9MWtooAu3BzUygXA2Sm65gOBAWCUejWINcshbuW_Dag1Fchzwrt2oP5XjUFW0Bt9DZp7irJ6AUdMGo3V2DlhJ-KV9MI_QO8uW0veQL2t_sJNSOY5uixnIAwrB9RzlKRuQUjqtZbzAMpo2QNeIhQwrdgyMWwqeGony58_YjKCc3IrbygxAQgpI8gIckBxYwyJoejH4C02riO0SowsY4k_z6FPDMzDPw9neCtdg8FEfHr5mqJf1w"/>
 </div>
-<div class="flex items-center justify-between mt-auto">
-<span class="text-xs text-outline font-medium">Video • 15 min</span>
-<button class="p-2 rounded-full hover:bg-tertiary-container/20 text-tertiary transition-colors"><span class="material-symbols-outlined">open_in_new</span></button>
+<div class="absolute inset-0 bg-primary/20 hover:bg-transparent transition-all pointer-events-none"></div>
 </div>
-</div>
-<!-- Resource Card 3 -->
-<div class="bg-white p-6 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
-<div>
-<div class="w-12 h-12 bg-green-50 text-green-600 rounded-lg flex items-center justify-center mb-4">
-<span class="material-symbols-outlined text-3xl">link</span>
-</div>
-<h4 class="font-bold text-lg mb-2">Simulador de Puntaje</h4>
-<p class="text-sm text-on-surface-variant mb-4">Herramienta externa para calcular tus posibilidades de ingreso.</p>
-</div>
-<div class="flex items-center justify-between mt-auto">
-<span class="text-xs text-outline font-medium">Enlace Externo</span>
-<button class="p-2 rounded-full hover:bg-green-50 text-green-600 transition-colors">
-<span class="material-symbols-outlined">open_in_new</span>
-</button>
-</div>
-</div>
-<!-- Resource Card 4 -->
-<div class="bg-white p-6 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
-<div>
-<div class="w-12 h-12 bg-orange-50 text-orange-600 rounded-lg flex items-center justify-center mb-4">
-<span class="material-symbols-outlined text-3xl">description</span>
-</div>
-<h4 class="font-bold text-lg mb-2">Calendario de Admisión</h4>
-<p class="text-sm text-on-surface-variant mb-4">Fechas críticas de registro y exámenes para universidades públicas.</p>
-</div>
-<div class="flex items-center justify-between mt-auto">
-<span class="text-xs text-outline font-medium">DOC • 2.1 MB</span>
-<button class="p-2 rounded-full hover:bg-orange-50 text-orange-600 transition-colors">
-<span class="material-symbols-outlined">download</span>
-</button>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Newsletter / CTA -->
-<section class="py-xl bg-[#D02E29] relative overflow-hidden">
-<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
-<div class="absolute bottom-0 left-0 w-96 h-96 bg-white/10 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
-<div class="container mx-auto px-margin-mobile md:px-margin-desktop relative z-10 text-center">
-<h2 class="font-headline-md text-headline-md text-white mb-6">¿Quieres recibir alertas personalizadas?</h2>
-<p class="text-white/80 font-body-lg mb-8 max-w-2xl mx-auto">Suscríbete para recibir notificaciones sobre becas y recordatorios de fechas de cierre.</p>
-<form class="flex flex-col md:flex-row gap-4 max-w-xl mx-auto px-4" onsubmit="event.preventDefault()">
-<input class="flex-grow px-6 py-4 rounded-xl border-none focus:ring-2 focus:ring-white/30 bg-white text-on-surface font-body-md" placeholder="Tu correo electrónico" type="email">
-<button class="bg-white text-[#D02E29] px-8 py-4 rounded-xl font-bold hover:bg-white/90 transition-colors active:scale-95 shadow-lg whitespace-nowrap">Suscribirme</button>
-</form>
 </div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-inverse-surface text-inverse-on-surface pt-16 pb-8">
-<div class="container mx-auto px-margin-mobile md:px-margin-desktop">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-16">
-<div class="col-span-1 text-center md:text-left">
-<div class="font-headline-sm text-headline-sm font-black text-white mb-6">Horizon Academic</div>
-<p class="text-surface-variant text-sm mb-6">Promoviendo el acceso equitativo a la educación superior de calidad.</p>
-<div class="flex gap-4 justify-center md:justify-start">
-<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors" href="#">
-<span class="material-symbols-outlined text-xl text-white">share</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors" href="#">
-<span class="material-symbols-outlined text-xl text-white">public</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors" href="#">
-<span class="material-symbols-outlined text-xl text-white">mail</span>
-</a>
+<footer class="bg-inverse-surface text-on-primary py-12 md:py-16 section-anchor" id="footer">
+<div class="container mx-auto px-4 md:px-margin-desktop">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12">
+<div class="col-span-1 lg:col-span-2">
+<img alt="Logo SES Blanco" class="h-24 md:h-32 w-auto max-w-[320px] brightness-0 invert mb-6 opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZNmP26bSCAnj7KM04zCNYRkjdZTqcIwzhCDyB8FhbdcYyXwx8rmH9b8UoAIA4WwImfswOHbA7uibgZKX6QV0yIjZCmmZqgnw5Un1N9o43sOGn1B9ltapCuj_lzHQTFqVn2bFUrvcJkSBTOIuOYCDgkeCs_mVhh7TH6OjqEQWdh3gNl9PKLiydkyc-rOvNgNnRw01hcfqhfvz2tz8mFpcenaeJjmSkQuzlSmvbpzIRaGyL23RuENVKWANIsFHFGjqky_0"/>
+<p class="text-inverse-on-surface text-sm leading-relaxed opacity-70">
+                    La Semana de la Educación Superior se posiciona como un dispositivo integral, que articula formación, investigación y proyección del nivel superior, contribuyendo al desarrollo educativo y socio-productivo de la provincia.
+                </p>
 </div>
-</div>
-<div class="text-center md:text-left">
-<h5 class="font-bold mb-6 text-white uppercase text-xs tracking-widest">Navegación</h5>
-<ul class="space-y-4 text-sm text-surface-variant">
-<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Cronograma</a></li>
-<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Universidades</a></li>
-<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Preguntas Frecuentes</a></li>
+<div>
+<h4 class="text-lg font-bold mb-4 md:mb-6 text-primary-fixed">Enlaces Rápidos</h4>
+<ul class="space-y-3 md:space-y-4 text-inverse-on-surface text-sm opacity-70">
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#inicio">Sobre el Evento</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#cronograma">Cronograma</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#instituciones">Instituciones</a></li>
+<li class=""><a class="hover:text-primary-fixed transition-colors" href="#sede">Sede</a></li>
 </ul>
 </div>
-<div class="text-center md:text-left">
-<h5 class="font-bold mb-6 text-white uppercase text-xs tracking-widest">Soporte</h5>
-<ul class="space-y-4 text-sm text-surface-variant">
-<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Centro de Ayuda</a></li>
-<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Contacto</a></li>
-<li class=""><a class="hover:text-primary-fixed transition-colors" href="#">Términos</a></li>
+<div>
+<h4 class="text-lg font-bold mb-4 md:mb-6 text-primary-fixed">Contacto</h4>
+<ul class="space-y-3 md:space-y-4 text-inverse-on-surface text-sm opacity-70">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed text-lg">mail</span>
+                        contacto@ses2026.com
+                    </li>
+<li class="flex items-center gap-3" id="sede">
+<span class="material-symbols-outlined text-primary-fixed text-lg">location_on</span>
+                       Centro Cívico 
+                    </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed text-lg">call</span>
+                        Av. Libertador Gral. San Martín, San Juan
+                    </li>
 </ul>
 </div>
-<div class="text-center md:text-left">
-<h5 class="font-bold mb-6 text-white uppercase text-xs tracking-widest">Ubicación</h5>
-<div class="text-sm text-surface-variant space-y-4">
-<div class="flex gap-2 justify-center md:justify-start">
-<span class="material-symbols-outlined text-primary">location_on</span>
-<span class="">San Juan, Argentina</span>
-</div>
-<div class="flex gap-2 justify-center md:justify-start">
-<span class="material-symbols-outlined text-primary">schedule</span>
-<span class="">Lun - Vie: 8:00 - 18:00</span>
-</div>
-</div>
-</div>
-</div>
-<div class="pt-8 border-t border-white/10 text-center text-xs text-surface-variant">
-<p class="">© 2026 Semana de Educación Superior. Todos los derechos reservados.</p>
+<div class="pt-8 border-t border-white/10 text-center text-[10px] md:text-xs text-surface-variant">
+<p class="">© 2026 Semana de Educación Superior - San Juan. Todos los derechos reservados.</p>
 </div>
 </div>
 </footer>
-<!-- Bottom Navigation (Mobile Only) -->
-<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 bg-surface flex justify-around items-center px-4 py-3 border-t border-outline-variant shadow-lg">
-<a class="flex flex-col items-center justify-center text-on-surface-variant px-5 py-1" href="index.html">
-<span class="material-symbols-outlined">home</span>
-<span class="text-[10px] font-medium">Inicio</span>
-</a>
-<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-5 py-1" href="#">
-<span class="material-symbols-outlined">calendar_today</span>
-<span class="text-[10px] font-medium">Eventos</span>
-</a>
-<a class="flex flex-col items-center justify-center text-on-surface-variant px-5 py-1" href="#">
-<span class="material-symbols-outlined">event_note</span>
-<span class="text-[10px] font-medium">Agenda</span>
-</a>
-</nav>
 <script>
-    function toggleDrawer() {
-        const drawer = document.getElementById('nav-drawer');
-        const overlay = document.getElementById('drawer-overlay');
-        if (drawer.classList.contains('-translate-x-full')) {
-            drawer.classList.remove('-translate-x-full');
-            overlay.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        } else {
-            drawer.classList.add('-translate-x-full');
-            overlay.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
-    }
+    // Mobile Menu Logic
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuClose = document.getElementById('menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-    // Header scroll effect
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+
+    menuClose.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+
+    // Close menu on link click
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    });
+
+    // Smooth scroll with offset
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                const headerOffset = window.innerWidth < 768 ? 100 : 130;
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Sticky Nav active state logic
     window.addEventListener('scroll', () => {
-        const header = document.getElementById('main-header');
-        if (window.scrollY > 50) {
-            header.classList.add('glass-panel', 'shadow-sm');
-            header.classList.remove('bg-surface');
-        } else {
-            header.classList.remove('glass-panel', 'shadow-sm');
-            header.classList.add('bg-surface');
-        }
+        const sections = ['proposito', 'presentacion-libro', 'agenda', 'sede'];
+        const navLinks = document.querySelectorAll('.sticky:not(.top-0) a');
+        
+        let current = '';
+        sections.forEach(section => {
+            const element = document.getElementById(section);
+            if (element) {
+                const sectionTop = element.offsetTop;
+                if (window.pageYOffset >= sectionTop - 150) {
+                    current = section;
+                }
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('text-primary', 'underline');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('text-primary', 'underline');
+            }
+        });
     });
 </script>
-
-
 </body></html>
