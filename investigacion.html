@@ -133,66 +133,23 @@
 </head>
 <body class="bg-background font-body-md text-on-surface overflow-x-hidden">
 <!-- TopNavBar -->
-<header class="sticky top-0 z-50 bg-surface border-b border-outline-variant shadow-sm" data-purpose="main-navigation">
-<div class="container mx-auto px-4 md:px-margin-desktop py-2 md:py-3 flex justify-between items-center">
+<header class="fixed top-0 w-full z-[60] flex justify-between items-center px-4 md:px-margin-desktop bg-surface border-b border-outline-variant transition-all duration-300 py-2 md:py-4" id="main-header">
 <div class="flex items-center gap-2 md:gap-4">
-<button class="md:hidden p-2 text-primary active:scale-95 transition-transform" onclick="toggleDrawer()">
-<span class="material-symbols-outlined">menu</span>
-</button>
-<div class="flex items-center gap-2 md:gap-4">
-<img alt="Gobierno de San Juan" class="h-12 md:h-24 w-auto object-contain mix-blend-multiply" src="imagenes/logo_gobierno.png"/>
-<div class="w-px h-8 md:h-16 bg-outline-variant mx-1 md:mx-4"></div>
-<img alt="Semana de la Educación Superior" class="h-12 md:h-24 w-auto object-contain" src="imagenes/SES.png"/>
+<div class="flex items-center gap-2 md:gap-4 overflow-hidden">
+<img alt="Gobierno de San Juan" class="h-12 md:h-20 w-auto object-contain mix-blend-multiply transition-all" src="imagenes/logo_gobierno.png">
+<div class="w-px h-8 md:h-12 bg-outline-variant mx-1 md:mx-4 shrink-0"></div>
+<img alt="Semana de la Educación Superior" class="h-12 md:h-20 w-auto object-contain transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNVE_OZrMLNJLkCXo3AIGXlp3g1hI7ofB-p9cR33bVnGw839RIdpmTInTdUOr2Ci_yPJYbBmhfuM_JS2yVHrZjQLBL1NJCVuvzg0zHT9cHkHX8XYPzQEnRO4TdzugR8EZgC7EN2f0KOjR60k0u0utkCqJhnY2UmT-ndy9KWPOuwrNDu42InhDm2Xsjvl-InySXsXshx_4l3Xf_D97qc1Rt7-lDXjIrUmDZ71vk11iWc--Nbzt6QtOICKmOe3g0a7ZQMFA">
 </div>
 </div>
-<!-- Desktop Nav -->
 <nav class="hidden lg:flex gap-8 items-center">
-<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="index.html">Inicio</a>
-<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#proposito">Propósito</a>
-<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#presentacion-libro">Presentación Libro</a>
-<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#agenda">Agenda</a>
-<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#sede">Sede</a>
+<a class="hover:opacity-70 transition-all"href="index.html">Inicio</a>
+<a class="hover:opacity-70 transition-all" href="#proposito">Propósito</a>
+<a class="hover:opacity-70 transition-all" href="#presentacion-libro">Presentación Libro</a>
+<a class="hover:opacity-70 transition-all" href="#agenda">Agenda</a>
+<a class="hover:opacity-70 transition-all" href="#sedes">Sede</a>
+<!-- <button class="bg-secondary text-white px-6 py-2 rounded-lg font-bold uppercase text-sm tracking-widest shadow-sm hover:opacity-90">Inscribirse</button>-->
 </nav>
 </header>
-<div class="fixed inset-0 bg-black/40 z-[55] hidden transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
-<aside class="fixed inset-y-0 left-0 w-80 z-[60] rounded-r-xl bg-surface-container-low transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col py-6" id="nav-drawer">
-    <div class="px-6 mb-8 flex justify-between items-center">
-        <span class="font-headline-sm text-headline-sm font-black" style="color:#e03c31;">
-            Educación Superior
-        </span>
-
-        <button onclick="toggleDrawer()">
-            <span class="material-symbols-outlined">close</span>
-        </button>
-    </div>
-    <div class="flex flex-col gap-2">
-        <!-- Inicio -->
-        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="index.html">
-            <span class="material-symbols-outlined">home</span>
-            <span class="font-label-md text-label-md">Inicio</span>
-        </a>
-        <!-- Propósito -->
-        <a class="flex items-center gap-4 bg-primary-container text-on-primary-container rounded-full px-4 py-3 mx-2" href="#proposito">
-            <span class="material-symbols-outlined">flag</span>
-            <span class="font-label-md text-label-md">Propósito</span>
-        </a>
-        <!-- Presentación Libro -->
-        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#presentacion-libro">
-            <span class="material-symbols-outlined">menu_book</span>
-            <span class="font-label-md text-label-md">Presentación Libro</span>
-        </a>
-        <!-- Agenda -->
-        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#agenda">
-            <span class="material-symbols-outlined">event_note</span>
-            <span class="font-label-md text-label-md">Agenda</span>
-        </a>
-        <!-- Sede -->
-        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#sede">
-            <span class="material-symbols-outlined">location_on</span>
-            <span class="font-label-md text-label-md">Sede</span>
-        </a>
-    </div>
-</aside>
 <!-- Desktop Nav 
 <nav class="hidden lg:flex gap-md items-center">
 <a class="font-label-md text-label-md uppercase tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#proposito">Propósito</a>
@@ -219,16 +176,8 @@
                     5° Encuentro de Experiencias de <span class="text-primary">Investigación y Pedagógicas</span>
 </h1>
 <p class="font-body-md md:font-body-lg text-on-surface-variant max-w-xl mx-auto lg:mx-0">
-                    Un espacio federal para el fortalecimiento de los Institutos Superiores de Formación Docente y Técnica de la Provincia de San Juan.
+                    Un espacio académico destinado a la sociaclización, intercambio y construcción colectiva de conocimientos.
                 </p>
-<div class="flex flex-col gap-sm border-l-4 pl-md py-2 text-left max-w-sm mx-auto lg:mx-0 border-brand-red">
-<p class="font-label-md text-on-surface uppercase tracking-tighter opacity-70">Organizan</p>
-<p class="font-body-md font-bold text-on-surface">Dirección de Educación Superior &amp; Dirección de Educación Privada</p>
-</div>
-<div class="flex flex-col sm:flex-row flex-wrap gap-md pt-sm justify-center lg:justify-start">
-<button class="bg-brand-red text-white px-xl py-4 rounded-xl font-label-md uppercase tracking-widest hover:scale-105 transition-transform shadow-lg w-full sm:w-auto">Inscribirse ahora</button>
-<button class="border-2 border-outline-variant text-on-surface-variant px-xl py-4 rounded-xl font-label-md uppercase tracking-widest hover:bg-surface-container transition-colors w-full sm:w-auto">Descargar Programa</button>
-</div>
 </div>
 <div class="relative group order-1 lg:order-2">
 <div class="absolute -inset-4 bg-brand-yellow/20 rounded-xl blur-2xl group-hover:bg-brand-yellow/30 transition-all"></div>
@@ -305,9 +254,6 @@
 <p class="font-body-md md:font-body-lg text-on-surface-variant">
                         Esta obra es una compilación exhaustiva del 4° Encuentro de Experiencias Pedagógicas y de Investigación. Recoge las voces, desafíos y propuestas de cientos de educadores sanjuaninos en su labor diaria por una educación de calidad.
                     </p>
-<button class="flex items-center gap-sm text-primary font-bold border-b-2 border-primary pb-1 hover:gap-md transition-all mx-auto lg:mx-0">
-                        Conocer a los autores <span class="material-symbols-outlined">arrow_forward</span>
-</button>
 </div>
 </div>
 </div>
@@ -426,14 +372,14 @@
 <div class="z-10 bg-brand-red w-8 h-8 rounded-full border-4 border-white flex items-center justify-center absolute left-0 md:left-1/2 md:transform md:-translate-x-1/2 order-1 md:order-2">
 <div class="w-2 h-2 bg-white rounded-full"></div>
 </div>
-<div class="hidden md:block w-[45%] order-3"></div>
+<div class="hidden md:block w-[45%] order-3" ></div>
 </div>
 </div>
 </div>
 </div>
 </section>
 <!-- Sede Section -->
-<section class="py-lg md:py-xl bg-surface-container-high overflow-hidden" id="sede">
+<section class="py-lg md:py-xl bg-surface-container-high overflow-hidden" id="sedes" >
 <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop grid lg:grid-cols-2 gap-lg md:gap-xl items-center">
 <div class="space-y-md text-center lg:text-left">
 <h2 class="font-display-lg-mobile text-on-background">Lugar del Encuentro</h2>
@@ -460,8 +406,7 @@
 </div>
 <div class="relative h-[250px] md:h-[400px] rounded-xl overflow-hidden shadow-xl border border-outline-variant">
 <div class="absolute inset-0 z-0">
-<img alt="Sede ISFD Santa María" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLbpbQ9MWtooAu3BzUygXA2Sm65gOBAWCUejWINcshbuW_Dag1Fchzwrt2oP5XjUFW0Bt9DZp7irJ6AUdMGo3V2DlhJ-KV9MI_QO8uW0veQL2t_sJNSOY5uixnIAwrB9RzlKRuQUjqtZbzAMpo2QNeIhQwrdgyMWwqeGony58_YjKCc3IrbygxAQgpI8gIckBxYwyJoejH4C02riO0SowsY4k_z6FPDMzDPw9neCtdg8FEfHr5mqJf1w"/>
-</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.4239216865417!2d-68.58869822467767!3d-31.539978602236427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968140e2dc250afb%3A0x7fe8543041283dae!2sUniversidad%20Cat%C3%B3lica%20de%20Cuyo%20San%20Juan!5e0!3m2!1ses-419!2sar!4v1785815982791!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
 <div class="absolute inset-0 bg-primary/20 hover:bg-transparent transition-all pointer-events-none"></div>
 </div>
 </div>
@@ -493,7 +438,7 @@
 <span class="material-symbols-outlined text-primary-fixed text-lg">mail</span>
                         contacto@ses2026.com
                     </li>
-<li class="flex items-center gap-3" id="sede">
+<li class="flex items-center gap-3" >
 <span class="material-symbols-outlined text-primary-fixed text-lg">location_on</span>
                        Centro Cívico 
                     </li>
@@ -508,43 +453,33 @@
 </div>
 </div>
 </footer>
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-2 pb-safe bg-surface border-t border-outline-variant shadow-lg md:hidden">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="#proposito">
+<span class="material-symbols-outlined">flag</span>
+<span class="text-[9px] font-bold">Propósito</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="#presentacion-libro">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="text-[9px] font-bold">Presentación Libro</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="#agenda">
+<span class="material-symbols-outlined">event_note</span>
+<span class="text-[9px] font-bold">Agenda</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="#sedes">
+<span class="material-symbols-outlined">location_on</span>
+<span class="text-[9px] font-bold">Sede</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="index.html#eventos">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="text-[9px] font-bold">Eventos</span>
+</a>
+</nav>
 <script>
-    function toggleDrawer() {
-    const drawer = document.getElementById('nav-drawer');
-    const overlay = document.getElementById('drawer-overlay');
-
-    if (drawer.classList.contains('-translate-x-full')) {
-        drawer.classList.remove('-translate-x-full');
-        overlay.classList.remove('hidden');
-        document.body.style.overflow = 'hidden';
-    } else {
-        drawer.classList.add('-translate-x-full');
-        overlay.classList.add('hidden');
-        document.body.style.overflow = '';
-    }
-}
-
-    // Smooth scroll with offset
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                const headerOffset = window.innerWidth < 768 ? 100 : 130;
-                const elementPosition = target.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-
+    
     // Sticky Nav active state logic
     window.addEventListener('scroll', () => {
-        const sections = ['proposito', 'presentacion-libro', 'agenda', 'sede'];
+        const sections = ['proposito', 'presentacion-libro', 'agenda', 'sedes'];
         const navLinks = document.querySelectorAll('.sticky:not(.top-0) a');
         
         let current = '';
@@ -557,10 +492,7 @@
                 }
             }
         });
-        // Close drawer on click outside links
-    document.querySelectorAll('#nav-drawer a').forEach(link => {
-        link.addEventListener('click', toggleDrawer);
-    });
+        
         navLinks.forEach(link => {
             link.classList.remove('text-primary', 'underline');
             if (link.getAttribute('href') === `#${current}`) {

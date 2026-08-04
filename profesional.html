@@ -129,17 +129,13 @@
 </head>
 <body class="bg-surface text-on-surface">
 <!-- Header: Institutional -->
-<header class="sticky top-0 z-50 bg-white border-b border-outline-variant px-margin-mobile md:px-margin-desktop py-4">
-<div class="max-w-7xl mx-auto flex justify-between items-center">
-<div class="flex items-center gap-6">
-<button class="lg:hidden p-2 text-primary active:scale-95 transition-transform" onclick="toggleDrawer()">
-<span class="material-symbols-outlined">menu</span>
-</button>
-<!-- Institutional Logo Placeholder -->
+ <header class="fixed top-0 w-full z-[60] flex justify-between items-center px-4 md:px-margin-desktop bg-surface border-b border-outline-variant transition-all duration-300 py-2 md:py-4" id="main-header">
+<div class="flex items-center gap-2 md:gap-4">
 <div class="flex items-center gap-2 md:gap-4 overflow-hidden">
 <img alt="Gobierno de San Juan" class="h-12 md:h-20 w-auto object-contain mix-blend-multiply transition-all" src="imagenes/logo_gobierno.png">
 <div class="w-px h-8 md:h-12 bg-outline-variant mx-1 md:mx-4 shrink-0"></div>
 <img alt="Semana de la Educación Superior" class="h-12 md:h-20 w-auto object-contain transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNVE_OZrMLNJLkCXo3AIGXlp3g1hI7ofB-p9cR33bVnGw839RIdpmTInTdUOr2Ci_yPJYbBmhfuM_JS2yVHrZjQLBL1NJCVuvzg0zHT9cHkHX8XYPzQEnRO4TdzugR8EZgC7EN2f0KOjR60k0u0utkCqJhnY2UmT-ndy9KWPOuwrNDu42InhDm2Xsjvl-InySXsXshx_4l3Xf_D97qc1Rt7-lDXjIrUmDZ71vk11iWc--Nbzt6QtOICKmOe3g0a7ZQMFA">
+</div>
 </div>
 </div>
 <nav class="hidden lg:flex gap-md items-center">
@@ -155,47 +151,7 @@
 </div>
 </div>
 </header>
-<!-- Mobile Drawer -->
-<div class="fixed inset-0 bg-black/40 z-[70] hidden transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
 
-<aside class="fixed inset-y-0 left-0 w-80 z-[80] bg-surface-container-low transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col py-6" id="nav-drawer">
-
-    <div class="px-6 mb-8 flex justify-between items-center">
-        <span class="font-headline-sm font-black text-primary">Educación Superior</span>
-
-        <button onclick="toggleDrawer()">
-            <span class="material-symbols-outlined">close</span>
-        </button>
-    </div>
-
-    <div class="flex flex-col gap-2">
-        <!-- Inicio -->
-        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="index.html">
-            <span class="material-symbols-outlined">home</span>
-            <span class="font-label-md text-lg">Inicio</span>
-        </a>
-        <!-- Propósito -->
-        <a class="flex items-center gap-4 bg-primary text-on-primary rounded-full px-4 py-3 mx-2" href="#proposito">
-            <span class="material-symbols-outlined">flag</span>
-            <span class="font-label-md text-lg">Propósito</span>
-        </a>
-        <!-- Temáticas -->
-        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#temas">
-            <span class="material-symbols-outlined">topic</span>
-            <span class="font-label-md text-lg">Temáticas</span>
-        </a>
-        <!-- Agenda -->
-        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#agenda">
-            <span class="material-symbols-outlined">event_note</span>
-            <span class="font-label-md text-lg">Agenda</span>
-        </a>
-        <!-- Ubicación -->
-        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#sede">
-            <span class="material-symbols-outlined">location_on</span>
-            <span class="font-label-md text-lg">Ubicación</span>
-        </a>
-    </div>
-</aside>
 
 <main>
 <!-- Split Hero Section -->
@@ -210,8 +166,8 @@
                     "Enseñar hoy: Reflexionar, investigar y transformar"
                 </p>
 </div>
-<div class="w-full md:w-1/2 relative min-h-[400px]">
-<img alt="Profesionales en jornada de desarrollo" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLtthIcAMaQHx42BjnOEaQPRSaGPjjecKMRIuPMaS_bE_cQyoL_omYJUmgymd8_aApHhSWtvJfyn4ksrUuDncXhMk4hQ-iwCYQsJoOqVi7By9dmAc1Jl6tZeCeX66NnWBUkQBCvaq-8dlSbGSA32NK2IHf93V4_7wC2COR24hIH6VRO04RiPrs-hebaeApMRkh0g1itc9IBaC7_RCiaxOq1yeroJUFWGE2AfG-VY67DyGa20Iq01mQBHJ4Wx"/>
+<div class="w-full md:w-1/2 relative min-h-[400px]" >
+<img  alt="Profesionales en jornada de desarrollo" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLtthIcAMaQHx42BjnOEaQPRSaGPjjecKMRIuPMaS_bE_cQyoL_omYJUmgymd8_aApHhSWtvJfyn4ksrUuDncXhMk4hQ-iwCYQsJoOqVi7By9dmAc1Jl6tZeCeX66NnWBUkQBCvaq-8dlSbGSA32NK2IHf93V4_7wC2COR24hIH6VRO04RiPrs-hebaeApMRkh0g1itc9IBaC7_RCiaxOq1yeroJUFWGE2AfG-VY67DyGa20Iq01mQBHJ4Wx"/>
 <div class="absolute inset-0 bg-gradient-to-r from-surface md:from-transparent"></div>
 </div>
 </section>
@@ -438,7 +394,7 @@
 <p class="font-body-md text-on-surface-variant mt-1">SUM. Salón de Usos Múltiples</p>
 </div>
 </div>
-<a class="inline-flex items-center gap-2 bg-brand-red text-white px-8 py-3 rounded-full font-bold hover:bg-red-700 transition-all shadow-md group" href="#">
+<a class="inline-flex items-center gap-2 bg-brand-red text-white px-8 py-3 rounded-full font-bold hover:bg-red-700 transition-all shadow-md group" href="https://maps.app.goo.gl/gM5nZp7753VjEZ128" target="_blank" rel="noopener noreferrer">
                         VER EN GOOGLE MAPS 
                         <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">open_in_new</span>
 </a>
@@ -446,22 +402,9 @@
 </div>
 <div class="w-full lg:w-[60%]">
 <div class="bg-white p-4 rounded-3xl shadow-2xl border border-outline-variant overflow-hidden">
-<div class="w-full h-[450px] rounded-2xl bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDbT7-JnVTKL0-yhxrFPFo8zLP5vQv8B5Tbcu08Sk5gzBUcsrnOhErGlptLSbOcxWAbj0nc0c-uBi692-NJN8HcXnSBroa9Uo4Ha_vt_YCbpP1mr6i3HD4oyFuQQaM-F01FhOXpK23vz1bcQDDJgpaInjXDfr1awizTvpzSG4itisetByqYVzqS5iQ_dxhUPmScKw2Qgv8RGAwLrgUBLX2f7jE9rjn_u-5a_YjJbc1_RftvhOgMVIJ7JA')"></div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.4239216865417!2d-68.58869822467767!3d-31.539978602236427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968140e2dc250afb%3A0x7fe8543041283dae!2sUniversidad%20Cat%C3%B3lica%20de%20Cuyo%20San%20Juan!5e0!3m2!1ses-419!2sar!4v1785815982791!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
 </div>
 </div>
-</div>
-</section>
-<!-- CTA Final -->
-<section class="py-xl px-margin-mobile md:px-margin-desktop bg-inverse-surface text-white text-center overflow-hidden relative">
-<!-- Decoration -->
-<div class="absolute -bottom-20 -left-20 w-64 h-64 bg-brand-red/20 rounded-full blur-3xl"></div>
-<div class="absolute -top-20 -right-20 w-64 h-64 bg-brand-yellow/20 rounded-full blur-3xl"></div>
-<div class="relative z-10 max-w-3xl mx-auto">
-<h2 class="font-display-lg text-3xl md:text-5xl mb-6">¿Listo para transformar tu práctica?</h2>
-<p class="font-body-lg mb-12 text-surface-variant/80">Únete a cientos de colegas en esta jornada de aprendizaje y construcción colectiva. Los cupos son limitados por capacidad de salas.</p>
-<button class="bg-brand-yellow text-on-tertiary-container font-bold text-lg px-16 py-5 rounded-full hover:scale-105 transition-transform shadow-xl">
-                INSCRIBIRME AHORA
-            </button>
 </div>
 </section>
 </main>
@@ -506,44 +449,31 @@
 </div>
 </div>
 </footer>
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-2 pb-safe bg-surface border-t border-outline-variant shadow-lg md:hidden">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="#proposito">
+<span class="material-symbols-outlined">flag</span>
+<span class="text-[9px] font-bold">Propósito</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="#temas">
+<span class="material-symbols-outlined">topic</span>
+<span class="text-[9px] font-bold">Temáticas</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="#agenda">
+<span class="material-symbols-outlined">event_note</span>
+<span class="text-[9px] font-bold">Agenda</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="#sede">
+<span class="material-symbols-outlined">location_on</span>
+<span class="text-[9px] font-bold">Ubicación</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="index.html#eventos">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="text-[9px] font-bold">Eventos</span>
+</a>
+</nav>
+
 <script>
-    function toggleDrawer() {
-    const drawer = document.getElementById('nav-drawer');
-    const overlay = document.getElementById('drawer-overlay');
-
-    if (drawer.classList.contains('-translate-x-full')) {
-        drawer.classList.remove('-translate-x-full');
-        overlay.classList.remove('hidden');
-        document.body.style.overflow = 'hidden';
-    } else {
-        drawer.classList.add('-translate-x-full');
-        overlay.classList.add('hidden');
-        document.body.style.overflow = '';
-    }
-}
-    // Smooth scroll for internal links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                const offset = 130; 
-                const bodyRect = document.body.getBoundingClientRect().top;
-                const elementRect = target.getBoundingClientRect().top;
-                const elementPosition = elementRect - bodyRect;
-                const offsetPosition = elementPosition - offset;
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-    // Close drawer on click outside links
-    document.querySelectorAll('#nav-drawer a').forEach(link => {
-        link.addEventListener('click', toggleDrawer);
-    });
+    
     // Simple scroll behavior for yellow nav
     const yellowNav = document.querySelector('.sticky.top-\\[73px\\]');
     window.addEventListener('scroll', function() {

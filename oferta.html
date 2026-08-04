@@ -1,7 +1,7 @@
 <!DOCTYPE html><html class="light" lang="es" style=""><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Semana Educación Superior 2026 | Oferta Educativa</title>
+<title> Oferta Educativa | Semana Educación Superior 2026 </title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700;800&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
@@ -151,27 +151,14 @@
 </div>
 </div>
 <nav class="hidden md:flex gap-4 lg:gap-8 items-center md:gap-4">
-<a class="text-on-surface-variant font-label-md hover:text-primary transition-colors text-sm lg:text-label-md" href="index.html">Volver a Inicio</a>
+<a class="hover:opacity-70 transition-all" href="#agenda">Agenda Oferta</a>
+<a class="hover:opacity-70 transition-all" href="index.html#eventos">Eventos</a>
 <!--<a class="text-primary font-label-md border-b-2 border-primary-container pb-1 text-sm lg:text-label-md" href="#">Eventos</a>
 <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors text-sm lg:text-label-md" href="#">Cronograma</a>
 <a class="text-on-surface-variant font-label-md hover:text-primary transition-colors text-sm lg:text-label-md" href="#">Instituciones</a>-->
 </nav>
 </header>
-<!-- Navigation Drawer (Mobile) -->
-<div class="fixed inset-0 bg-black/40 z-[55] hidden transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
-<aside class="fixed inset-y-0 left-0 w-80 z-[60] rounded-r-xl bg-surface-container-low transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col py-6" id="nav-drawer">
-<div class="px-6 mb-8 flex justify-between items-center">
-<span class="font-headline-sm text-headline-sm font-black text-primary">Educación Superior</span>
-<button onclick="toggleDrawer()"><span class="material-symbols-outlined">close</span></button>
-</div>
-<div class="flex flex-col gap-2">
-<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="index.html">
-<span class="material-symbols-outlined">home</span>
-<span class="font-label-md text-label-md">Inicio</span>
-</a>
 
-</div>
-</aside>
 <main class="pb-24 md:pb-0 pt-24 sm:pt-28 md:pt-32">
 <!-- Hero Section -->
 <section class="relative min-h-[420px] md:min-h-[480px] flex items-center overflow-hidden bg-surface-container-lowest">
@@ -181,7 +168,8 @@
                         OFERTA EDUCATIVA <br><span class="text-on-background">2027</span>
 </h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mx-auto md:mx-0">
-                        Descubre las oportunidades académicas que transformarán tu futuro profesional. Conocé los institutos de gestión estatal y privada y programas que ofrecen. Podrás charlar profesionales y estudiantes avanzados de las carreras que te interesan.           </p>
+                        Descubre las oportunidades académicas que transformarán tu futuro profesional. Conocé los institutos de gestión estatal y privada. Podrás charlar profesionales y estudiantes avanzados de las carreras que te interesan.           </p>
+</div>
 </div>
 <div class="hidden md:block relative">
 <div class="relative w-full max-w-[320px] mx-auto aspect-square rounded-full border-2 border-primary/20 p-4">
@@ -193,7 +181,6 @@
 <div>
 <div class="text-xs text-on-surface-variant">Tu futuro</div>
 <div class="font-bold text-primary">empieza hoy!</div>
-</div>
 </div>
 </div>
 </div>
@@ -541,25 +528,9 @@ Resource Card 4
 <span class="material-symbols-outlined">calendar_today</span>
 <span class="text-[10px] font-medium">Eventos</span>
 </a>
-<a class="flex flex-col items-center justify-center text-on-surface-variant px-5 py-1" href="#">
-<span class="material-symbols-outlined">event_note</span>
-<span class="text-[10px] font-medium">Agenda</span>
-</a>
 </nav>
 <script>
-    function toggleDrawer() {
-        const drawer = document.getElementById('nav-drawer');
-        const overlay = document.getElementById('drawer-overlay');
-        if (drawer.classList.contains('-translate-x-full')) {
-            drawer.classList.remove('-translate-x-full');
-            overlay.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        } else {
-            drawer.classList.add('-translate-x-full');
-            overlay.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
-    }
+    
 
     // Header scroll effect
     window.addEventListener('scroll', () => {

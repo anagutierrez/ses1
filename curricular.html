@@ -133,75 +133,22 @@
 </head>
 <body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
 <!-- Header: Institutional -->
-<header class="sticky top-0 z-50 bg-surface border-b border-outline-variant shadow-sm" data-purpose="main-navigation">
-<div class="container mx-auto px-4 md:px-margin-desktop py-2 md:py-3 flex justify-between items-center">
+<header class="fixed top-0 w-full z-[60] flex justify-between items-center px-4 md:px-margin-desktop bg-surface border-b border-outline-variant transition-all duration-300 py-2 md:py-4" id="main-header">
 <div class="flex items-center gap-2 md:gap-4">
-    <button class="md:hidden p-2 text-primary active:scale-95 transition-transform" onclick="toggleDrawer()">
-<span class="material-symbols-outlined">menu</span>
-</button>
-<div class="flex items-center gap-2 md:gap-4">
-<img alt="Gobierno de San Juan" class="h-12 md:h-24 w-auto object-contain mix-blend-multiply" src="imagenes/logo_gobierno.png"/>
-<div class="w-px h-8 md:h-16 bg-outline-variant mx-1 md:mx-4"></div>
-<img alt="Semana de la Educación Superior" class="h-12 md:h-24 w-auto object-contain" src="imagenes/SES.png"/>
+<div class="flex items-center gap-2 md:gap-4 overflow-hidden">
+<img alt="Gobierno de San Juan" class="h-12 md:h-20 w-auto object-contain mix-blend-multiply transition-all" src="imagenes/logo_gobierno.png">
+<div class="w-px h-8 md:h-12 bg-outline-variant mx-1 md:mx-4 shrink-0"></div>
+<img alt="Semana de la Educación Superior" class="h-12 md:h-20 w-auto object-contain transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNVE_OZrMLNJLkCXo3AIGXlp3g1hI7ofB-p9cR33bVnGw839RIdpmTInTdUOr2Ci_yPJYbBmhfuM_JS2yVHrZjQLBL1NJCVuvzg0zHT9cHkHX8XYPzQEnRO4TdzugR8EZgC7EN2f0KOjR60k0u0utkCqJhnY2UmT-ndy9KWPOuwrNDu42InhDm2Xsjvl-InySXsXshx_4l3Xf_D97qc1Rt7-lDXjIrUmDZ71vk11iWc--Nbzt6QtOICKmOe3g0a7ZQMFA">
 </div>
 </div>
 <!-- Desktop Nav -->
 <nav class="hidden lg:flex gap-8 items-center">
-<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors md:text-base" href="index.html">Inicio</a>
-<a class="text-primary font-label-md text-label-md border-b-2 border-primary pb-1 md:text-base" href="#propósitos">Propósitos</a>
-<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors md:text-base" href="#ejes">Ejes</a>
-<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors md:text-base" href="#agenda">Agenda</a>
-<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors md:text-base" href="#ubicacion">Ubicación</a>
+<a class="hover:text-primary transition-colors active:font-bold" href="index.html">Inicio</a>
+<a class="hover:text-primary transition-colors active:font-bold" href="#propositos">Propósitos</a>
+<a class="hover:text-primary transition-colors active:font-bold" href="#agenda">Agenda</a>
+<a class="hover:text-primary transition-colors active:font-bold" href="#ubicacion">Sede</a>
 </nav>
 </header>
-<div class="fixed inset-0 bg-black/40 z-[70] hidden transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
-<aside class="fixed inset-y-0 left-0 w-80 z-[80] bg-surface-container-low transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col py-6" id="nav-drawer">
-
-    <div class="px-6 mb-8 flex justify-between items-center">
-        <span class="font-headline-sm font-black text-primary">
-            Educación Superior
-        </span>
-
-        <button onclick="toggleDrawer()">
-            <span class="material-symbols-outlined">close</span>
-        </button>
-    </div>
-
-    <div class="flex flex-col gap-2">
-
-        <!-- Inicio -->
-        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="index.html">
-            <span class="material-symbols-outlined">home</span>
-            <span class="font-label-md text-lg">Inicio</span>
-        </a>
-
-        <!-- Propósitos -->
-        <a class="flex items-center gap-4 bg-primary-container text-on-primary-container rounded-full px-4 py-3 mx-2" href="#propositos">
-            <span class="material-symbols-outlined">flag</span>
-            <span class="font-label-md text-lg">Propósitos</span>
-        </a>
-
-        <!-- Ejes -->
-        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#ejes">
-            <span class="material-symbols-outlined">topic</span>
-            <span class="font-label-md text-lg">Ejes</span>
-        </a>
-
-        <!-- Agenda -->
-        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#agenda">
-            <span class="material-symbols-outlined">event_note</span>
-            <span class="font-label-md text-lg">Agenda</span>
-        </a>
-
-        <!-- Ubicación -->
-        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#ubicacion">
-            <span class="material-symbols-outlined">location_on</span>
-            <span class="font-label-md text-lg">Ubicación</span>
-        </a>
-
-    </div>
-
-</aside>
 <main>
 <!-- Split Hero Section -->
 <section class="relative bg-surface flex flex-col md:flex-row min-h-[600px] overflow-hidden flex-col-reverse">
@@ -218,31 +165,7 @@
                         Innovación curricular para una educación que transforma
                     </p>
 </div>
-<div class="flex flex-wrap gap-lg mb-10">
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-brand-yellow flex items-center justify-center">
-<span class="material-symbols-outlined text-on-background">calendar_today</span>
-</div>
-<div>
-<p class="text-xs font-label-md text-on-surface-variant uppercase">Fecha</p>
-<p class="text-body-md font-bold">20-21 Agosto 2026</p>
-</div>
-</div>
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-brand-yellow flex items-center justify-center">
-<span class="material-symbols-outlined text-on-background">location_on</span>
-</div>
-<div>
-<p class="text-xs font-label-md text-on-surface-variant uppercase">Sede</p>
-<p class="text-body-md font-bold">San Juan, Argentina</p>
-</div>
-</div>
-</div>
-<div class="flex flex-wrap gap-4">
-<button class="bg-brand-red text-white text-body-md font-bold px-10 py-4 rounded-full shadow-lg hover:brightness-90 transition-all flex items-center gap-2">
-                        INSCRIBIRSE AHORA <span class="material-symbols-outlined">arrow_forward</span>
-</button>
-</div>
+
 </div>
 <div class="w-full md:w-1/2 relative min-h-[400px] p-margin-mobile md:p-margin-desktop flex items-center justify-center">
 <div class="relative w-full h-full max-h-[500px] aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
@@ -251,7 +174,7 @@
 </div>
 </section>
 <!-- Propósito Section -->
-<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="proposito">
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="propositos">
 <div class="max-w-4xl mx-auto text-center">
 <span class="text-brand-red font-label-md uppercase tracking-widest block mb-4">Nuestro Objetivo</span>
 <h2 class="font-headline-md text-on-surface mb-10">Propósito del Encuentro</h2>
@@ -266,11 +189,11 @@
 </div>
 </section>
 <!-- Ejes Temáticos -->
-<section class="py-xl px-margin-mobile md:px-margin-desktop bg-white" id="ejes">
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-white" >
 <div class="max-w-7xl mx-auto">
 <div class="text-center mb-16">
 <span class="text-brand-red font-label-md uppercase tracking-widest block mb-2">Estructura</span>
-<h2 class="font-display-lg text-on-surface text-3xl md:text-4xl">Ejes Temáticos</h2>
+<h2 class="font-display-lg text-on-surface text-3xl md:text-4xl"id="ejes">Ejes Temáticos</h2>
 <p class="text-on-surface-variant mt-4 font-body-md max-w-2xl mx-auto">
                         Los pilares que estructuran nuestra jornada de transformación curricular.
                     </p>
@@ -304,10 +227,10 @@
 </div>
 </section>
 <!-- Agenda Section: Vertical Timeline -->
-<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="agenda">
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface-container-low" >
 <div class="max-w-4xl mx-auto">
 <div class="text-center mb-20">
-<span class="text-brand-red font-label-md uppercase tracking-widest block mb-4">Cronograma</span>
+<span class="text-brand-red font-label-md uppercase tracking-widest block mb-4"id="agenda">Cronograma</span>
 <h2 class="font-headline-md text-brand-red mb-2">Agenda del Encuentro</h2>
 <p class="font-body-md text-on-surface-variant">Un recorrido por los hitos de nuestra jornada académica.</p>
 </div>
@@ -446,11 +369,11 @@
 </div>
 </section>
 <!-- Ubicación Section -->
-<section class="py-xl px-margin-mobile md:px-margin-desktop bg-white" id="ubicacion">
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-white" >
 <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-xl items-center">
 <div class="w-full lg:w-[40%]">
-<span class="text-brand-red font-label-md uppercase tracking-widest block mb-4">Sede</span>
-<h2 class="font-display-lg text-on-surface text-3xl md:text-4xl mb-8">Ubicación del Evento</h2>
+<span class="text-brand-red font-label-md uppercase tracking-widest block mb-4"id="ubicacion">Sede</span>
+<h2 class="font-display-lg text-on-surface text-3xl md:text-4xl mb-8">Sede del Evento</h2>
 <div class="space-y-8">
 <div class="flex items-start gap-6">
 <div class="bg-brand-yellow/20 p-4 rounded-2xl">
@@ -470,7 +393,7 @@
 <p class="font-body-md text-on-surface-variant mt-1">Primer Piso - Sector Norte</p>
 </div>
 </div>
-<a class="inline-flex items-center gap-2 bg-brand-red text-white px-8 py-3 rounded-full font-bold hover:brightness-90 transition-all shadow-md group" href="#">
+<a class="inline-flex items-center gap-2 bg-brand-red text-white px-8 py-3 rounded-full font-bold hover:brightness-90 transition-all shadow-md group" href="https://maps.app.goo.gl/gM5nZp7753VjEZ128" target="_blank" rel="noopener noreferrer">
                             CÓMO LLEGAR 
                             <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">directions</span>
 </a>
@@ -478,7 +401,7 @@
 </div>
 <div class="w-full lg:w-[60%]">
 <div class="bg-white p-4 rounded-3xl shadow-2xl border border-outline-variant overflow-hidden">
-<div class="w-full h-[400px] rounded-2xl bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAwuBzCzlwmaLG1kYMupYiWaPfcrgZqwEazId0vl3uRkQrB90gOjTZCn-e7LDtD1RDy1gWQ03jKkvgQSM5TlKyR9L9-K3Sej3o7-5Wqf2M4qFDOFJ2jab6KB-adqtMWgXQvhXTg_WL8-Robvj95Ui9pfn4InUzu-4RWqAoDYA8IqqUMnT62xzCOvQFUJSTq2OhhOrLAvradc0f8VsYg39osCsnLoF95008Wf-q-PEm7wR2RTjTystebTg')"></div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.4239216865417!2d-68.58869822467767!3d-31.539978602236427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968140e2dc250afb%3A0x7fe8543041283dae!2sUniversidad%20Cat%C3%B3lica%20de%20Cuyo%20San%20Juan!5e0!3m2!1ses-419!2sar!4v1785815982791!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
 </div>
 </div>
 </div>
@@ -521,38 +444,31 @@
 </ul>
 </div>
 </footer>
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-2 pb-safe bg-surface border-t border-outline-variant shadow-lg md:hidden">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="#propositos">
+<span class="material-symbols-outlined">flag</span>
+<span class="text-[9px] font-bold">Propósitos</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="#ejes">
+<span class="material-symbols-outlined">topic</span>
+<span class="text-[9px] font-bold">Ejes</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="#agenda">
+<span class="material-symbols-outlined">event_note</span>
+<span class="text-[9px] font-bold">Agenda</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="#ubicacion">
+<span class="material-symbols-outlined">location_on</span>
+<span class="text-[9px] font-bold">Ubicación</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="index.html#eventos">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="text-[9px] font-bold">Eventos</span>
+</a>
+</nav>
+
 <script>
-    function toggleDrawer() {
-    const drawer = document.getElementById('nav-drawer');
-    const overlay = document.getElementById('drawer-overlay');
-
-        if (drawer.classList.contains('-translate-x-full')) {
-            drawer.classList.remove('-translate-x-full');
-            overlay.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        } else {
-            drawer.classList.add('-translate-x-full');
-            overlay.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
-    }
-
-    // Header scroll effect
-    window.addEventListener('scroll', () => {
-        const header = document.getElementById('main-header');
-
-        if (window.scrollY > 50) {
-            header.classList.add('glass-panel', 'shadow-sm');
-            header.classList.remove('bg-surface');
-        } else {
-            header.classList.remove('glass-panel', 'shadow-sm');
-            header.classList.add('bg-surface');
-        }
-    });
-    // Close drawer on click outside links
-    document.querySelectorAll('#nav-drawer a').forEach(link => {
-        link.addEventListener('click', toggleDrawer);
-    });
+    
         // Smooth scroll for nav links (already covered by CSS but adding JS for fine-tuning)
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {

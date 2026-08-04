@@ -128,9 +128,6 @@
 <!-- Institutional Header -->
 <header class="fixed top-0 w-full z-[60] flex justify-between items-center px-4 md:px-margin-desktop bg-surface border-b border-outline-variant transition-all duration-300 py-2 md:py-4" id="main-header">
 <div class="flex items-center gap-2 md:gap-4">
-<button class="lg:hidden p-2 text-primary active:scale-95 transition-transform" onclick="toggleDrawer()">
-<span class="material-symbols-outlined">menu</span>
-</button>
 <div class="flex items-center gap-2 md:gap-4 overflow-hidden">
 <img alt="Gobierno de San Juan" class="h-12 md:h-20 w-auto object-contain mix-blend-multiply transition-all" src="imagenes/logo_gobierno.png">
 <div class="w-px h-8 md:h-12 bg-outline-variant mx-1 md:mx-4 shrink-0"></div>
@@ -138,53 +135,14 @@
 </div>
 </div>
 <nav class="hidden lg:flex gap-8 items-center">
-<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors md:text-base" href="index.html">Inicio</a>
+<a class="hover:text-primary transition-colors active:font-bold" href="index.html">Inicio</a>
 <a class="hover:text-primary transition-colors active:font-bold" href="#proposito">Propósito</a>
 <a class="hover:text-primary transition-colors active:font-bold" href="#ejes">Ejes de Diálogo</a>
 <a class="hover:text-primary transition-colors active:font-bold" href="#participantes">Participantes</a>
 <a class="hover:text-primary transition-colors active:font-bold" href="#resultados">Resultados</a>
 </nav>
 </header>
-<!-- Mobile Drawer -->
-<div class="fixed inset-0 bg-black/40 z-[70] hidden transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
-<aside class="fixed inset-y-0 left-0 w-80 z-[80] bg-surface-container-low transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col py-6" id="nav-drawer">
 
-    <div class="px-6 mb-8 flex justify-between items-center">
-        <span class="font-headline-sm font-black text-primary">Educación Superior</span>
-
-        <button onclick="toggleDrawer()">
-            <span class="material-symbols-outlined">close</span>
-        </button>
-    </div>
-
-    <div class="flex flex-col gap-2">
-        <!-- Inicio -->
-        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="index.html">
-            <span class="material-symbols-outlined">home</span>
-            <span class="font-label-md text-lg">Inicio</span>
-        </a>
-        <!-- Propósito -->
-        <a class="flex items-center gap-4 bg-primary text-on-primary rounded-full px-4 py-3 mx-2" href="#proposito">
-            <span class="material-symbols-outlined">flag</span>
-            <span class="font-label-md text-lg">Propósito</span>
-        </a>
-        <!-- Ejes de Diálogo -->
-        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#ejes">
-            <span class="material-symbols-outlined">forum</span>
-            <span class="font-label-md text-lg">Ejes de Diálogo</span>
-        </a>
-        <!-- Participantes -->
-        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#participantes">
-            <span class="material-symbols-outlined">groups</span>
-            <span class="font-label-md text-lg">Participantes</span>
-        </a>
-        <!-- Resultados -->
-        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#resultados">
-            <span class="material-symbols-outlined">assignment</span>
-            <span class="font-label-md text-lg">Resultados</span>
-        </a>
-    </div>
-</aside>
 <main class="pt-[64px] md:pt-[112px]">
 <!-- Sophisticated Hero Section -->
 <section class="relative min-h-[500px] md:min-h-[600px] flex items-center overflow-hidden bg-surface-container-lowest">
@@ -224,12 +182,6 @@
 <p class="font-label-md text-sm md:text-base">Instituto Tecnológico</p>
 </div>
 </div>
-</div>
-<div class="pt-6">
-<button class="w-full sm:w-auto bg-primary text-white px-8 py-4 rounded-xl font-bold hover:bg-secondary active:scale-95 transition-all shadow-lg flex items-center justify-center gap-2">
-                        Inscribirse ahora
-                        <span class="material-symbols-outlined">edit_calendar</span>
-</button>
 </div>
 </div>
 </div>
@@ -379,41 +331,27 @@
 </div>
 </div>
 </footer>
-<script>
-    // Mobile Menu Toggle Logic
-    function toggleDrawer() {
-    const drawer = document.getElementById('nav-drawer');
-    const overlay = document.getElementById('drawer-overlay');
-
-        if (drawer.classList.contains('-translate-x-full')) {
-            drawer.classList.remove('-translate-x-full');
-            overlay.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        } else {
-            drawer.classList.add('-translate-x-full');
-            overlay.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
-    }
-
-    // Header scroll effect
-    window.addEventListener('scroll', () => {
-        const header = document.getElementById('main-header');
-
-        if (window.scrollY > 50) {
-            header.classList.add('glass-panel', 'shadow-sm');
-            header.classList.remove('bg-surface');
-        } else {
-            header.classList.remove('glass-panel', 'shadow-sm');
-            header.classList.add('bg-surface');
-        }
-    });
-
-    // Close drawer on click outside links
-    document.querySelectorAll('#nav-drawer a').forEach(link => {
-        link.addEventListener('click', toggleDrawer);
-    });
-</script>
-
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-2 pb-safe bg-surface border-t border-outline-variant shadow-lg md:hidden">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="#proposito">
+<span class="material-symbols-outlined">flag</span>
+<span class="text-[9px] font-bold">Propósito</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="#ejes">
+<span class="material-symbols-outlined">forum</span>
+<span class="text-[9px] font-bold">Ejes</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="#participantes">
+<span class="material-symbols-outlined">groups</span>
+<span class="text-[9px] font-bold">Participantes</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="#resultados">
+<span class="material-symbols-outlined">assignment</span>
+<span class="text-[9px] font-bold">Resultados</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="index.html#eventos">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="text-[9px] font-bold">Eventos</span>
+</a>
+</nav>
 
 </body></html>
