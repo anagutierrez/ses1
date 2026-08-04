@@ -148,28 +148,42 @@
 <!-- Mobile Drawer -->
 <div class="fixed inset-0 bg-black/40 z-[70] hidden transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
 <aside class="fixed inset-y-0 left-0 w-80 z-[80] bg-surface-container-low transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col py-6" id="nav-drawer">
-<div class="px-6 mb-8 flex justify-between items-center">
-<span class="font-headline-sm font-black text-primary">Horizon Academic</span>
-<button onclick="toggleDrawer()"><span class="material-symbols-outlined">close</span></button>
-</div>
-<div class="flex flex-col gap-2">
-<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#">
-<span class="material-symbols-outlined">home</span>
-<span class="font-label-md text-lg">Inicio</span>
-</a>
-<a class="flex items-center gap-4 bg-primary text-on-primary rounded-full px-4 py-3 mx-2" href="#">
-<span class="material-symbols-outlined">calendar_today</span>
-<span class="font-label-md text-lg">Eventos</span>
-</a>
-<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#">
-<span class="material-symbols-outlined">event_note</span>
-<span class="font-label-md text-lg">Cronograma</span>
-</a>
-<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#">
-<span class="material-symbols-outlined">apartment</span>
-<span class="font-label-md text-lg">Instituciones</span>
-</a>
-</div>
+
+    <div class="px-6 mb-8 flex justify-between items-center">
+        <span class="font-headline-sm font-black text-primary">Educación Superior</span>
+
+        <button onclick="toggleDrawer()">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+    </div>
+
+    <div class="flex flex-col gap-2">
+        <!-- Inicio -->
+        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="index.html">
+            <span class="material-symbols-outlined">home</span>
+            <span class="font-label-md text-lg">Inicio</span>
+        </a>
+        <!-- Propósito -->
+        <a class="flex items-center gap-4 bg-primary text-on-primary rounded-full px-4 py-3 mx-2" href="#proposito">
+            <span class="material-symbols-outlined">flag</span>
+            <span class="font-label-md text-lg">Propósito</span>
+        </a>
+        <!-- Ejes de Diálogo -->
+        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#ejes">
+            <span class="material-symbols-outlined">forum</span>
+            <span class="font-label-md text-lg">Ejes de Diálogo</span>
+        </a>
+        <!-- Participantes -->
+        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#participantes">
+            <span class="material-symbols-outlined">groups</span>
+            <span class="font-label-md text-lg">Participantes</span>
+        </a>
+        <!-- Resultados -->
+        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#resultados">
+            <span class="material-symbols-outlined">assignment</span>
+            <span class="font-label-md text-lg">Resultados</span>
+        </a>
+    </div>
 </aside>
 <main class="pt-[64px] md:pt-[112px]">
 <!-- Sophisticated Hero Section -->
@@ -279,7 +293,7 @@
 <span class="material-symbols-outlined text-3xl">business</span>
 </div>
 <h4 class="font-bold text-base md:text-lg text-on-surface mb-2">Sector Industrial</h4>
-<p class="text-xs md:text-sm text-on-surface-variant">Cámara Industria, Minera e invitados especiales del sector socioproductivo.</p>
+<p class="text-xs md:text-sm text-on-surface-variant">Unión Industrial de San Juan e invitados especiales del sector socioproductivo.</p>
 </div>
 <div class="bg-white p-6 md:p-8 rounded-2xl border border-outline-variant text-center hover:border-primary transition-all hover:shadow-md">
 <div class="w-16 h-16 bg-primary/5 text-primary rounded-full flex items-center justify-center mx-auto mb-4">
@@ -366,9 +380,11 @@
 </div>
 </footer>
 <script>
+    // Mobile Menu Toggle Logic
     function toggleDrawer() {
-        const drawer = document.getElementById('nav-drawer');
-        const overlay = document.getElementById('drawer-overlay');
+    const drawer = document.getElementById('nav-drawer');
+    const overlay = document.getElementById('drawer-overlay');
+
         if (drawer.classList.contains('-translate-x-full')) {
             drawer.classList.remove('-translate-x-full');
             overlay.classList.remove('hidden');
@@ -376,18 +392,20 @@
         } else {
             drawer.classList.add('-translate-x-full');
             overlay.classList.add('hidden');
-            document.body.style.overflow = '';
+            document.body.style.overflow = 'auto';
         }
     }
 
+    // Header scroll effect
     window.addEventListener('scroll', () => {
         const header = document.getElementById('main-header');
-        if (window.scrollY > 20) {
-            header.classList.add('glass-panel', 'shadow-md', 'py-2');
-            header.classList.remove('bg-surface', 'py-4');
+
+        if (window.scrollY > 50) {
+            header.classList.add('glass-panel', 'shadow-sm');
+            header.classList.remove('bg-surface');
         } else {
-            header.classList.remove('glass-panel', 'shadow-md', 'py-2');
-            header.classList.add('bg-surface', 'py-4');
+            header.classList.remove('glass-panel', 'shadow-sm');
+            header.classList.add('bg-surface');
         }
     });
 

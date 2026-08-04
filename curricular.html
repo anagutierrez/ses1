@@ -23,7 +23,7 @@
                         "surface-bright": "#f7f9ff",
                         "inverse-surface": "#29313a",
                         "secondary-fixed-dim": "#ffb4aa",
-                        "primary": "#954a00",
+                        "primary": "#e03c31",
                         "inverse-on-surface": "#e9f1fd",
                         "on-secondary-fixed": "#410001",
                         "on-primary-fixed": "#301400",
@@ -44,13 +44,13 @@
                         "outline": "#8b7263",
                         "error-container": "#ffdad6",
                         "outline-variant": "#dec1af",
-                        "on-primary-container": "#5f2c00",
+                        "on-primary-container": "#ffffff",
                         "tertiary-fixed": "#ffdea8",
                         "surface": "#f7f9ff",
                         "background": "#f7f9ff",
                         "tertiary-fixed-dim": "#fabc3f",
                         "surface-container": "#e7effa",
-                        "primary-container": "#ff8200",
+                        "primary-container": "#D02E29",
                         "on-secondary-container": "#fffbff",
                         "on-secondary-fixed-variant": "#930006",
                         "on-error-container": "#93000a",
@@ -136,6 +136,9 @@
 <header class="sticky top-0 z-50 bg-surface border-b border-outline-variant shadow-sm" data-purpose="main-navigation">
 <div class="container mx-auto px-4 md:px-margin-desktop py-2 md:py-3 flex justify-between items-center">
 <div class="flex items-center gap-2 md:gap-4">
+    <button class="md:hidden p-2 text-primary active:scale-95 transition-transform" onclick="toggleDrawer()">
+<span class="material-symbols-outlined">menu</span>
+</button>
 <div class="flex items-center gap-2 md:gap-4">
 <img alt="Gobierno de San Juan" class="h-12 md:h-24 w-auto object-contain mix-blend-multiply" src="imagenes/logo_gobierno.png"/>
 <div class="w-px h-8 md:h-16 bg-outline-variant mx-1 md:mx-4"></div>
@@ -150,21 +153,55 @@
 <a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors md:text-base" href="#agenda">Agenda</a>
 <a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors md:text-base" href="#ubicacion">Ubicación</a>
 </nav>
-<!-- Mobile Menu Toggle -->
-<button class="lg:hidden p-2 text-primary focus:outline-none" id="mobile-menu-toggle">
-<span class="material-symbols-outlined text-3xl">menu</span>
-</button>
-</div>
-<!-- Mobile Nav Menu -->
-<div class="hidden lg:hidden bg-surface border-t border-outline-variant px-4 py-6 space-y-4 shadow-xl" id="mobile-menu">
-<a class="block font-label-md text-on-surface-variant hover:text-primary py-2" href="#inicio">Inicio</a>
-<a class="block font-label-md text-on-surface-variant hover:text-primary py-2" href="#propósitos">Propósitos</a>
-<a class="block font-label-md text-on-surface-variant hover:text-primary py-2" href="#ejes">Ejes</a>
-<a class="block font-label-md text-on-surface-variant hover:text-primary py-2" href="#agenda">Agenda</a>
-<a class="block font-label-md text-on-surface-variant hover:text-primary py-2" href="#ubicacion">Ubicación</a>
-<a class="inline-block w-full text-center bg-primary text-on-primary px-6 py-3 rounded-xl shadow-md font-bold" href="#footer">Inscribirse</a>
-</div>
 </header>
+<div class="fixed inset-0 bg-black/40 z-[70] hidden transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
+<aside class="fixed inset-y-0 left-0 w-80 z-[80] bg-surface-container-low transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col py-6" id="nav-drawer">
+
+    <div class="px-6 mb-8 flex justify-between items-center">
+        <span class="font-headline-sm font-black text-primary">
+            Educación Superior
+        </span>
+
+        <button onclick="toggleDrawer()">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+    </div>
+
+    <div class="flex flex-col gap-2">
+
+        <!-- Inicio -->
+        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="index.html">
+            <span class="material-symbols-outlined">home</span>
+            <span class="font-label-md text-lg">Inicio</span>
+        </a>
+
+        <!-- Propósitos -->
+        <a class="flex items-center gap-4 bg-primary-container text-on-primary-container rounded-full px-4 py-3 mx-2" href="#propositos">
+            <span class="material-symbols-outlined">flag</span>
+            <span class="font-label-md text-lg">Propósitos</span>
+        </a>
+
+        <!-- Ejes -->
+        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#ejes">
+            <span class="material-symbols-outlined">topic</span>
+            <span class="font-label-md text-lg">Ejes</span>
+        </a>
+
+        <!-- Agenda -->
+        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#agenda">
+            <span class="material-symbols-outlined">event_note</span>
+            <span class="font-label-md text-lg">Agenda</span>
+        </a>
+
+        <!-- Ubicación -->
+        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#ubicacion">
+            <span class="material-symbols-outlined">location_on</span>
+            <span class="font-label-md text-lg">Ubicación</span>
+        </a>
+
+    </div>
+
+</aside>
 <main>
 <!-- Split Hero Section -->
 <section class="relative bg-surface flex flex-col md:flex-row min-h-[600px] overflow-hidden flex-col-reverse">
@@ -485,6 +522,37 @@
 </div>
 </footer>
 <script>
+    function toggleDrawer() {
+    const drawer = document.getElementById('nav-drawer');
+    const overlay = document.getElementById('drawer-overlay');
+
+        if (drawer.classList.contains('-translate-x-full')) {
+            drawer.classList.remove('-translate-x-full');
+            overlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        } else {
+            drawer.classList.add('-translate-x-full');
+            overlay.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+    }
+
+    // Header scroll effect
+    window.addEventListener('scroll', () => {
+        const header = document.getElementById('main-header');
+
+        if (window.scrollY > 50) {
+            header.classList.add('glass-panel', 'shadow-sm');
+            header.classList.remove('bg-surface');
+        } else {
+            header.classList.remove('glass-panel', 'shadow-sm');
+            header.classList.add('bg-surface');
+        }
+    });
+    // Close drawer on click outside links
+    document.querySelectorAll('#nav-drawer a').forEach(link => {
+        link.addEventListener('click', toggleDrawer);
+    });
         // Smooth scroll for nav links (already covered by CSS but adding JS for fine-tuning)
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {

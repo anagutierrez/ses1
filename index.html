@@ -148,6 +148,9 @@
 <header class="sticky top-0 z-50 bg-surface border-b border-outline-variant shadow-sm" data-purpose="main-navigation">
 <div class="container mx-auto px-4 md:px-margin-desktop py-2 md:py-3 flex justify-between items-center">
 <div class="flex items-center gap-2 md:gap-2">
+<button class="md:hidden p-2 text-primary active:scale-95 transition-transform" onclick="toggleDrawer()">
+<span class="material-symbols-outlined">menu</span>
+</button>
 <div class="flex items-center gap-2 md:gap-4">
 <img alt="Gobierno de San Juan" class="h-12 md:h-24 w-auto object-contain mix-blend-multiply" src="imagenes/logo_gobierno.png"/>
 <div class="w-px h-8 md:h-16 bg-outline-variant mx-1 md:mx-4"></div>
@@ -161,20 +164,33 @@
 <a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#cronograma">Cronograma</a>
 <a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#instituciones">Instituciones</a>
 </nav>
-<!-- Mobile Menu Toggle -->
-<button class="lg:hidden p-2 text-primary focus:outline-none" id="mobile-menu-toggle">
-<span class="material-symbols-outlined text-3xl">menu</span>
-</button>
-</div>
-<!-- Mobile Nav Menu -->
-<div class="hidden lg:hidden bg-surface border-t border-outline-variant px-4 py-6 space-y-4 shadow-xl" id="mobile-menu">
-<a class="block font-label-md text-on-surface-variant hover:text-primary py-2" href="#inicio">Inicio</a>
-<a class="block font-label-md text-on-surface-variant hover:text-primary py-2" href="#eventos">Eventos</a>
-<a class="block font-label-md text-on-surface-variant hover:text-primary py-2" href="#cronograma">Cronograma</a>
-<a class="block font-label-md text-on-surface-variant hover:text-primary py-2" href="#instituciones">Instituciones</a>
-<a class="inline-block w-full text-center bg-primary text-on-primary px-6 py-3 rounded-xl shadow-md font-bold" href="#footer">Inscribirse</a>
-</div>
 </header>
+<div class="fixed inset-0 bg-black/40 z-[55] hidden transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
+<aside class="fixed inset-y-0 left-0 w-80 z-[60] rounded-r-xl bg-surface-container-low transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col py-6" id="nav-drawer">
+<div class="px-6 mb-8 flex justify-between items-center">
+<span class="font-headline-sm text-headline-sm font-black text-primary">Educación Superior</span>
+<button onclick="toggleDrawer()"><span class="material-symbols-outlined">close</span></button>
+</div>
+<div class="flex flex-col gap-2">
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="index.html">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-md text-label-md">Inicio</span>
+</a>
+<a class="flex items-center gap-4 bg-primary-container text-on-primary-container rounded-full px-4 py-3 mx-2" href="#eventos">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="font-label-md text-label-md">Eventos</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#cronograma">
+<span class="material-symbols-outlined">schedule</span>
+<span class="font-label-md text-label-md">Cronograma</span>
+</a>
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#instituciones">
+<span class="material-symbols-outlined">account_balance</span>
+<span class="font-label-md text-label-md">Instituciones</span>
+</a>
+</div>
+</aside>
+
 <!-- END: MainHeader -->
 <!-- BEGIN: HeroSection -->
 <section class="hero-pattern py-12 md:py-20 lg:py-0 lg:min-h-[600px] flex items-center overflow-hidden section-anchor" id="inicio">
@@ -360,7 +376,7 @@
 <!-- Day 1 Content -->
 <div class="schedule-day block" id="day-1">
 <div class="relative timeline-dot mb-8 md:mb-12">
-<span class="block text-primary font-bold text-sm md:text-lg mb-2">Mañana y Tarde de 9:30 a 17:00</span>
+<span class="block text-primary font-bold text-sm md:text-lg mb-2">Mañana y Tarde de 11:00 a 17:00</span>
 <div class="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all" href="oferta.html" target="_blank">
 <h5 class="text-base md:text-xl font-bold mb-2">Oferta Educativa del Nivel Superior</h5>
 <p class="text-on-surface-variant text-xs md:text-base">Exposición completa de la oferta académica de nivel superior de la provincia.</p>
@@ -379,7 +395,7 @@
 <!-- Day 2 Content -->
 <div class="schedule-day hidden" id="day-2">
 <div class="relative timeline-dot mb-8 md:mb-12">
-<span class="block text-primary font-bold text-sm md:text-lg mb-2">Mañana y Tarde de 9:30 a 15:30</span>
+<span class="block text-primary font-bold text-sm md:text-lg mb-2">Mañana y Tarde de 8:30 a 15:30</span>
 <div class="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all">
 <h5 class="text-base md:text-xl font-bold mb-2">Oferta Educativa del Nivel Superior</h5>
 <p class="text-on-surface-variant text-xs md:text-base">Exposición completa de la oferta académica de nivel superior de la provincia.</p>
@@ -644,33 +660,37 @@
     updateCountdown();
 
     // Mobile Menu Toggle Logic
-    const menuBtn = document.getElementById('mobile-menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    
-    if(menuBtn && mobileMenu) {
-        menuBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            mobileMenu.classList.toggle('hidden');
-            const icon = menuBtn.querySelector('.material-symbols-outlined');
-            icon.innerText = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
-        });
+    function toggleDrawer() {
+    const drawer = document.getElementById('nav-drawer');
+    const overlay = document.getElementById('drawer-overlay');
 
-        // Close menu on click outside
-        document.addEventListener('click', (e) => {
-            if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
-                mobileMenu.classList.add('hidden');
-                menuBtn.querySelector('.material-symbols-outlined').innerText = 'menu';
-            }
-        });
-
-        mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                menuBtn.querySelector('.material-symbols-outlined').innerText = 'menu';
-            });
-        });
+        if (drawer.classList.contains('-translate-x-full')) {
+            drawer.classList.remove('-translate-x-full');
+            overlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        } else {
+            drawer.classList.add('-translate-x-full');
+            overlay.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
     }
 
+    // Header scroll effect
+    window.addEventListener('scroll', () => {
+        const header = document.getElementById('main-header');
+
+        if (window.scrollY > 50) {
+            header.classList.add('glass-panel', 'shadow-sm');
+            header.classList.remove('bg-surface');
+        } else {
+            header.classList.remove('glass-panel', 'shadow-sm');
+            header.classList.add('bg-surface');
+        }
+    });
+    // Close drawer on click outside links
+    document.querySelectorAll('#nav-drawer a').forEach(link => {
+        link.addEventListener('click', toggleDrawer);
+    });
     // Schedule Tabs Logic
     const tabButtons = document.querySelectorAll('#schedule-tabs button');
     const dayContents = document.querySelectorAll('.schedule-day');

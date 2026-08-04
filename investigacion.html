@@ -16,7 +16,7 @@
                         "secondary-fixed": "#ffdad5",
                         "on-tertiary": "#ffffff",
                         "tertiary-container": "#d39a1b",
-                        "surface-tint": "#954a00",
+                        "surface-tint": "#e03c31",
                         "on-primary-container": "#5f2c00",
                         "on-error": "#ffffff",
                         "error": "#ba1a1a",
@@ -36,10 +36,10 @@
                         "on-tertiary-fixed-variant": "#5e4200",
                         "on-primary-fixed": "#301400",
                         "on-primary-fixed-variant": "#723700",
-                        "primary": "#954a00",
+                        "primary": "#e03c31",
                         "outline-variant": "#dec1af",
                         "tertiary-fixed-dim": "#fabc3f",
-                        "secondary": "#b51b17",
+                        "secondary": "#E03C31",
                         "surface-container-highest": "#dbe3ee",
                         "surface-bright": "#f7f9ff",
                         "on-error-container": "#93000a",
@@ -48,7 +48,7 @@
                         "on-primary": "#ffffff",
                         "inverse-primary": "#ffb785",
                         "on-surface": "#141c24",
-                        "primary-container": "#ff8200",
+                        "primary-container": "#FFD6B3",
                         "background": "#f7f9ff",
                         "on-tertiary-fixed": "#271900",
                         "on-secondary-fixed": "#410001",
@@ -56,7 +56,7 @@
                         "surface-dim": "#d3dbe6",
                         "on-tertiary-container": "#4e3600",
                         "secondary-fixed-dim": "#ffb4aa",
-                        "secondary-container": "#d9372d",
+                        "secondary-container": "#e03c31",
                         "on-secondary-fixed-variant": "#930006",
                         "surface-container-low": "#edf4ff",
                         "on-secondary-container": "#fffbff",
@@ -136,6 +136,9 @@
 <header class="sticky top-0 z-50 bg-surface border-b border-outline-variant shadow-sm" data-purpose="main-navigation">
 <div class="container mx-auto px-4 md:px-margin-desktop py-2 md:py-3 flex justify-between items-center">
 <div class="flex items-center gap-2 md:gap-4">
+<button class="md:hidden p-2 text-primary active:scale-95 transition-transform" onclick="toggleDrawer()">
+<span class="material-symbols-outlined">menu</span>
+</button>
 <div class="flex items-center gap-2 md:gap-4">
 <img alt="Gobierno de San Juan" class="h-12 md:h-24 w-auto object-contain mix-blend-multiply" src="imagenes/logo_gobierno.png"/>
 <div class="w-px h-8 md:h-16 bg-outline-variant mx-1 md:mx-4"></div>
@@ -150,21 +153,46 @@
 <a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#agenda">Agenda</a>
 <a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors" href="#sede">Sede</a>
 </nav>
-<!-- Mobile Menu Toggle -->
-<button class="lg:hidden p-2 text-primary focus:outline-none" id="mobile-menu-toggle">
-<span class="material-symbols-outlined text-3xl">menu</span>
-</button>
-</div>
-<!-- Mobile Nav Menu -->
-<div class="hidden lg:hidden bg-surface border-t border-outline-variant px-4 py-6 space-y-4 shadow-xl" id="mobile-menu">
-<a class="block font-label-md text-on-surface-variant hover:text-primary py-2" href="index.html">Inicio</a>
-<a class="block font-label-md text-on-surface-variant hover:text-primary py-2" href="#proposito">Propósitos</a>
-<a class="block font-label-md text-on-surface-variant hover:text-primary py-2" href="#presentacion-libro">Presentación del Libro</a>
-<a class="block font-label-md text-on-surface-variant hover:text-primary py-2" href="#agenda">Agenda</a>
-<a class="block font-label-md text-on-surface-variant hover:text-primary py-2" href="#sede">Sede</a>
-<a class="inline-block w-full text-center bg-primary text-on-primary px-6 py-3 rounded-xl shadow-md font-bold" href="#footer">Inscribirse</a>
-</div>
 </header>
+<div class="fixed inset-0 bg-black/40 z-[55] hidden transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
+<aside class="fixed inset-y-0 left-0 w-80 z-[60] rounded-r-xl bg-surface-container-low transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col py-6" id="nav-drawer">
+    <div class="px-6 mb-8 flex justify-between items-center">
+        <span class="font-headline-sm text-headline-sm font-black" style="color:#e03c31;">
+            Educación Superior
+        </span>
+
+        <button onclick="toggleDrawer()">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+    </div>
+    <div class="flex flex-col gap-2">
+        <!-- Inicio -->
+        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="index.html">
+            <span class="material-symbols-outlined">home</span>
+            <span class="font-label-md text-label-md">Inicio</span>
+        </a>
+        <!-- Propósito -->
+        <a class="flex items-center gap-4 bg-primary-container text-on-primary-container rounded-full px-4 py-3 mx-2" href="#proposito">
+            <span class="material-symbols-outlined">flag</span>
+            <span class="font-label-md text-label-md">Propósito</span>
+        </a>
+        <!-- Presentación Libro -->
+        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#presentacion-libro">
+            <span class="material-symbols-outlined">menu_book</span>
+            <span class="font-label-md text-label-md">Presentación Libro</span>
+        </a>
+        <!-- Agenda -->
+        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#agenda">
+            <span class="material-symbols-outlined">event_note</span>
+            <span class="font-label-md text-label-md">Agenda</span>
+        </a>
+        <!-- Sede -->
+        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#sede">
+            <span class="material-symbols-outlined">location_on</span>
+            <span class="font-label-md text-label-md">Sede</span>
+        </a>
+    </div>
+</aside>
 <!-- Desktop Nav 
 <nav class="hidden lg:flex gap-md items-center">
 <a class="font-label-md text-label-md uppercase tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#proposito">Propósito</a>
@@ -173,11 +201,11 @@
 <a class="font-label-md text-label-md uppercase tracking-wide text-on-surface-variant hover:text-primary transition-colors" href="#ubicacion">Ubicación</a>
 <button class="text-on-primary px-6 py-2 rounded-xl font-label-md uppercase tracking-widest cursor-pointer active:opacity-80 transition-all bg-brand-red">Inscribirse</button>
 </nav>-->
-<!-- Mobile Menu Toggle -->
+<!-- Mobile Menu Toggle 
 <button class="lg:hidden p-2 text-on-surface-variant" id="menu-toggle">
 <span class="material-symbols-outlined">menu</span>
 </button>
-</header>
+</header>-->
 <main>
 <!-- Hero Section -->
 <section class="relative min-h-fit md:min-h-[716px] flex items-center bg-surface-container-lowest overflow-hidden">
@@ -481,28 +509,20 @@
 </div>
 </footer>
 <script>
-    // Mobile Menu Logic
-    const menuToggle = document.getElementById('menu-toggle');
-    const menuClose = document.getElementById('menu-close');
-    const mobileMenu = document.getElementById('mobile-menu');
+    function toggleDrawer() {
+    const drawer = document.getElementById('nav-drawer');
+    const overlay = document.getElementById('drawer-overlay');
 
-    menuToggle.addEventListener('click', () => {
-        mobileMenu.classList.add('active');
+    if (drawer.classList.contains('-translate-x-full')) {
+        drawer.classList.remove('-translate-x-full');
+        overlay.classList.remove('hidden');
         document.body.style.overflow = 'hidden';
-    });
-
-    menuClose.addEventListener('click', () => {
-        mobileMenu.classList.remove('active');
+    } else {
+        drawer.classList.add('-translate-x-full');
+        overlay.classList.add('hidden');
         document.body.style.overflow = '';
-    });
-
-    // Close menu on link click
-    document.querySelectorAll('#mobile-menu a').forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenu.classList.remove('active');
-            document.body.style.overflow = '';
-        });
-    });
+    }
+}
 
     // Smooth scroll with offset
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -537,7 +557,10 @@
                 }
             }
         });
-
+        // Close drawer on click outside links
+    document.querySelectorAll('#nav-drawer a').forEach(link => {
+        link.addEventListener('click', toggleDrawer);
+    });
         navLinks.forEach(link => {
             link.classList.remove('text-primary', 'underline');
             if (link.getAttribute('href') === `#${current}`) {

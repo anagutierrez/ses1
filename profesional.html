@@ -27,7 +27,7 @@
                         "primary-fixed-dim": "#ffb785",
                         "secondary-fixed-dim": "#ffb4aa",
                         "surface": "#f7f9ff",
-                        "primary-container": "#ff8200",
+                        "primary-container": "#D02E29",
                         "tertiary": "#7c5800",
                         "outline-variant": "#dec1af",
                         "surface-variant": "#dbe3ee",
@@ -52,13 +52,13 @@
                         "on-secondary-container": "#fffbff",
                         "on-primary-fixed-variant": "#723700",
                         "on-error-container": "#93000a",
-                        "secondary-container": "#d9372d",
+                        "secondary-container": "#e3c1c0",
                         "on-surface": "#141c24",
                         "surface-tint": "#954a00",
-                        "primary": "#954a00",
+                        "primary": "#e03c31",
                         "primary-fixed": "#ffdcc6",
                         "on-secondary-fixed-variant": "#930006",
-                        "on-primary-container": "#5f2c00",
+                        "on-primary-container": "#ffffff",
                         "on-error": "#ffffff",
                         "brand-red": "#D02E29",
                         "brand-yellow": "#FBDD40"
@@ -132,6 +132,9 @@
 <header class="sticky top-0 z-50 bg-white border-b border-outline-variant px-margin-mobile md:px-margin-desktop py-4">
 <div class="max-w-7xl mx-auto flex justify-between items-center">
 <div class="flex items-center gap-6">
+<button class="lg:hidden p-2 text-primary active:scale-95 transition-transform" onclick="toggleDrawer()">
+<span class="material-symbols-outlined">menu</span>
+</button>
 <!-- Institutional Logo Placeholder -->
 <div class="flex items-center gap-2 md:gap-4 overflow-hidden">
 <img alt="Gobierno de San Juan" class="h-12 md:h-20 w-auto object-contain mix-blend-multiply transition-all" src="imagenes/logo_gobierno.png">
@@ -145,57 +148,67 @@
 <a class="text-on-surface-variant font-label-md hover:text-brand-red transition-colors" href="#agenda">Agenda</a>
 <a class="text-on-surface-variant font-label-md hover:text-brand-red transition-colors" href="#sede">Ubicación</a>
 </nav>
-<div class="flex items-center gap-4">
+<!--<div class="flex items-center gap-4">
 <button class="bg-brand-red text-white px-6 py-2 rounded-full font-label-md hover:opacity-90 transition-opacity hidden sm:block shadow-sm">
                 Inscribirse
-            </button>
-<button class="lg:hidden text-on-surface">
-<span class="material-symbols-outlined">menu</span>
-</button>
+            </button>-->
 </div>
 </div>
 </header>
+<!-- Mobile Drawer -->
+<div class="fixed inset-0 bg-black/40 z-[70] hidden transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
+
+<aside class="fixed inset-y-0 left-0 w-80 z-[80] bg-surface-container-low transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col py-6" id="nav-drawer">
+
+    <div class="px-6 mb-8 flex justify-between items-center">
+        <span class="font-headline-sm font-black text-primary">Educación Superior</span>
+
+        <button onclick="toggleDrawer()">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+    </div>
+
+    <div class="flex flex-col gap-2">
+        <!-- Inicio -->
+        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="index.html">
+            <span class="material-symbols-outlined">home</span>
+            <span class="font-label-md text-lg">Inicio</span>
+        </a>
+        <!-- Propósito -->
+        <a class="flex items-center gap-4 bg-primary text-on-primary rounded-full px-4 py-3 mx-2" href="#proposito">
+            <span class="material-symbols-outlined">flag</span>
+            <span class="font-label-md text-lg">Propósito</span>
+        </a>
+        <!-- Temáticas -->
+        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#temas">
+            <span class="material-symbols-outlined">topic</span>
+            <span class="font-label-md text-lg">Temáticas</span>
+        </a>
+        <!-- Agenda -->
+        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#agenda">
+            <span class="material-symbols-outlined">event_note</span>
+            <span class="font-label-md text-lg">Agenda</span>
+        </a>
+        <!-- Ubicación -->
+        <a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 mx-2 hover:bg-surface-container-high rounded-full transition-all" href="#sede">
+            <span class="material-symbols-outlined">location_on</span>
+            <span class="font-label-md text-lg">Ubicación</span>
+        </a>
+    </div>
+</aside>
+
 <main>
 <!-- Split Hero Section -->
 <section class="relative bg-surface flex flex-col md:flex-row min-h-[600px] items-center">
 <div class="w-full md:w-1/2 flex flex-col justify-center px-margin-mobile md:px-margin-desktop py-xl text-center">
-<div class="inline-flex items-center gap-2 bg-brand-red/10 px-4 py-1.5 rounded-full text-brand-red font-label-md mb-6 w-fit mx-auto">
-<span class="material-symbols-outlined text-sm">event</span>
-                ISFD SANTA MARÍA - SEGUNDA EDICIÓN
-            </div>
+
 <h1 class="font-display-lg text-on-background text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
                 II Jornada de Desarrollo Profesional
             </h1>
-<div class="border-l-4 border-brand-red pl-6 mb-8">
+
 <p class="font-headline-sm text-on-surface italic">
                     "Enseñar hoy: Reflexionar, investigar y transformar"
                 </p>
-</div>
-<div class="flex flex-wrap gap-lg mb-10">
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-brand-yellow flex items-center justify-center">
-<span class="material-symbols-outlined text-on-tertiary-container">location_on</span>
-</div>
-<div>
-<p class="text-xs font-label-md text-on-surface-variant uppercase">Sede</p>
-<p class="text-body-md font-bold">Rivadavia, San Juan</p>
-</div>
-</div>
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-brand-yellow flex items-center justify-center">
-<span class="material-symbols-outlined text-on-tertiary-container">group</span>
-</div>
-<div>
-<p class="text-xs font-label-md text-on-surface-variant uppercase">Público</p>
-<p class="text-body-md font-bold">Docentes y Estudiantes</p>
-</div>
-</div>
-</div>
-<div class="flex flex-wrap gap-4 justify-center">
-<button class="bg-brand-red text-white text-body-md font-bold px-10 py-4 rounded-full shadow-lg hover:bg-red-700 transition-colors flex items-center gap-2">
-                    RESERVAR MI LUGAR <span class="material-symbols-outlined">arrow_forward</span>
-</button>
-</div>
 </div>
 <div class="w-full md:w-1/2 relative min-h-[400px]">
 <img alt="Profesionales en jornada de desarrollo" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLtthIcAMaQHx42BjnOEaQPRSaGPjjecKMRIuPMaS_bE_cQyoL_omYJUmgymd8_aApHhSWtvJfyn4ksrUuDncXhMk4hQ-iwCYQsJoOqVi7By9dmAc1Jl6tZeCeX66NnWBUkQBCvaq-8dlSbGSA32NK2IHf93V4_7wC2COR24hIH6VRO04RiPrs-hebaeApMRkh0g1itc9IBaC7_RCiaxOq1yeroJUFWGE2AfG-VY67DyGa20Iq01mQBHJ4Wx"/>
@@ -422,7 +435,7 @@
 </div>
 <div>
 <h4 class="font-bold text-on-surface text-lg">Instalaciones</h4>
-<p class="font-body-md text-on-surface-variant mt-1">Aulas climatizadas, auditorio principal y espacios de cafetería disponibles.</p>
+<p class="font-body-md text-on-surface-variant mt-1">SUM. Salón de Usos Múltiples</p>
 </div>
 </div>
 <a class="inline-flex items-center gap-2 bg-brand-red text-white px-8 py-3 rounded-full font-bold hover:bg-red-700 transition-all shadow-md group" href="#">
@@ -494,6 +507,20 @@
 </div>
 </footer>
 <script>
+    function toggleDrawer() {
+    const drawer = document.getElementById('nav-drawer');
+    const overlay = document.getElementById('drawer-overlay');
+
+    if (drawer.classList.contains('-translate-x-full')) {
+        drawer.classList.remove('-translate-x-full');
+        overlay.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    } else {
+        drawer.classList.add('-translate-x-full');
+        overlay.classList.add('hidden');
+        document.body.style.overflow = '';
+    }
+}
     // Smooth scroll for internal links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -513,7 +540,10 @@
             }
         });
     });
-
+    // Close drawer on click outside links
+    document.querySelectorAll('#nav-drawer a').forEach(link => {
+        link.addEventListener('click', toggleDrawer);
+    });
     // Simple scroll behavior for yellow nav
     const yellowNav = document.querySelector('.sticky.top-\\[73px\\]');
     window.addEventListener('scroll', function() {
