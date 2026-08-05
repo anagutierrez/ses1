@@ -133,20 +133,20 @@
 </head>
 <body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
 <!-- Header: Institutional -->
-<header class="fixed top-0 w-full z-[60] flex justify-between items-center px-4 md:px-margin-desktop bg-surface border-b border-outline-variant transition-all duration-300 py-2 md:py-4" id="main-header">
+<header class="fixed sticky top-0 w-full z-[60] flex justify-between items-center px-4 md:px-margin-desktop bg-surface border-b border-outline-variant transition-all duration-300 py-2" id="main-header">
 <div class="flex items-center gap-2 md:gap-4">
 <div class="flex items-center gap-2 md:gap-4 overflow-hidden">
-<img alt="Gobierno de San Juan" class="h-12 md:h-20 w-auto object-contain mix-blend-multiply transition-all" src="imagenes/logo_gobierno.png">
+<img alt="Gobierno de San Juan" class="h-12 lg:h-16 w-auto object-contain mix-blend-multiply transition-all" src="imagenes/logo_gobierno.png">
 <div class="w-px h-8 md:h-12 bg-outline-variant mx-1 md:mx-4 shrink-0"></div>
-<img alt="Semana de la Educación Superior" class="h-12 md:h-20 w-auto object-contain transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNVE_OZrMLNJLkCXo3AIGXlp3g1hI7ofB-p9cR33bVnGw839RIdpmTInTdUOr2Ci_yPJYbBmhfuM_JS2yVHrZjQLBL1NJCVuvzg0zHT9cHkHX8XYPzQEnRO4TdzugR8EZgC7EN2f0KOjR60k0u0utkCqJhnY2UmT-ndy9KWPOuwrNDu42InhDm2Xsjvl-InySXsXshx_4l3Xf_D97qc1Rt7-lDXjIrUmDZ71vk11iWc--Nbzt6QtOICKmOe3g0a7ZQMFA">
+<img alt="Semana de la Educación Superior" class="h-12 md:h-20 w-auto object-contain transition-all" src="imagenes/SESch.png">
 </div>
 </div>
 <!-- Desktop Nav -->
 <nav class="hidden lg:flex gap-8 items-center">
-<a class="hover:text-primary transition-colors active:font-bold" href="index.html">Inicio</a>
 <a class="hover:text-primary transition-colors active:font-bold" href="#propositos">Propósitos</a>
 <a class="hover:text-primary transition-colors active:font-bold" href="#agenda">Agenda</a>
 <a class="hover:text-primary transition-colors active:font-bold" href="#ubicacion">Sede</a>
+<a class="hover:text-primary transition-colors active:font-bold" href="index.html#eventos">Eventos</a>
 </nav>
 </header>
 <main>
@@ -169,12 +169,12 @@
 </div>
 <div class="w-full md:w-1/2 relative min-h-[400px] p-margin-mobile md:p-margin-desktop flex items-center justify-center">
 <div class="relative w-full h-full max-h-[500px] aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
-<img alt="Modern academic setting" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv6AxiZfdJ1562ZAkQptL6A9VhVGzejeDvtke573z8hFg63RYMapeLzBbxB2cl_Tny7V_vw2_Uw43Ou55DH2Zc-GAKGDCG9VgVrRSeQrC5_Y6GyepfsPK0x0U278xH03gswgsGAyz5vmIMqZ3ILyYUIgHSsur5xtrMBJ9-pVQFlTCX6ov-moQuoMb4FIz28swoAFc2OHpsv9ilAbkxD5IsdwSIOfkz5ap9LHgno8bK7K9UMrJuNs50Fg"/>
+<img alt="Modern academic setting" class="w-full h-full object-cover" src="imagenes/dc.jpg"/>
 </div>
 </div>
 </section>
 <!-- Propósito Section -->
-<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="propositos">
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="propositos" style="scroll-margin-top:120px;">
 <div class="max-w-4xl mx-auto text-center">
 <span class="text-brand-red font-label-md uppercase tracking-widest block mb-4">Nuestro Objetivo</span>
 <h2 class="font-headline-md text-on-surface mb-10">Propósito del Encuentro</h2>
@@ -230,7 +230,7 @@
 <section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface-container-low" >
 <div class="max-w-4xl mx-auto">
 <div class="text-center mb-20">
-<span class="text-brand-red font-label-md uppercase tracking-widest block mb-4"id="agenda">Cronograma</span>
+<span class="text-brand-red font-label-md uppercase tracking-widest block mb-4"id="agenda" style="scroll-margin-top:120px;">Cronograma</span>
 <h2 class="font-headline-md text-brand-red mb-2">Agenda del Encuentro</h2>
 <p class="font-body-md text-on-surface-variant">Un recorrido por los hitos de nuestra jornada académica.</p>
 </div>
@@ -329,7 +329,7 @@
 </div>
 </section>
 <!-- Materiales Section -->
-<section class="py-xl bg-on-background text-white" id="lectura">
+<section class="py-xl bg-on-background text-white" id="lectura" style="scroll-margin-top:120px;">
 <div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop text-center">
 <span class="text-brand-yellow font-label-md uppercase tracking-widest block mb-4">Recursos</span>
 <h2 class="font-headline-md mb-4 text-white">Lectura Obligatoria</h2>
@@ -372,7 +372,7 @@
 <section class="py-xl px-margin-mobile md:px-margin-desktop bg-white" >
 <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-xl items-center">
 <div class="w-full lg:w-[40%]">
-<span class="text-brand-red font-label-md uppercase tracking-widest block mb-4"id="ubicacion">Sede</span>
+<span class="text-brand-red font-label-md uppercase tracking-widest block mb-4"id="ubicacion" style="scroll-margin-top:120px;">Sede</span>
 <h2 class="font-display-lg text-on-surface text-3xl md:text-4xl mb-8">Sede del Evento</h2>
 <div class="space-y-8">
 <div class="flex items-start gap-6">
@@ -412,19 +412,19 @@
 <div class="container mx-auto px-4 md:px-margin-desktop">
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12">
 <div class="col-span-1 lg:col-span-2">
-<img alt="Logo SES Blanco" class="h-24 md:h-32 w-auto max-w-[320px] brightness-0 invert mb-6 opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZNmP26bSCAnj7KM04zCNYRkjdZTqcIwzhCDyB8FhbdcYyXwx8rmH9b8UoAIA4WwImfswOHbA7uibgZKX6QV0yIjZCmmZqgnw5Un1N9o43sOGn1B9ltapCuj_lzHQTFqVn2bFUrvcJkSBTOIuOYCDgkeCs_mVhh7TH6OjqEQWdh3gNl9PKLiydkyc-rOvNgNnRw01hcfqhfvz2tz8mFpcenaeJjmSkQuzlSmvbpzIRaGyL23RuENVKWANIsFHFGjqky_0"/>
-<p class="text-inverse-on-surface text-sm leading-relaxed opacity-70">
+<div class="flex flex-col items-start gap-6">
+
+    <img
+        src="imagenes/ME Logotipo Blanco.png"
+        class="w-72 md:w-80 h-auto">
+
+    <img
+        src="imagenes/unnamed.png"
+        class="w-48 md:w-56 h-auto brightness-0 invert opacity-90">
+
+</div><p class="text-inverse-on-surface text-sm leading-relaxed opacity-70">
                     La Semana de la Educación Superior se posiciona como un dispositivo integral, que articula formación, investigación y proyección del nivel superior, contribuyendo al desarrollo educativo y socio-productivo de la provincia.
                 </p>
-</div>
-<div>
-<h4 class="text-lg font-bold mb-4 md:mb-6 text-primary-fixed">Enlaces Rápidos</h4>
-<ul class="space-y-3 md:space-y-4 text-inverse-on-surface text-sm opacity-70">
-<li class=""><a class="hover:text-primary-fixed transition-colors" href="#inicio">Sobre el Evento</a></li>
-<li class=""><a class="hover:text-primary-fixed transition-colors" href="#cronograma">Cronograma</a></li>
-<li class=""><a class="hover:text-primary-fixed transition-colors" href="#instituciones">Instituciones</a></li>
-<li class=""><a class="hover:text-primary-fixed transition-colors" href="#sede">Sede</a></li>
-</ul>
 </div>
 <div>
 <h4 class="text-lg font-bold mb-4 md:mb-6 text-primary-fixed">Contacto</h4>
