@@ -129,14 +129,44 @@
 </head>
 <body class="bg-surface text-on-surface">
 <!-- Header: Institutional -->
-<header class="fixed sticky top-0 w-full z-[60] flex justify-between items-center px-4 md:px-margin-desktop bg-surface border-b border-outline-variant transition-all duration-300 py-2" id="main-header">
-<div class="flex items-center gap-2 md:gap-4">
-<div class="flex items-center gap-2 md:gap-4 overflow-hidden">
-<img alt="Gobierno de San Juan" class="h-12 lg:h-16 w-auto object-contain mix-blend-multiply transition-all" src="imagenes/logo_gobierno.png">
-<div class="w-px h-8 md:h-12 bg-outline-variant mx-1 md:mx-4 shrink-0"></div>
-<img alt="Semana de la Educación Superior" class="h-12 md:h-20 w-auto object-contain transition-all" src="imagenes/SESch.png">
-</div>
-</div>
+<header class="fixed sticky top-0 w-full z-[60] flex items-center px-4 md:px-margin-desktop bg-surface border-b border-outline-variant py-2">
+
+    <!-- IZQUIERDA -->
+    <div class="flex items-center shrink-0">
+
+        <img
+            alt="Gobierno de San Juan"
+            class="h-12 lg:h-16 w-auto object-contain mix-blend-multiply"
+            src="imagenes/logo_gobierno.png">
+
+        <div class="w-px h-8 md:h-12 bg-outline-variant mx-3"></div>
+
+        <img
+            alt="Semana de la Educación Superior"
+            class="h-12 md:h-20 w-auto object-contain"
+            src="imagenes/SESch.png">
+
+        <!-- Separador -->
+        <div class="w-px h-8 md:h-12 bg-outline-variant mx-6"></div>
+
+    </div>
+
+    <!-- CENTRO -->
+    <div class="hidden xl:flex flex-1 justify-center">
+
+        <div class="text-center leading-tight">
+
+            <span class="text-[11px] uppercase tracking-[0.18em] font-semibold text-on-surface-variant">
+                II JORNADA DE
+            </span>
+
+            <h2 class="text-[16px] font-bold text-[#E03C31] leading-none mt-1">
+                Desarrollo Profesional
+            </h2>
+
+        </div>
+
+    </div>
 <nav class="hidden lg:flex gap-md items-center">
 <a class="text-on-surface-variant font-label-md hover:text-brand-red transition-colors" href="#proposito">Propósito</a>
 <a class="text-on-surface-variant font-label-md hover:text-brand-red transition-colors" href="#temas">Temáticas</a>
@@ -157,9 +187,11 @@
                     "Enseñar hoy: Reflexionar, investigar y transformar"
                 </p>
 </div>
-<div class="w-full md:w-1/2 relative min-h-[400px]" >
+<div class="w-full md:w-1/2 relative min-h-[400px] p-margin-mobile md:p-margin-desktop flex items-center justify-center">
+<div class="relative w-full h-full max-h-[500px] aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl" >
 <img  alt="Profesionales en jornada de desarrollo" class="absolute inset-0 w-full h-full object-cover" src="imagenes/dp.jpg " alt="Profesionales en jornada de desarrollo"/>
 <div class="absolute inset-0 bg-gradient-to-r from-surface md:from-transparent"></div>
+</div>
 </div>
 </section>
 <!-- Propósito Section -->
@@ -172,7 +204,7 @@
 <span class="material-symbols-outlined text-9xl">menu_book</span>
 </div>
 <p class="font-body-lg text-on-surface-variant leading-relaxed relative z-10">
-                    La jornada tiene como objetivo general propiciar el fortalecimiento del desarrollo profesional docente a partir de la revisión y el análisis de la enseñanza en los escenarios actuales, la construcción de redes de trabajo colaborativo entre el ISFD y las escuelas asociadas, y la socialización de experiencias educativas innovadoras y de investigación que permitan enriquecer el capital cultural y pedagógico de la comunidad.
+                    La jornada tiene como objetivo general propiciar el fortalecimiento del desarrollo profesional docente a partir de la revisión y el análisis de la enseñanza en los escenarios actuales, la construcción de redes de trabajo colaborativo entre el ISFD y las escuelas co-formadoras, y la socialización de experiencias educativas innovadoras y de investigación que permitan enriquecer el capital cultural y pedagógico de la comunidad.
                 </p>
 </div>
 </div>
@@ -638,14 +670,13 @@
 <ul class="space-y-3 md:space-y-4 text-inverse-on-surface text-sm opacity-70">
 <li class="flex items-center gap-3">
 <span class="material-symbols-outlined text-primary-fixed text-lg">mail</span>
-                        contacto@ses2026.com
+                        edusuperior.sj@gmail.com
                     </li>
 <li class="flex items-center gap-3" id="sede">
 <span class="material-symbols-outlined text-primary-fixed text-lg">location_on</span>
                        Centro Cívico 
                     </li>
 <li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary-fixed text-lg">call</span>
                         Av. Libertador Gral. San Martín, San Juan
                     </li>
 </ul>

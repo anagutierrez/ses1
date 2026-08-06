@@ -126,14 +126,44 @@
 </head>
 <body class="overflow-x-hidden">
 <!-- Institutional Header -->
-<header class="fixed sticky top-0 w-full z-[60] flex justify-between items-center px-4 md:px-margin-desktop bg-surface border-b border-outline-variant transition-all duration-300 py-2" id="main-header">
-<div class="flex items-center gap-2 md:gap-4">
-<div class="flex items-center gap-2 md:gap-4 overflow-hidden">
-<img alt="Gobierno de San Juan" class="h-12 lg:h-16 w-auto object-contain mix-blend-multiply transition-all" src="imagenes/logo_gobierno.png">
-<div class="w-px h-8 md:h-12 bg-outline-variant mx-1 md:mx-4 shrink-0"></div>
-<img alt="Semana de la Educación Superior" class="h-12 md:h-20 w-auto object-contain transition-all" src="imagenes/SESch.png">
-</div>
-</div>
+<header class="fixed sticky top-0 w-full z-[60] flex items-center px-4 md:px-margin-desktop bg-surface border-b border-outline-variant py-2">
+
+    <!-- IZQUIERDA -->
+    <div class="flex items-center shrink-0">
+
+        <img
+            alt="Gobierno de San Juan"
+            class="h-12 lg:h-16 w-auto object-contain mix-blend-multiply"
+            src="imagenes/logo_gobierno.png">
+
+        <div class="w-px h-8 md:h-12 bg-outline-variant mx-3"></div>
+
+        <img
+            alt="Semana de la Educación Superior"
+            class="h-12 md:h-20 w-auto object-contain"
+            src="imagenes/SESch.png">
+
+        <!-- Separador -->
+        <div class="w-px h-8 md:h-12 bg-outline-variant mx-6"></div>
+
+    </div>
+
+    <!-- CENTRO -->
+    <div class="hidden xl:flex flex-1 justify-center">
+
+        <div class="text-center leading-tight">
+
+            <span class="text-[9px] uppercase tracking-[0.18em] font-semibold text-on-surface-variant">
+                I CONVERSATORIO 
+            </span>
+
+            <h2 class="text-[14px] font-bold text-[#E03C31] leading-none mt-1">
+                de Institutos Superiores Técnicos
+            </h2>
+
+        </div>
+
+    </div>
 <nav class="hidden lg:flex gap-8 items-center">
 <a class="hover:text-primary transition-colors active:font-bold" href="#proposito">Propósito</a>
 <a class="hover:text-primary transition-colors active:font-bold" href="#ejes">Ejes de Diálogo</a>
@@ -180,7 +210,7 @@
 <span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
 <div>
 <p class="text-[10px] md:text-xs font-bold text-outline uppercase">Lugar</p>
-<p class="font-label-md text-sm md:text-base">Instituto Tecnológico</p>
+<p class="font-label-md text-sm md:text-base">Centro Tecnológico (Ex Conectar Lab)</p>
 </div>
 </div>
 </div>
@@ -264,8 +294,9 @@
 </div>
 </div>
 </section>
+</div>
 <!-- Resultados -->
-<section class="bg-[#FBDD40] rounded-3xl p-6 md:p-lg scroll-mt-32" id="resultados" style="scroll-margin-top:120px;">
+<section class="bg-[#FBDD40] p-6 md:p-lg scroll-mt-32" id="resultados" style="scroll-margin-top:120px;">
 <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
 <div class="w-full lg:w-1/2">
 <h2 class="text-2xl md:text-headline-md font-headline-md text-on-surface mb-6">Resultados Esperados</h2>
@@ -289,8 +320,8 @@
 </div>
 </div>
 </section>
-<section class="bg-red-600 py-xl px-margin-mobile md:px-margin-desktop text-white" id="contacto-directo">
-<div class="max-w-4xl mx-auto text-center">
+<section class="bg-red-600 py-xl px-margin-mobile md:px-margin-desktop text-white " id="contacto-directo">
+<div class="max-w-7xl mx-auto text-center">
 <h2 class="font-display-lg text-3xl md:text-4xl mb-6 text-2xl">Contacto</h2>
 <p class="font-body-lg mb-8 opacity-90">¿Tienes dudas sobre la jornada o necesitas más información? Escríbenos.</p>
 <div class="flex flex-col items-center gap-4">
@@ -329,7 +360,7 @@ transition-all" href="mailto:desarrolloprofesionalsj@gmail.com">
 </div>
 <div>
 <h4 class="font-bold text-on-surface text-lg">Instalaciones</h4>
-<p class="font-body-md text-on-surface-variant mt-1">Instituto Tecnológico (Ex Conectar Lab)</p>
+<p class="font-body-md text-on-surface-variant mt-1">CENTRO Tecnológico (Ex Conectar Lab)</p>
 </div>
 </div>
 <a class="inline-flex items-center gap-2 bg-brand-red text-white px-8 py-3 rounded-full font-bold hover:bg-red-700 transition-all shadow-md group" href="https://maps.app.goo.gl/xiESQm2sfhuZkQ4G8" target="_blank" rel="noopener noreferrer">
@@ -344,7 +375,6 @@ transition-all" href="mailto:desarrolloprofesionalsj@gmail.com">
 </div>
 </div>
 </section>
-</div>
 </main>
 <!-- Institutional Footer -->
 <footer class="bg-inverse-surface text-on-primary py-12 md:py-16 section-anchor" id="footer">
@@ -370,14 +400,13 @@ transition-all" href="mailto:desarrolloprofesionalsj@gmail.com">
 <ul class="space-y-3 md:space-y-4 text-inverse-on-surface text-sm opacity-70">
 <li class="flex items-center gap-3">
 <span class="material-symbols-outlined text-primary-fixed text-lg">mail</span>
-                        contacto@ses2026.com
+                        edusuperior.sj@gmail.com
                     </li>
 <li class="flex items-center gap-3" id="sede">
 <span class="material-symbols-outlined text-primary-fixed text-lg">location_on</span>
                        Centro Cívico 
                     </li>
 <li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary-fixed text-lg">call</span>
                         Av. Libertador Gral. San Martín, San Juan
                     </li>
 </ul>

@@ -133,14 +133,44 @@
 </head>
 <body class="bg-background font-body-md text-on-surface overflow-x-hidden">
 <!-- TopNavBar -->
-<header class="fixed sticky top-0 w-full z-[60] flex justify-between items-center px-4 md:px-margin-desktop bg-surface border-b border-outline-variant transition-all duration-300 py-2" id="main-header">
-<div class="flex items-center gap-2 md:gap-4">
-<div class="flex items-center gap-2 md:gap-4 overflow-hidden">
-<img alt="Gobierno de San Juan" class="h-12 lg:h-16 w-auto object-contain mix-blend-multiply transition-all" src="imagenes/logo_gobierno.png">
-<div class="w-px h-8 md:h-12 bg-outline-variant mx-1 md:mx-4 shrink-0"></div>
-<img alt="Semana de la Educación Superior" class="h-12 md:h-20 w-auto object-contain transition-all" src="imagenes/SESch.png">
-</div>
-</div>
+<header class="fixed sticky top-0 w-full z-[60] flex items-center px-4 md:px-margin-desktop bg-surface border-b border-outline-variant py-2">
+
+    <!-- IZQUIERDA -->
+    <div class="flex items-center shrink-0">
+
+        <img
+            alt="Gobierno de San Juan"
+            class="h-12 lg:h-16 w-auto object-contain mix-blend-multiply"
+            src="imagenes/logo_gobierno.png">
+
+        <div class="w-px h-8 md:h-12 bg-outline-variant mx-3"></div>
+
+        <img
+            alt="Semana de la Educación Superior"
+            class="h-12 md:h-20 w-auto object-contain"
+            src="imagenes/SESch.png">
+
+        <!-- Separador -->
+        <div class="w-px h-8 md:h-12 bg-outline-variant mx-6"></div>
+
+    </div>
+
+    <!-- CENTRO -->
+    <div class="hidden xl:flex flex-1 justify-center">
+
+        <div class="text-center leading-tight">
+
+            <span class="text-[11px] uppercase tracking-[0.18em] font-semibold text-on-surface-variant">
+                V ENCUENTRO DE
+            </span>
+
+            <h2 class="text-[16px] font-bold text-[#E03C31] leading-none mt-1">
+                Investigación y Experiencias Pedagógicas
+            </h2>
+
+        </div>
+
+    </div>
 <nav class="hidden lg:flex gap-8 items-center">
 <a class="hover:opacity-70 transition-all" href="#proposito">Propósito</a>
 <a class="hover:opacity-70 transition-all" href="#presentacion-libro">Presentación Libro</a>
@@ -435,14 +465,13 @@
 <ul class="space-y-3 md:space-y-4 text-inverse-on-surface text-sm opacity-70">
 <li class="flex items-center gap-3">
 <span class="material-symbols-outlined text-primary-fixed text-lg">mail</span>
-                        contacto@ses2026.com
+                        edusuperior.sj@gmail.com
                     </li>
 <li class="flex items-center gap-3" id="sede">
 <span class="material-symbols-outlined text-primary-fixed text-lg">location_on</span>
                        Centro Cívico 
                     </li>
 <li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary-fixed text-lg">call</span>
                         Av. Libertador Gral. San Martín, San Juan
                     </li>
 </ul>

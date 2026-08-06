@@ -133,21 +133,53 @@
 </head>
 <body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
 <!-- Header: Institutional -->
-<header class="fixed sticky top-0 w-full z-[60] flex justify-between items-center px-4 md:px-margin-desktop bg-surface border-b border-outline-variant transition-all duration-300 py-2" id="main-header">
-<div class="flex items-center gap-2 md:gap-4">
-<div class="flex items-center gap-2 md:gap-4 overflow-hidden">
-<img alt="Gobierno de San Juan" class="h-12 lg:h-16 w-auto object-contain mix-blend-multiply transition-all" src="imagenes/logo_gobierno.png">
-<div class="w-px h-8 md:h-12 bg-outline-variant mx-1 md:mx-4 shrink-0"></div>
-<img alt="Semana de la Educación Superior" class="h-12 md:h-20 w-auto object-contain transition-all" src="imagenes/SESch.png">
-</div>
-</div>
-<!-- Desktop Nav -->
-<nav class="hidden lg:flex gap-8 items-center">
-<a class="hover:text-primary transition-colors active:font-bold" href="#propositos">Propósitos</a>
-<a class="hover:text-primary transition-colors active:font-bold" href="#agenda">Agenda</a>
-<a class="hover:text-primary transition-colors active:font-bold" href="#ubicacion">Sede</a>
-<a class="hover:text-primary transition-colors active:font-bold" href="index.html#eventos">Eventos</a>
-</nav>
+<header class="fixed sticky top-0 w-full z-[60] flex items-center px-4 md:px-margin-desktop bg-surface border-b border-outline-variant py-2">
+
+    <!-- IZQUIERDA -->
+    <div class="flex items-center shrink-0">
+
+        <img
+            alt="Gobierno de San Juan"
+            class="h-12 lg:h-16 w-auto object-contain mix-blend-multiply"
+            src="imagenes/logo_gobierno.png">
+
+        <div class="w-px h-8 md:h-12 bg-outline-variant mx-3"></div>
+
+        <img
+            alt="Semana de la Educación Superior"
+            class="h-12 md:h-20 w-auto object-contain"
+            src="imagenes/SESch.png">
+
+        <!-- Separador -->
+        <div class="w-px h-8 md:h-12 bg-outline-variant mx-6"></div>
+
+    </div>
+
+    <!-- CENTRO -->
+    <div class="hidden xl:flex flex-1 justify-center">
+
+        <div class="text-center leading-tight">
+
+            <span class="text-[11px] uppercase tracking-[0.18em] font-semibold text-on-surface-variant">
+                I ENCUENTRO DE
+            </span>
+
+            <h2 class="text-[16px] font-bold text-[#E03C31] leading-none mt-1">
+                Desarrollo Curricular
+            </h2>
+
+        </div>
+
+    </div>
+
+    <!-- DERECHA -->
+    <nav class="hidden lg:flex gap-8 items-center shrink-0">
+        <a href="#propositos">Propósitos</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#ubicacion">Sede</a>
+        <a href="index.html#eventos">Eventos</a>
+    </nav>
+
 </header>
 <main>
 <!-- Split Hero Section -->
@@ -169,21 +201,31 @@
 </div>
 <div class="w-full md:w-1/2 relative min-h-[400px] p-margin-mobile md:p-margin-desktop flex items-center justify-center">
 <div class="relative w-full h-full max-h-[500px] aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
-<img alt="Modern academic setting" class="w-full h-full object-cover" src="imagenes/dc.jpg"/>
+<img alt="Desarrollo Curricular" class="w-full h-full object-cover" src="imagenes/dc.jpg"/>
 </div>
 </div>
 </section>
 <!-- Propósito Section -->
 <section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="propositos" style="scroll-margin-top:120px;">
 <div class="max-w-4xl mx-auto text-center">
-<span class="text-brand-red font-label-md uppercase tracking-widest block mb-4">Nuestro Objetivo</span>
-<h2 class="font-headline-md text-on-surface mb-10">Propósito del Encuentro</h2>
+<span class="text-brand-red font-label-md uppercase tracking-widest block mb-4">Propósito del Encuentro</span>
 <div class="p-10 bg-white border border-outline-variant rounded-3xl shadow-sm relative overflow-hidden text-left">
 <div class="absolute top-0 right-0 p-6 opacity-5">
 <span class="material-symbols-outlined text-9xl">import_contacts</span>
 </div>
 <p class="font-body-lg text-on-surface-variant leading-relaxed relative z-10">
-                        Espacio académico destinado a la socialización, intercambio y reflexión sobre los procesos de actualización de los diseños curriculares jurisdiccionales. Buscamos fortalecer la formación docente inicial a través de una mirada crítica y constructiva de nuestros marcos normativos y pedagógicos vigentes.
+                        Promover un espacio de análisis, reflexión y socialización en torno a los procesos de actualización desarrollados en los Diseños Curriculares Jurisdiccionales de San Juan, teniendo en cuenta las normativas vigentes y los marcos referenciales del INFoD.
+                    </p>
+</div>
+<h2 class="font-headline-md text-on-surface mb-10">Objetivos del Encuentro</h2>
+<div class="p-10 bg-white border border-outline-variant rounded-3xl shadow-sm relative overflow-hidden text-left">
+<div class="absolute top-0 right-0 p-6 opacity-5">
+<span class="material-symbols-outlined text-9xl">import_contacts</span>
+</div>
+<p class="font-body-lg text-on-surface-variant leading-relaxed relative z-10">
+                        ●	Reflexionar sobre el proceso de actualización de los DCJ de la provincia en el marco de las resoluciones vigentes. <br>
+●	Identificar las orientaciones y pautas para la elaboración de los trayectos formativos a partir de la Res. del CFE 476/24 y Res. CFE 511/25. <br>
+●	Analizar y construir orientaciones metodológicas para el abordaje de formatos pedagógicos combinados y simples.
                     </p>
 </div>
 </div>
@@ -209,19 +251,20 @@
 <div class="bg-surface-container-low p-8 rounded-2xl border-t-4 border-brand-yellow hover:shadow-xl transition-all group">
 <div class="text-brand-red font-display-lg text-4xl mb-4">02</div>
 <h3 class="font-label-md text-on-surface text-lg mb-4">Contextualización jurisdiccional e implementación de los Diseños Curriculares.</h3>
-<p class="text-on-surface-variant text-sm">Adaptación de contenidos a la realidad educativa de la provincia de San Juan.</p>
+<p class="text-on-surface-variant text-sm">- Exposición de experiencias de actualización a nivel nacional de los DCJ.</p> <br>
+<p class="text-on-surface-variant text-sm">- Sensibilización y análisis de los nuevos DCJ.</p>
 </div>
 <!-- Card 3 -->
 <div class="bg-surface-container-low p-8 rounded-2xl border-t-4 border-brand-yellow hover:shadow-xl transition-all group">
 <div class="text-brand-red font-display-lg text-4xl mb-4">03</div>
 <h3 class="font-label-md text-on-surface text-lg mb-4">Diseño didáctico y diversificación de formatos pedagógicos.</h3>
-<p class="text-on-surface-variant text-sm">Innovación en las aulas a través de nuevas metodologías de enseñanza y aprendizaje.</p>
+<p class="text-on-surface-variant text-sm">Identificación y reflexión sobre el seguimiento y evaluación de los formatos pedagógicos simples y combinados.</p>
 </div>
 <!-- Card 4 -->
 <div class="bg-surface-container-low p-8 rounded-2xl border-t-4 border-brand-yellow hover:shadow-xl transition-all group">
 <div class="text-brand-red font-display-lg text-4xl mb-4">04</div>
 <h3 class="font-label-md text-on-surface text-lg mb-4">Diseño de trayectos formativos y marcos normativos vigentes.</h3>
-<p class="text-on-surface-variant text-sm">Planificación de la formación continua docente dentro del marco legal actual.</p>
+<p class="text-on-surface-variant text-sm">Reconocimiento de las orientaciones y pautas para la elaboración de los trayectos formativos a partir de las Res. del CFE 476/24 y la Res. del CFE 511/25</p>
 </div>
 </div>
 </div>
@@ -235,94 +278,163 @@
 <p class="font-body-md text-on-surface-variant">Un recorrido por los hitos de nuestra jornada académica.</p>
 </div>
 <div class="relative timeline-line-v2 px-4 sm:px-6 px-margin-mobile">
+<div class="relative z-10 flex justify-center mb-8">
+<span class="bg-secondary-container text-white px-6 py-2 rounded-full font-bold shadow-md text-center"> Jueves 20 de agosto.
+    Turno Mañana</span>
+</div>
+<div class="relative z-10 flex justify-center py-4">
+<div class="flex flex-col items-center justify-center px-5 py-3 rounded-full border border-primary/20 bg-primary/5 text-center">
+<span class="text-primary font-bold text-xs md:text-sm uppercase tracking-[0.2em] leading-tight">TEMÁTICA:</span>
+<span class="text-primary font-semibold text-[10px] md:text-xs uppercase tracking-[0.2em] leading-tight mt-1">Políticas federales y perspectivas nacionales de la formación docente.
+</span>
+</div>
+</div>
 <!-- Event 1 -->
 <div class="relative flex flex-col md:flex-row items-center gap-8 group mb-12">
 <div class="md:w-1/2 md:text-right hidden md:block">
-<div class="text-brand-red font-bold text-xl uppercase">08:30 HS</div>
-<div class="text-on-surface-variant font-label-md">Recepción</div>
+<div class="text-brand-red font-bold text-xl uppercase">9:30 hs a 10:15 hs.</div>
+<div class="text-on-surface-variant font-label-md"></div>
 </div>
 <div class="relative z-10 w-10 h-10 bg-white border-4 border-brand-red rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
 <div class="w-2 h-2 bg-brand-red rounded-full"></div>
 </div>
 <div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant shadow-sm bg-brand-yellow">
-<div class="md:hidden text-brand-red font-bold mb-2">08:30 HS - Sede</div>
-<h3 class="font-headline-sm text-on-surface mb-2">Acreditación</h3>
-<p class="text-on-surface-variant mb-0 font-body-md">Entrega de carpetas y materiales de trabajo.</p>
+<div class="md:hidden text-brand-red font-bold mb-2">9:30 hs a 10:15 hs.</div>
+<h3 class="font-headline-sm text-on-surface mb-2"></h3>
+<p class="text-on-surface-variant mb-0 font-body-md">Presentación de las líneas del INFoD a cargo del director ejecutivo Lic. Martin Müller.</p>
 </div>
+</div>
+<div class="relative z-10 flex justify-center mb-8">
+<span class="bg-secondary-container text-white px-6 py-2 rounded-full font-bold shadow-md text-center"> Jueves 20 de agosto.
+    Turno Tarde</span>
 </div>
 <!-- Event 2 -->
 <div class="relative flex flex-col md:flex-row-reverse items-center gap-8 group mb-12">
 <div class="md:w-1/2 md:text-left hidden md:block">
-<div class="text-brand-red font-bold text-xl uppercase">09:00 HS</div>
-<div class="text-on-surface-variant font-label-md">Acto Central</div>
+<div class="text-brand-red font-bold text-xl uppercase">14:30 HS a  15 HS</div>
+<div class="text-on-surface-variant font-label-md"></div>
 </div>
 <div class="relative z-10 w-10 h-10 bg-white border-4 border-brand-red rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
 <div class="w-2 h-2 bg-brand-red rounded-full"></div>
 </div>
 <div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant shadow-sm bg-brand-yellow">
-<div class="md:hidden text-brand-red font-bold mb-2">09:00 HS - Salón Actos</div>
-<h3 class="font-headline-sm text-on-surface mb-2">Apertura Institucional</h3>
-<p class="text-on-surface-variant mb-0 font-body-md">Bienvenida a cargo de autoridades ministeriales.</p>
+<div class="md:hidden text-brand-red font-bold mb-2">14:30 HS a  15 HS</div>
+<h3 class="font-headline-sm text-on-surface mb-2"></h3>
+<p class="text-on-surface-variant mb-0 font-body-md">Acreditación</p>
 </div>
 </div>
 <!-- Event 3 -->
 <div class="relative flex flex-col md:flex-row items-center gap-8 group mb-12">
 <div class="md:w-1/2 md:text-right hidden md:block">
-<div class="text-brand-red font-bold text-xl uppercase">09:30 HS</div>
-<div class="text-on-surface-variant font-label-md">Bloque Académico</div>
+<div class="text-brand-red font-bold text-xl uppercase">15:00 HS a  15:15 HS</div>
+<div class="text-on-surface-variant font-label-md"></div>
 </div>
 <div class="relative z-10 w-10 h-10 bg-white border-4 border-brand-red rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
 <div class="w-2 h-2 bg-brand-red rounded-full"></div>
 </div>
 <div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant shadow-sm bg-brand-yellow">
-<div class="md:hidden text-brand-red font-bold mb-2">09:30 HS - Aulas</div>
-<h3 class="font-headline-sm text-on-surface mb-2">Ponencias y Talleres</h3>
-<p class="text-on-surface-variant mb-0 font-body-md">Mesas de debate sobre desarrollo curricular y políticas federales.</p>
+<div class="md:hidden text-brand-red font-bold mb-2">15:00 HS a  15:15 HS</div>
+<h3 class="font-headline-sm text-on-surface mb-2"></h3>
+<p class="text-on-surface-variant mb-0 font-body-md">Palabras de apertura a cargo de directores de DES y DEP..</p>
 </div>
 </div>
 <!-- Event 4 -->
 <div class="relative flex flex-col md:flex-row-reverse items-center gap-8 group mb-12">
 <div class="md:w-1/2 md:text-left hidden md:block">
-<div class="text-brand-red font-bold text-xl uppercase">10:30 HS</div>
-<div class="text-on-surface-variant font-label-md">Coffee Break</div>
+<div class="text-brand-red font-bold text-xl uppercase">15:15 HS - 16:15 HS</div>
+<div class="text-on-surface-variant font-label-md"></div>
 </div>
 <div class="relative z-10 w-10 h-10 bg-white border-4 border-brand-red rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
 <div class="w-2 h-2 bg-brand-red rounded-full"></div>
 </div>
 <div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant shadow-sm bg-brand-yellow">
-<div class="md:hidden text-brand-red font-bold mb-2">10:30 HS - Cafetería</div>
-<h3 class="font-headline-sm text-on-surface mb-2">Pausa Desayuno</h3>
-<p class="text-on-surface-variant mb-0 font-body-md">Instancia de intercambio informal entre colegas.</p>
+<div class="md:hidden text-brand-red font-bold mb-2">15:15 HS - 16:15 HS</div>
+<h3 class="font-headline-sm text-on-surface mb-2"></h3>
+<p class="text-on-surface-variant mb-0 font-body-md">Conferencia sobre el trabajo de desarrollo curricular a nivel nacional.</p>
 </div>
 </div>
 <!-- Event 5 -->
 <div class="relative flex flex-col md:flex-row items-center gap-8 group mb-12">
 <div class="md:w-1/2 md:text-right hidden md:block">
-<div class="text-brand-red font-bold text-xl uppercase">11:00 HS</div>
-<div class="text-on-surface-variant font-label-md">Taller</div>
+<div class="text-brand-red font-bold text-xl uppercase">16:15 HS - 17:30 HS </div>
+<div class="text-on-surface-variant font-label-md"></div>
 </div>
 <div class="relative z-10 w-10 h-10 bg-white border-4 border-brand-red rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
 <div class="w-2 h-2 bg-brand-red rounded-full"></div>
 </div>
 <div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant shadow-sm bg-brand-yellow">
-<div class="md:hidden text-brand-red font-bold mb-2">11:00 HS - Sector B</div>
-<h3 class="font-headline-sm text-on-surface mb-2">Continúan Ponencias</h3>
-<p class="text-on-surface-variant mb-0 font-body-md">Profundización en ejes de diseño didáctico y formatos pedagógicos.</p>
+<div class="md:hidden text-brand-red font-bold mb-2">16:15 HS - 17:30 HS</div>
+<h3 class="font-headline-sm text-on-surface mb-2"></h3>
+<p class="text-on-surface-variant mb-0 font-body-md">Talleres de sensibilización y análisis de los DCJ. </p>
+</div>
+</div>
+<div class="relative z-10 flex justify-center mb-8">
+<span class="bg-secondary-container text-white px-6 py-2 rounded-full font-bold shadow-md text-center"> viernes 21 de agosto.
+    Turno Mañana
+</span>
+</div>
+<div class="relative z-10 flex justify-center py-4">
+<div class="flex flex-col items-center justify-center px-5 py-3 rounded-full border border-primary/20 bg-primary/5 text-center">
+<span class="text-primary font-bold text-xs md:text-sm uppercase tracking-[0.2em] leading-tight">TEMÁTICA:</span>
+<span class="text-primary font-semibold text-[10px] md:text-xs uppercase tracking-[0.2em] leading-tight mt-1">Diseño didáctico y diversificación de formatos pedagógicos (simples y combinados).
+</span>
 </div>
 </div>
 <!-- Event 6 -->
 <div class="relative flex flex-col md:flex-row-reverse items-center gap-8 group">
 <div class="md:w-1/2 md:text-left hidden md:block">
-<div class="text-brand-red font-bold text-xl uppercase">15:30 HS</div>
-<div class="text-on-surface-variant font-label-md">Cierre</div>
+<div class="text-brand-red font-bold text-xl uppercase">10:00 hs – 10:30 hs</div>
+<div class="text-on-surface-variant font-label-md"></div>
 </div>
 <div class="relative z-10 w-10 h-10 bg-white border-4 border-brand-red rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
 <div class="w-2 h-2 bg-brand-red rounded-full"></div>
 </div>
 <div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant shadow-sm bg-brand-yellow">
-<div class="md:hidden text-brand-red font-bold mb-2">15:30 HS - Auditorio</div>
-<h3 class="font-headline-sm text-on-surface mb-2">Cierre</h3>
-<p class="text-on-surface-variant mb-0 font-body-md">Síntesis de conclusiones y entrega de certificados.</p>
+<div class="md:hidden text-brand-red font-bold mb-2">10:00 hs – 10:30 hs</div>
+<h3 class="font-headline-sm text-on-surface mb-2"></h3>
+<p class="text-on-surface-variant mb-0 font-body-md">Acreditación.</p>
+</div>
+</div>
+<!-- Event 7 -->
+<div class="relative flex flex-col md:flex-row items-center gap-8 group mb-12">
+<div class="md:w-1/2 md:text-right hidden md:block">
+<div class="text-brand-red font-bold text-xl uppercase">10:30 HS - 13:00 HS </div>
+<div class="text-on-surface-variant font-label-md"></div>
+</div>
+<div class="relative z-10 w-10 h-10 bg-white border-4 border-brand-red rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
+<div class="w-2 h-2 bg-brand-red rounded-full"></div>
+</div>
+<div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant shadow-sm bg-brand-yellow">
+<div class="md:hidden text-brand-red font-bold mb-2">10:30 HS - 13:00 HS</div>
+<h3 class="font-headline-sm text-on-surface mb-2"></h3>
+<p class="text-on-surface-variant mb-0 font-body-md">Jornada Taller a cargo del equipo de desarrollo curricular del INFoD. </p>
+</div>
+</div>
+<div class="relative z-10 flex justify-center mb-8">
+<span class="bg-secondary-container text-white px-6 py-2 rounded-full font-bold shadow-md text-center"> viernes 21 de agosto.
+    Turno Tarde
+</span>
+</div>
+<div class="relative z-10 flex justify-center py-4">
+<div class="flex flex-col items-center justify-center px-5 py-3 rounded-full border border-primary/20 bg-primary/5 text-center">
+<span class="text-primary font-bold text-xs md:text-sm uppercase tracking-[0.2em] leading-tight">TEMÁTICA:</span>
+<span class="text-primary font-semibold text-[10px] md:text-xs uppercase tracking-[0.2em] leading-tight mt-1">Diseño de trayectos formativos y marcos normativos vigentes.
+</span>
+</div>
+</div>
+<!-- Event 8 -->
+<div class="relative flex flex-col md:flex-row-reverse items-center gap-8 group">
+<div class="md:w-1/2 md:text-left hidden md:block">
+<div class="text-brand-red font-bold text-xl uppercase">14:00 HS  - 16:00 HS</div>
+<div class="text-on-surface-variant font-label-md"></div>
+</div>
+<div class="relative z-10 w-10 h-10 bg-white border-4 border-brand-red rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform">
+<div class="w-2 h-2 bg-brand-red rounded-full"></div>
+</div>
+<div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant shadow-sm bg-brand-yellow">
+<div class="md:hidden text-brand-red font-bold mb-2">14:00 HS  - 16:00 HS</div>
+<h3 class="font-headline-sm text-on-surface mb-2"></h3>
+<p class="text-on-surface-variant mb-0 font-body-md">Jornada Taller a cargo del equipo de desarrollo curricular del INFoD.</p>
 </div>
 </div>
 </div>
@@ -335,33 +447,34 @@
 <h2 class="font-headline-md mb-4 text-white">Lectura Obligatoria</h2>
 <p class="text-surface-variant opacity-80 mb-12 max-w-2xl mx-auto">Documentos base que estructuran el debate de este encuentro curricular.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter max-w-4xl mx-auto">
-<!-- Res 476 -->
+
+<!-- Circular -->
 <div class="flex items-center justify-between p-6 bg-white/10 rounded-2xl border border-white/20 group hover:bg-white/20 transition-all">
 <div class="flex items-center gap-6">
 <div class="w-14 h-14 rounded-xl bg-brand-yellow flex items-center justify-center text-on-background shrink-0">
 <span class="material-symbols-outlined text-3xl">picture_as_pdf</span>
 </div>
 <div class="text-left">
-<h4 class="font-bold text-white mb-1">Resolución 476/24</h4>
-<p class="text-surface-variant text-sm">Marco General Curricular</p>
+<h4 class="font-bold text-white mb-1">Circular</h4>
+<p class="text-surface-variant text-sm"></p>
 </div>
 </div>
-<a class="text-brand-yellow hover:scale-110 transition-transform" href="#">
+<a class="text-brand-yellow hover:scale-110 transition-transform" href="descargar/Circular DC.pdf" target="_blank" rel="noopener noreferrer">
 <span class="material-symbols-outlined text-2xl">download</span>
 </a>
 </div>
-<!-- Res 511 -->
+<!-- Flayer -->
 <div class="flex items-center justify-between p-6 bg-white/10 rounded-2xl border border-white/20 group hover:bg-white/20 transition-all">
 <div class="flex items-center gap-6">
 <div class="w-14 h-14 rounded-xl bg-brand-yellow flex items-center justify-center text-on-background shrink-0">
 <span class="material-symbols-outlined text-3xl">picture_as_pdf</span>
 </div>
 <div class="text-left">
-<h4 class="font-bold text-white mb-1">Resolución 511/25</h4>
-<p class="text-surface-variant text-sm">Lineamientos Jurisdiccionales</p>
+<h4 class="font-bold text-white mb-1">Flayer Encuentro</h4>
+<p class="text-surface-variant text-sm"></p>
 </div>
 </div>
-<a class="text-brand-yellow hover:scale-110 transition-transform" href="#">
+<a class="text-brand-yellow hover:scale-110 transition-transform" href="descargar/Flayer IEnc_Desarrollo Curricular.pdf" target="_blank" rel="noopener noreferrer">
 <span class="material-symbols-outlined text-2xl">download</span>
 </a>
 </div>
@@ -382,7 +495,7 @@ hover:scale-105
 hover:shadow-xl
 transition-all" href="mailto:desarrolloprofesionalsj@gmail.com">
 <span class="material-symbols-outlined">mail</span>
-        @gmail.com
+        actualizaciondcj2025@gmail.com
       </a>
 </div>
 </div>
@@ -450,14 +563,13 @@ transition-all" href="mailto:desarrolloprofesionalsj@gmail.com">
 <ul class="space-y-3 md:space-y-4 text-inverse-on-surface text-sm opacity-70">
 <li class="flex items-center gap-3">
 <span class="material-symbols-outlined text-primary-fixed text-lg">mail</span>
-                        contacto@ses2026.com
+                        edusuperior.sj@gmail.com
                     </li>
 <li class="flex items-center gap-3" id="sede">
 <span class="material-symbols-outlined text-primary-fixed text-lg">location_on</span>
                        Centro Cívico 
                     </li>
 <li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary-fixed text-lg">call</span>
                         Av. Libertador Gral. San Martín, San Juan
                     </li>
 </ul>
