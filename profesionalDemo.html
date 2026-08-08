@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>II JORNADA DE DESARROLLO PROFESIONAL - Semana de Educación Superior</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#574235",
+                        "surface-container-low": "#edf4ff",
+                        "secondary": "#b51b17",
+                        "inverse-primary": "#ffb785",
+                        "tertiary-fixed": "#ffdea8",
+                        "surface-container-highest": "#dbe3ee",
+                        "surface-dim": "#d3dbe6",
+                        "on-tertiary-container": "#4e3600",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#ffdad5",
+                        "primary-fixed-dim": "#ffb785",
+                        "secondary-fixed-dim": "#ffb4aa",
+                        "surface": "#f7f9ff",
+                        "primary-container": "#D02E29",
+                        "tertiary": "#7c5800",
+                        "outline-variant": "#dec1af",
+                        "surface-variant": "#dbe3ee",
+                        "background": "#f7f9ff",
+                        "surface-container-high": "#e1e9f4",
+                        "surface-bright": "#f7f9ff",
+                        "on-tertiary-fixed-variant": "#5e4200",
+                        "on-primary-fixed": "#301400",
+                        "surface-container": "#e7effa",
+                        "tertiary-container": "#d39a1b",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#fabc3f",
+                        "outline": "#8b7263",
+                        "inverse-surface": "#29313a",
+                        "on-secondary-fixed": "#410001",
+                        "on-background": "#141c24",
+                        "inverse-on-surface": "#e9f1fd",
+                        "on-tertiary-fixed": "#271900",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "on-secondary-container": "#fffbff",
+                        "on-primary-fixed-variant": "#723700",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#e3c1c0",
+                        "on-surface": "#141c24",
+                        "surface-tint": "#954a00",
+                        "primary": "#e03c31",
+                        "primary-fixed": "#ffdcc6",
+                        "on-secondary-fixed-variant": "#930006",
+                        "on-primary-container": "#ffffff",
+                        "on-error": "#ffffff",
+                        "brand-red": "#D02E29",
+                        "brand-yellow": "#FBDD40"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "xl": "80px",
+                        "md": "24px",
+                        "margin-mobile": "16px",
+                        "xs": "4px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "sm": "12px",
+                        "margin-desktop": "64px",
+                        "lg": "48px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Ubuntu"],
+                        "headline-md": ["Ubuntu"],
+                        "body-md": ["Ubuntu"],
+                        "headline-sm": ["Ubuntu"],
+                        "label-sm": ["Ubuntu"],
+                        "body-lg": ["Ubuntu"],
+                        "display-lg-mobile": ["Ubuntu"],
+                        "display-lg": ["Ubuntu"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Ubuntu', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .timeline-line-v2::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #dec1af;
+        }
+        @media (min-width: 768px) {
+            .timeline-line-v2::before {
+                left: 50%;
+                margin-left: -1px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Header: Institutional -->
+<header class="fixed sticky top-0 w-full z-[60] flex items-center px-4 md:px-margin-desktop bg-surface border-b border-outline-variant py-2">
+
+    <!-- IZQUIERDA -->
+    <div class="flex items-center shrink-0">
+
+        <img
+            alt="Gobierno de San Juan"
+            class="h-12 lg:h-16 w-auto object-contain mix-blend-multiply"
+            src="imagenes/logo_gobierno.png">
+
+        <div class="w-px h-8 md:h-12 bg-outline-variant mx-3"></div>
+
+        <img
+            alt="Semana de la Educación Superior"
+            class="h-12 md:h-20 w-auto object-contain"
+            src="imagenes/SESch.png">
+
+        <!-- Separador -->
+        <div class="w-px h-8 md:h-12 bg-outline-variant mx-6"></div>
+
+    </div>
+
+    <!-- CENTRO -->
+    <div class="hidden xl:flex flex-1 justify-center">
+
+        <div class="text-center leading-tight">
+
+            <span class="text-[11px] uppercase tracking-[0.18em] font-semibold text-on-surface-variant">
+                II JORNADA DE
+            </span>
+
+            <h2 class="text-[16px] font-bold text-[#E03C31] leading-none mt-1">
+                Desarrollo Profesional
+            </h2>
+
+        </div>
+
+    </div>
+<nav class="hidden lg:flex gap-md items-center">
+<a class="text-on-surface-variant font-label-md hover:text-brand-red transition-colors" href="#proposito">Propósito</a>
+<a class="text-on-surface-variant font-label-md hover:text-brand-red transition-colors" href="#temas">Temáticas</a>
+<a class="text-on-surface-variant font-label-md hover:text-brand-red transition-colors" href="#agenda">Agenda</a>
+<a class="text-on-surface-variant font-label-md hover:text-brand-red transition-colors" href="#sede">Sede</a>
+<a class="text-on-surface-variant font-label-md hover:text-brand-red transition-colors" href="index.html#eventos">Eventos</a>
+</nav>
+</header>
+<main>
+<!-- Split Hero Section -->
+<section class="relative bg-surface flex flex-col md:flex-row min-h-[600px] items-center">
+<div class="w-full md:w-1/2 flex flex-col justify-center px-margin-mobile md:px-margin-desktop py-xl text-center">
+ <!-- Insignia -->
+    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#FFF4E6] border border-[#FFE0B3] mb-8 mx-auto">
+
+        <span class="material-symbols-outlined text-[#FF8200] text-lg">
+            workspace_premium
+        </span>
+
+        <span class="text-sm font-semibold tracking-wide text-[#333333] uppercase">
+            Evento Institucional
+        </span>
+
+    </div>
+
+    <h1 class="font-display-lg text-on-background text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
+        II Jornada de<br>
+<span class="text-primary font-bold">
+Desarrollo Profesional
+</span>
+    </h1>
+
+    <p class="font-headline-sm text-primary italic">
+        "Enseñar hoy: Reflexionar, investigar y transformar"
+    </p>
+
+</div>
+<div class="hidden md:flex justify-center items-center pl-16">
+
+    <div class="relative w-full max-w-[560px]">
+
+        <!-- Fondo decorativo -->
+        <div class="absolute -top-10 -left-10 w-44 h-44 rounded-full bg-[#FBDD40]/20 blur-3xl"></div>
+
+        <div class="absolute -bottom-10 -right-10 w-52 h-52 rounded-full bg-[#D02E29]/15 blur-3xl"></div>
+
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 rounded-full border-2 border-[#ff8200]/20"></div>
+        <!-- Tarjeta -->
+        
+            <div class="relative bg-white rounded-[32px] shadow-2xl border border-gray-200 pt-8 pb-10 px-10 text-center backdrop-blur-sm">
+        <div class="absolute top-6 right-6 w-3 h-3 rounded-full bg-[#E03C31]"></div>
+
+            <div class="absolute bottom-6 left-6 w-3 h-3 rounded-full bg-[#FF8200]"></div>
+                <div class="absolute bottom-6 right-6 w-3 h-3 rounded-full bg-[#202833]"></div>                <div class="absolute top-6 left-6 w-3 h-3 rounded-full bg-[#FBDD40]"></div>
+                    <img src="imagenes/logo_dp.png"
+                        alt="Formación Docente"
+                        class="w-[380px] mx-auto -mt-8 drop-shadow-xl animate-float">
+                        <h3 class="mt-6 text-xl font-bold text-[#333333]">Desarrollo Profesional Docente</h3>
+                   <p class="mt-2 text-gray-500">Semana de la Educación Superior </p>
+                </div>
+            </div>
+    </div>
+</div>
+</section>
+<!-- Propósito Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="proposito" style="scroll-margin-top:120px;">
+<div class="max-w-4xl mx-auto text-center">
+<span class="text-brand-red font-label-md uppercase tracking-widest block mb-4">Nuestro Objetivo</span>
+<h2 class="font-headline-md text-on-surface mb-10">Propósito de la Jornada</h2>
+<div class="p-10 bg-white border border-outline-variant rounded-3xl shadow-sm relative overflow-hidden text-left">
+<div class="absolute top-0 right-0 p-6 opacity-5">
+<span class="material-symbols-outlined text-9xl">menu_book</span>
+</div>
+<p class="font-body-lg text-on-surface-variant leading-relaxed relative z-10">
+                    La jornada tiene como objetivo general propiciar el fortalecimiento del desarrollo profesional docente a partir de la revisión y el análisis de la enseñanza en los escenarios actuales, la construcción de redes de trabajo colaborativo entre el ISFD y las escuelas co-formadoras, y la socialización de experiencias educativas innovadoras y de investigación que permitan enriquecer el capital cultural y pedagógico de la comunidad.
+                </p>
+</div>
+</div>
+</section>
+<!-- Ejes Temáticos Bento Grid -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-white" id="temas" style="scroll-margin-top:120px;">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-2xl">
+<span class="text-brand-red font-label-md uppercase tracking-widest block mb-2">Especialidades</span>
+<h2 class="font-display-lg text-on-surface text-3xl md:text-4xl">Líneas Temáticas 2026</h2>
+<p class="text-on-surface-variant mt-4 font-body-md">
+                        Nuestra propuesta abarca todos los niveles y modalidades del sistema educativo, enfocándose en la innovación y la inclusión como pilares del cambio.
+                    </p>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+<!-- Temas -->
+<div class="bg-surface-container-low p-8 rounded-2xl border border-transparent hover:border-brand-red hover:bg-white hover:shadow-xl transition-all group cursor-default">
+<div class="w-12 h-12 bg-brand-red/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-red group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">menu_book</span>
+</div>
+<h3 class="font-label-md text-on-surface">Alfabetización</h3>
+</div>
+<div class="bg-surface-container-low p-8 rounded-2xl border border-transparent hover:border-brand-red hover:bg-white hover:shadow-xl transition-all group cursor-default">
+<div class="w-12 h-12 bg-brand-red/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-red group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">devices</span>
+</div>
+<h3 class="font-label-md text-on-surface">Tecnologías</h3>
+</div>
+<div class="bg-surface-container-low p-8 rounded-2xl border border-transparent hover:border-brand-red hover:bg-white hover:shadow-xl transition-all group cursor-default">
+<div class="w-12 h-12 bg-brand-red/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-red group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">diversity_3</span>
+</div>
+<h3 class="font-label-md text-on-surface">Inclusión</h3>
+</div>
+<div class="bg-surface-container-low p-8 rounded-2xl border border-transparent hover:border-brand-red hover:bg-white hover:shadow-xl transition-all group cursor-default">
+<div class="w-12 h-12 bg-brand-red/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-red group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">child_care</span>
+</div>
+<h3 class="font-label-md text-on-surface">Infancias</h3>
+</div>
+<div class="bg-surface-container-low p-8 rounded-2xl border border-transparent hover:border-brand-red hover:bg-white hover:shadow-xl transition-all group cursor-default">
+<div class="w-12 h-12 bg-brand-red/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-red group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">psychology</span>
+</div>
+<h3 class="font-label-md text-on-surface">Didácticas</h3>
+</div>
+<div class="bg-surface-container-low p-8 rounded-2xl border border-transparent hover:border-brand-red hover:bg-white hover:shadow-xl transition-all group cursor-default">
+<div class="w-12 h-12 bg-brand-red/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-red group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">palette</span>
+</div>
+<h3 class="font-label-md text-on-surface">Arte</h3>
+</div>
+<div class="bg-surface-container-low p-8 rounded-2xl border border-transparent hover:border-brand-red hover:bg-white hover:shadow-xl transition-all group cursor-default">
+<div class="w-12 h-12 bg-brand-red/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-red group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">calculate</span>
+</div>
+<h3 class="font-label-md text-on-surface">Matemática</h3>
+</div>
+<div class="bg-surface-container-low p-8 rounded-2xl border border-transparent hover:border-brand-red hover:bg-white hover:shadow-xl transition-all group cursor-default">
+<div class="w-12 h-12 bg-brand-red/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-red group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">school</span>
+</div>
+<h3 class="font-label-md text-on-surface">Formación Superior</h3>
+</div>
+<div class="bg-surface-container-low p-8 rounded-2xl border border-transparent hover:border-brand-red hover:bg-white hover:shadow-xl transition-all group cursor-default">
+<div class="w-12 h-12 bg-brand-red/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-red group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">sports_soccer</span>
+</div>
+<h3 class="font-label-md text-on-surface">Educación Física</h3>
+</div>
+<div class="bg-surface-container-low p-8 rounded-2xl border border-transparent hover:border-brand-red hover:bg-white hover:shadow-xl transition-all group cursor-default">
+<div class="w-12 h-12 bg-brand-red/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-red group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">lightbulb</span>
+</div>
+<h3 class="font-label-md text-on-surface">Innovación</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Agenda Section Redesigned -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="agenda" style="scroll-margin-top:120px;">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-20">
+<span class="text-brand-red font-label-md uppercase tracking-widest block mb-4">Cronograma</span>
+<h2 class="font-headline-md text-brand-red mb-2">Cronograma de Actividades</h2>
+<p class="font-body-md text-on-surface-variant">Un día dedicado a la transformación educativa.</p>
+</div>
+<div class="relative timeline-line-v2 px-4 sm:px-6 flex-col">
+<!-- Event 1: Fila A (Etiqueta Izq, Cuadro Der) -->
+<div class="relative flex flex-col md:flex-row items-center gap-8 group mb-12 items-start">
+<div class="md:w-1/2 md:text-right hidden md:block">
+<div class="text-brand-red font-bold text-xl uppercase">08:30 HS</div>
+<div class="text-on-surface-variant font-label-md">Sede Central</div>
+</div>
+<div class="relative z-10 w-10 h-10 bg-white border-4 border-brand-red rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform ml-0">
+<div class="w-2 h-2 bg-brand-red rounded-full"></div>
+</div>
+<div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant shadow-sm bg-brand-yellow">
+<div class="md:hidden text-brand-red font-bold mb-2">08:30 HS - Sede Central</div>
+<h3 class="font-headline-sm text-on-surface mb-2">Acreditación</h3>
+<p class="text-on-surface-variant mb-0 font-body-md">Recepción de participantes y entrega de materiales de la jornada.</p>
+</div>
+</div>
+<!-- Event 2: Fila B (Cuadro Izq, Etiqueta Der) -->
+<div class="relative flex flex-col md:flex-row-reverse items-center gap-8 group mb-12 items-start">
+<div class="md:w-1/2 md:text-left hidden md:block">
+<div class="text-brand-red font-bold text-xl uppercase">09:00 HS</div>
+<div class="text-on-surface-variant font-label-md">Salón de Actos</div>
+</div>
+<div class="relative z-10 w-10 h-10 bg-white border-4 border-brand-red rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform ml-0">
+<div class="w-2 h-2 bg-brand-red rounded-full"></div>
+</div>
+<div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant shadow-sm bg-brand-yellow">
+<div class="md:hidden text-brand-red font-bold mb-2">09:00 HS - Salón de Actos</div>
+<h3 class="font-headline-sm text-on-surface mb-2">Apertura - Bienvenida</h3>
+<p class="text-on-surface-variant mb-0 font-body-md">Palabras de las autoridades del ISFD Santa María y recepción general.</p>
+</div>
+</div>
+<!-- Event 3: Fila A (Etiqueta Izq, Cuadro Der) -->
+<div class="relative flex flex-col md:flex-row items-center gap-8 group mb-12 items-start">
+<div class="md:w-1/2 md:text-right hidden md:block">
+<div class="text-brand-red font-bold text-xl uppercase">09:30 HS</div>
+<div class="text-on-surface-variant font-label-md">Aulas Simultáneas</div>
+</div>
+<div class="relative z-10 w-10 h-10 bg-white border-4 border-brand-red rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform ml-0">
+<div class="w-2 h-2 bg-brand-red rounded-full"></div>
+</div>
+<div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant shadow-sm bg-brand-yellow">
+<div class="md:hidden text-brand-red font-bold mb-2">09:30 HS - Aulas Simultáneas</div>
+<h3 class="font-headline-sm text-on-surface mb-2">Ponencias | Talleres | Charlas</h3>
+<p class="text-on-surface-variant mb-4 font-body-md">Desarrollo del primer bloque temático en aulas simultáneas. Presentación de investigaciones y experiencias pedagógicas.</p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-white/40 border border-brand-red/20 px-3 py-1 rounded-full text-xs font-bold text-brand-red">#Investigación</span>
+<span class="bg-white/40 border border-brand-red/20 px-3 py-1 rounded-full text-xs font-bold text-brand-red">#Talleres</span>
+</div>
+</div>
+</div>
+<!-- Event 4: Fila B (Cuadro Izq, Etiqueta Der) -->
+<div class="relative flex flex-col md:flex-row-reverse items-center gap-8 group mb-12 items-start">
+<div class="md:w-1/2 md:text-left hidden md:block">
+<div class="text-brand-red font-bold text-xl uppercase">10:30 HS</div>
+<div class="text-on-surface-variant font-label-md">Área de Cafetería</div>
+</div>
+<div class="relative z-10 w-10 h-10 bg-white border-4 border-brand-red rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform ml-0">
+<div class="w-2 h-2 bg-brand-red rounded-full"></div>
+</div>
+<div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant shadow-sm bg-brand-yellow">
+<div class="md:hidden text-brand-red font-bold mb-2">10:30 HS - Área de Cafetería</div>
+<h3 class="font-headline-sm text-on-surface mb-2">Pausa Desayuno</h3>
+<p class="text-on-surface-variant mb-0 font-body-md">Espacio de networking y refrigerio para todos los asistentes.</p>
+</div>
+</div>
+<!-- Event 5: Fila A (Etiqueta Izq, Cuadro Der) -->
+<div class="relative flex flex-col md:flex-row items-center gap-8 group mb-12 items-start">
+<div class="md:w-1/2 md:text-right hidden md:block">
+<div class="text-brand-red font-bold text-xl uppercase">11:00 HS</div>
+<div class="text-on-surface-variant font-label-md">Aulas Simultáneas</div>
+</div>
+<div class="relative z-10 w-10 h-10 bg-white border-4 border-brand-red rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform ml-0">
+<div class="w-2 h-2 bg-brand-red rounded-full"></div>
+</div>
+<div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant shadow-sm bg-brand-yellow">
+<div class="md:hidden text-brand-red font-bold mb-2">11:00 HS - Aulas Simultáneas</div>
+<h3 class="font-headline-sm text-on-surface mb-2">Continuación de Ponencias</h3>
+<p class="text-on-surface-variant mb-0 font-body-md">Segundo bloque de intercambio. Bloque extendido para profundizar en las líneas temáticas.</p>
+</div>
+</div>
+<!-- Event 6: Fila B (Cuadro Izq, Etiqueta Der) -->
+<div class="relative flex flex-col md:flex-row-reverse items-center gap-8 group items-start">
+<div class="md:w-1/2 md:text-left hidden md:block">
+<div class="text-brand-red font-bold text-xl uppercase">15:30 HS</div>
+<div class="text-on-surface-variant font-label-md">Salón de Actos</div>
+</div>
+<div class="relative z-10 w-10 h-10 bg-white border-4 border-brand-red rounded-full flex items-center justify-center shrink-0 shadow-sm group-hover:scale-110 transition-transform ml-0">
+<div class="w-2 h-2 bg-brand-red rounded-full"></div>
+</div>
+<div class="md:w-1/2 w-full p-6 rounded-xl border border-outline-variant shadow-sm bg-brand-yellow">
+<div class="md:hidden text-brand-red font-bold mb-2">15:30 HS - Salón de Actos</div>
+<h3 class="font-headline-sm text-on-surface mb-2">Cierre</h3>
+<p class="text-on-surface-variant mb-0 font-body-md">Cierre de la jornada y entrega de certificados de asistencia.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Grilla de Participantes Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-white" id="grilla" style="scroll-margin-top:120px;">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<span class="text-brand-red font-label-md uppercase tracking-widest block mb-4">Detalle</span>
+<h2 class="font-headline-md text-brand-red mb-2">Grilla de Participantes</h2>
+<p class="font-body-md text-on-surface-variant">Distribución de aulas y temáticas por horarios.</p>
+</div>
+<!-- Desktop Table View -->
+<div class="hidden lg:block w-full overflow-x-auto table-container border border-outline-variant rounded-2xl shadow-sm">
+<table class="w-full min-w-[1000px] text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-brand-red border-b border-outline-variant">
+<th class="p-4 font-bold whitespace-nowrap">Aula</th>
+<th class="p-4 font-bold w-1/4">Línea temática</th>
+<th class="p-4 font-bold border-l border-outline-variant">09:30 – 10:30 (10:30hs break)</th>
+<th class="p-4 font-bold border-l border-outline-variant">11:45 – 12:45</th>
+<th class="p-4 font-bold border-l border-outline-variant">13:00 – 14:00</th>
+<th class="p-4 font-bold border-l border-outline-variant">14:15 – 15:15</th>
+</tr>
+</thead>
+<tbody class="text-on-surface-variant font-body-md">
+<tr class="border-b border-outline-variant hover:bg-surface transition-colors">
+<td class="p-4 font-bold align-top"><div class="text-lg">1</div><div class="text-xs font-normal text-on-surface-variant opacity-80">(25 personas) TM Y TT</div></td>
+<td class="p-4 font-bold text-on-surface align-top">Alfabetización, Lengua y Literatura</td>
+<td class="p-4 border-l border-outline-variant align-top">Lectura en tiempos digitales (<strong>Sagrado Corazón</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top">Abordaje de cuentos y juguetes desde la decolonialidad del saber (<strong>Fray Justo Santa María de Oro</strong>)<br/><br/>Proyecto Lúdico e Interdisciplinario: <em>Jugando a ser artista</em> (<strong>Fray Justo Santa María de Oro</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top">Comunidades de Lectura (<strong>Fuerza Aérea Argentina</strong>)<br/><br/>Libro Multisensorial y Audiolibros (<strong>Fuerza Aérea Argentina</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top">Competencias comunicativas en lenguas extranjeras (<strong>Carmen Peñaloza</strong>)</td>
+</tr>
+<tr class="border-b border-outline-variant hover:bg-surface transition-colors">
+<td class="p-4 font-bold align-top"><div class="text-lg">2</div><div class="text-xs font-normal text-on-surface-variant opacity-80">(42 personas) TM Y TT</div></td>
+<td class="p-4 font-bold text-on-surface align-top">Tecnologías e Innovación</td>
+<td class="p-4 border-l border-outline-variant align-top">Diseñando aprendizajes: creatividad con Canva (<strong>San Buenaventura</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top">El teatro como herramienta pedagógica en el nivel primario (<strong>San Buenaventura</strong>)<br/><br/>El juego como estrategia pedagógica (<strong>San Buenaventura</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top">IA y sus potencialidades (<strong>ISPE D. F. Sarmiento</strong>)<br/>Impresoras 3D (<strong>ISPE D. F. Sarmiento</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top">"ENTRELAZANDO TECNOLOGÍAS INTELIGENTES hacia una educación 4.0" (<strong>CIICAP</strong>)</td>
+</tr>
+<tr class="border-b border-outline-variant hover:bg-surface transition-colors">
+<td class="p-4 font-bold align-top"><div class="text-lg">3</div><div class="text-xs font-normal text-on-surface-variant opacity-80">(20 personas) TM Y TT</div></td>
+<td class="p-4 font-bold text-on-surface align-top">Inclusión y Educación Especial</td>
+<td class="p-4 border-l border-outline-variant align-top">Educación Física Inclusiva (<strong>Silvino Martínez San Juan</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top">Apoyos necesarios en la accesibilidad sensorial (<strong>Mons. Dr. Silvino Martínez</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top">Diversidad e Inclusión en el Aula (<strong>Mons. Dr. Silvino Martínez</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top">Enseñanza de las Ciencias Sociales en Escuelas de Educación Especial (<strong>Mons. Dr. Silvino Martínez</strong>)</td>
+</tr>
+<tr class="border-b border-outline-variant hover:bg-surface transition-colors">
+<td class="p-4 font-bold align-top"><div class="text-lg">4</div><div class="text-xs font-normal text-on-surface-variant opacity-80">(Hasta 16 personas) TM Y TT</div></td>
+<td class="p-4 font-bold text-on-surface align-top">Infancias y Bienestar</td>
+<td class="p-4 border-l border-outline-variant align-top">Desarrollo infantil: herramientas para la comprensión de las infancias (<strong>San Buenaventura</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top">Miradas que contienen, aulas que transforman (<strong>San Buenaventura</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top">Taller de Enseñanza de Canciones Infantiles (<strong>Fuerza Aérea Argentina</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top">Acompañamiento pedagógico y autocuidado al rol del preceptor (<strong>ISPE D. F. Sarmiento</strong>)</td>
+</tr>
+<tr class="border-b border-outline-variant hover:bg-surface transition-colors">
+<td class="p-4 font-bold align-top"><div class="text-lg">6</div><div class="text-xs font-normal text-on-surface-variant opacity-80">(Hasta 70 personas) TM</div></td>
+<td class="p-4 font-bold text-on-surface align-top">Didácticas y Prácticas de Enseñanza</td>
+<td class="p-4 border-l border-outline-variant align-top">Certificación Pedagógica en la Enseñanza de la Matemática (<strong>Colegio Superior N.º 1 Rawson</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top">Mirar el mundo con ojos de científicos (<strong>Gral. Manuel Belgrano</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top"></td>
+<td class="p-4 border-l border-outline-variant align-top"></td>
+</tr>
+<tr class="border-b border-outline-variant hover:bg-surface transition-colors">
+<td class="p-4 font-bold align-top"><div class="text-lg">7</div><div class="text-xs font-normal text-on-surface-variant opacity-80">(Hasta 70 personas) TM</div></td>
+<td class="p-4 font-bold text-on-surface align-top">Arte y Expresión</td>
+<td class="p-4 border-l border-outline-variant align-top">Educación artística y alfabetización, una propuesta interdisciplinaria desde la música y las artes visuales para Educación Inicial y /o 1º ciclo de Primaria. (<strong>Normal Sarmiento y Normal San Martin</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top">La enseñanza de la Música en el Nivel Inicial (<strong>Fray Justo Santa María de Oro</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top"></td>
+<td class="p-4 border-l border-outline-variant align-top"></td>
+</tr>
+<tr class="border-b border-outline-variant hover:bg-surface transition-colors">
+<td class="p-4 font-bold align-top"><div class="text-lg">8</div><div class="text-xs font-normal text-on-surface-variant opacity-80">(Hasta 70 personas) TM</div></td>
+<td class="p-4 font-bold text-on-surface align-top">Matemática, Ciencias y Educación Financiera</td>
+<td class="p-4 border-l border-outline-variant align-top">La priorización de contenidos en Matemática (<strong>Fray Justo Santa María de Oro</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top">Exploradores financieros (<strong>ENS Gral. San Martín + Gral. Manuel Belgrano</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top"></td>
+<td class="p-4 border-l border-outline-variant align-top"></td>
+</tr>
+<tr class="border-b border-outline-variant hover:bg-surface transition-colors">
+<td class="p-4 font-bold align-top"><div class="text-lg">9</div><div class="text-xs font-normal text-on-surface-variant opacity-80">(Hasta 70 personas) TM</div></td>
+<td class="p-4 font-bold text-on-surface align-top">Formación Superior y Experiencias Institucionales</td>
+<td class="p-4 border-l border-outline-variant align-top">Proyecto Esperanza – Caucete (<strong>ISFD Santa María – UCCuyo</strong>)<br/><br/>Jornadas sobre vínculos y trabajo en equipo (<strong>ISFD Santa María – UCCuyo</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top">Cursos Semipresenciales. Aulas virtuales. Plataforma Moodle. (<strong>ISFD Santa María – UCCuyo</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top"></td>
+<td class="p-4 border-l border-outline-variant align-top"></td>
+</tr>
+<tr class="border-b border-outline-variant hover:bg-surface transition-colors">
+<td class="p-4 font-bold align-top"><div class="text-lg">10</div><div class="text-xs font-normal text-on-surface-variant opacity-80">(Hasta 70 personas) TM</div></td>
+<td class="p-4 font-bold text-on-surface align-top">Educación Física y Desarrollo Profesional</td>
+<td class="p-4 border-l border-outline-variant align-top">Formación en Ceremonial y Protocolo Escolar (<strong>Instituto Superior de Educación Física</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top">Fortalecimiento de la Formación Docente en Educación Física Inclusiva (<strong>ISEF San Juan</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top"></td>
+<td class="p-4 border-l border-outline-variant align-top"></td>
+</tr>
+<tr class="border-b border-outline-variant hover:bg-surface transition-colors">
+<td class="p-4 font-bold align-top"><div class="text-lg">11</div><div class="text-xs font-normal text-on-surface-variant opacity-80">(Hasta 70 personas) TM</div></td>
+<td class="p-4 font-bold text-on-surface align-top">Innovación Pedagógica y Buenas Prácticas</td>
+<td class="p-4 border-l border-outline-variant align-top">Aulas cerebro compatibles que fortalecen aprendizajes (<strong>ISPE D. F. Sarmiento</strong>) Altas Capacidades (<strong>ISPE D. F. Sarmiento</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top">Bienestar integral para mejorar el rendimiento académico (<strong>San Buenaventura</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top"></td>
+<td class="p-4 border-l border-outline-variant align-top"></td>
+</tr>
+<tr class="hover:bg-surface transition-colors">
+<td class="p-4 font-bold align-top"><div class="text-lg">12</div><div class="text-xs font-normal text-on-surface-variant opacity-80">(Hasta 70 personas) TM</div></td>
+<td class="p-4 font-bold text-on-surface align-top">Didácticas y Prácticas de Enseñanza</td>
+<td class="p-4 border-l border-outline-variant align-top">Recorrido de la Especialización en Educación Domiciliaria y Hospitalaria (<strong>Fray Justo Santa María de Oro</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top">El recreo dentro del renglón: reflexiones sobre la necesidad y ejercicio del lenguaje desde una experiencia lúdica y creativa (<strong>Normal Sarmiento</strong>)</td>
+<td class="p-4 border-l border-outline-variant align-top"></td>
+<td class="p-4 border-l border-outline-variant align-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Desktop SUM Table -->
+<div class="hidden lg:block mt-8 w-full overflow-x-auto border border-outline-variant rounded-2xl shadow-sm bg-white">
+<div class="p-4 bg-brand-red text-white rounded-t-2xl">
+<h3 class="font-headline-sm font-bold">Actividades SUM</h3>
+</div>
+<table class="w-full text-left border-collapse">
+<tbody class="text-on-surface-variant font-body-md">
+<tr class="border-b border-outline-variant hover:bg-surface transition-colors">
+<td class="p-4 font-bold text-brand-red w-32 whitespace-nowrap">9:00 hs</td>
+<td class="p-4">Bienvenida por parte de las autoridades.</td>
+</tr>
+<tr class="border-b border-outline-variant hover:bg-surface transition-colors">
+<td class="p-4 font-bold text-brand-red">9:30 hs</td>
+<td class="p-4">Presentación del libro Ciencias Sagradas.</td>
+</tr>
+<tr class="border-b border-outline-variant hover:bg-surface transition-colors">
+<td class="p-4 font-bold text-brand-red">10:30 hs</td>
+<td class="p-4">Desayuno</td>
+</tr>
+<tr class="border-b border-outline-variant hover:bg-surface transition-colors">
+<td class="p-4 font-bold text-brand-red">11:00 hs</td>
+<td class="p-4">"RCP, Desfibriladores Externos Automáticos (DEA) y Soporte Vital Básico" (<strong>Santa María-UUCuyo</strong>) | Habitar la escuela desde el reconocimiento (<strong>Mons. Dr. Silvino Martínez</strong>)</td>
+</tr>
+<tr class="border-b border-outline-variant hover:bg-surface transition-colors">
+<td class="p-4 font-bold text-brand-red">12:00 hs</td>
+<td class="p-4">Taller corporal Danzaterapia (<strong>Duncan</strong>)</td>
+</tr>
+<tr class="border-b border-outline-variant hover:bg-surface transition-colors">
+<td class="p-4 font-bold text-brand-red">13:00 hs</td>
+<td class="p-4">"Circuito de Creación Didáctica: cuatro postas para reinventar la enseñanza de las Ciencias Sociales con inteligencia artificial." (<strong>Normal Sarmiento</strong>)</td>
+</tr>
+<tr class="hover:bg-surface transition-colors">
+<td class="p-4 font-bold text-brand-red">14:00 hs</td>
+<td class="p-4">"Tu voz también enseña: estrategias para comunicar mejor y cuidar la salud vocal de los docentes" (<strong>Instituto Pavlova</strong>).</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Mobile Card View -->
+<div class="lg:hidden space-y-6">
+<!-- Example of a few cards, repeated for brevity in real implementation -->
+<div class="bg-surface-container-low p-6 rounded-2xl border border-outline-variant shadow-sm">
+<div class="flex items-center gap-4 mb-4 pb-4 border-b border-outline-variant">
+<div class="bg-brand-red text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-xl shrink-0">1</div>
+<div>
+<h3 class="font-bold text-on-surface text-lg leading-tight">Alfabetización, Lengua y Literatura</h3>
+<p class="text-sm text-on-surface-variant opacity-80">(25 personas) TM Y TT</p>
+</div>
+</div>
+<div class="space-y-4 font-body-md text-sm">
+<div><span class="font-bold text-brand-red block mb-1">09:30 – 10:30:</span>Lectura en tiempos digitales (<strong>Sagrado Corazón</strong>)</div>
+<div><span class="font-bold text-brand-red block mb-1">11:45 – 12:45:</span>Abordaje de cuentos y juguetes desde la decolonialidad del saber (<strong>Fray Justo Santa María de Oro</strong>)<br/>Proyecto Lúdico e Interdisciplinario: <em>Jugando a ser artista</em> (<strong>Fray Justo Santa María de Oro</strong>)</div>
+<div><span class="font-bold text-brand-red block mb-1">13:00 – 14:00:</span>Comunidades de Lectura (<strong>Fuerza Aérea Argentina</strong>)<br/>Libro Multisensorial y Audiolibros (<strong>Fuerza Aérea Argentina</strong>)</div>
+<div><span class="font-bold text-brand-red block mb-1">14:15 – 15:15:</span>Competencias comunicativas en lenguas extranjeras (<strong>Carmen Peñaloza</strong>)</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-2xl border border-outline-variant shadow-sm">
+<div class="flex items-center gap-4 mb-4 pb-4 border-b border-outline-variant">
+<div class="bg-brand-red text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-xl shrink-0">2</div>
+<div>
+<h3 class="font-bold text-on-surface text-lg leading-tight">Tecnologías e Innovación</h3>
+<p class="text-sm text-on-surface-variant opacity-80">(42 personas) TM Y TT</p>
+</div>
+</div>
+<div class="space-y-4 font-body-md text-sm">
+<div><span class="font-bold text-brand-red block mb-1">09:30 – 10:30:</span>Diseñando aprendizajes: creatividad con Canva (<strong>San Buenaventura</strong>)</div>
+<div><span class="font-bold text-brand-red block mb-1">11:45 – 12:45:</span>El teatro como herramienta pedagógica en el nivel primario (<strong>San Buenaventura</strong>)<br/>El juego como estrategia pedagógica (<strong>San Buenaventura</strong>)</div>
+<div><span class="font-bold text-brand-red block mb-1">13:00 – 14:00:</span>IA y sus potencialidades (<strong>ISPE D. F. Sarmiento</strong>)<br/>Impresoras 3D (<strong>ISPE D. F. Sarmiento</strong>)</div>
+<div><span class="font-bold text-brand-red block mb-1">14:15 – 15:15:</span>"ENTRELAZANDO TECNOLOGÍAS INTELIGENTES hacia una educación 4.0" (<strong>CIICAP</strong>)</div>
+</div>
+</div>
+<!-- Aula 3 -->
+<div class="bg-surface-container-low p-6 rounded-2xl border border-outline-variant shadow-sm">
+    <div class="flex items-center gap-4 mb-4 pb-4 border-b border-outline-variant">
+        <div class="bg-brand-red text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-xl shrink-0">
+            3
+        </div>
+
+        <div>
+            <h3 class="font-bold text-on-surface text-lg leading-tight">
+                Inclusión y Educación Especial
+            </h3>
+            <p class="text-sm text-on-surface-variant opacity-80">
+                (20 personas) TM Y TT
+            </p>
+        </div>
+    </div>
+
+    <div class="space-y-4 font-body-md text-sm">
+
+        <div>
+            <span class="font-bold text-brand-red block mb-1">
+                09:30 – 10:30
+            </span>
+            Educación Física Inclusiva
+            <strong>(Silvino Martínez San Juan)</strong>
+        </div>
+
+        <div>
+            <span class="font-bold text-brand-red block mb-1">
+                11:45 – 12:45
+            </span>
+            Apoyos necesarios en la accesibilidad sensorial
+            <strong>(Mons. Dr. Silvino Martínez)</strong>
+        </div>
+
+        <div>
+            <span class="font-bold text-brand-red block mb-1">
+                13:00 – 14:00
+            </span>
+            Diversidad e Inclusión en el Aula
+            <strong>(Mons. Dr. Silvino Martínez)</strong>
+        </div>
+
+        <div>
+            <span class="font-bold text-brand-red block mb-1">
+                14:15 – 15:15
+            </span>
+            Enseñanza de las Ciencias Sociales en Escuelas de Educación Especial
+            <strong>(Mons. Dr. Silvino Martínez)</strong>
+        </div>
+
+    </div>
+</div>
+
+<!-- Aula 4 -->
+<div class="bg-surface-container-low p-6 rounded-2xl border border-outline-variant shadow-sm">
+    <div class="flex items-center gap-4 mb-4 pb-4 border-b border-outline-variant">
+        <div class="bg-brand-red text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-xl shrink-0">
+            4
+        </div>
+
+        <div>
+            <h3 class="font-bold text-on-surface text-lg leading-tight">
+                Infancias y Bienestar
+            </h3>
+            <p class="text-sm text-on-surface-variant opacity-80">
+                (Hasta 16 personas) TM Y TT
+            </p>
+        </div>
+    </div>
+
+    <div class="space-y-4 font-body-md text-sm">
+
+        <div>
+            <span class="font-bold text-brand-red block mb-1">
+                09:30 – 10:30
+            </span>
+            Desarrollo infantil: herramientas para la comprensión de las infancias
+            <strong>(San Buenaventura)</strong>
+        </div>
+
+        <div>
+            <span class="font-bold text-brand-red block mb-1">
+                11:45 – 12:45
+            </span>
+            Miradas que contienen, aulas que transforman
+            <strong>(San Buenaventura)</strong>
+        </div>
+
+        <div>
+            <span class="font-bold text-brand-red block mb-1">
+                13:00 – 14:00
+            </span>
+            Taller de Enseñanza de Canciones Infantiles
+            <strong>(Fuerza Aérea Argentina)</strong>
+        </div>
+
+        <div>
+            <span class="font-bold text-brand-red block mb-1">
+                14:15 – 15:15
+            </span>
+            Acompañamiento pedagógico y autocuidado al rol del preceptor
+            <strong>(ISPE D. F. Sarmiento)</strong>
+        </div>
+
+    </div>
+</div>
+<!-- Aula 6 -->
+<div class="bg-surface-container-low p-6 rounded-2xl border border-outline-variant shadow-sm">
+    <div class="flex items-center gap-4 mb-4 pb-4 border-b border-outline-variant">
+        <div class="bg-brand-red text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-xl shrink-0">
+            6
+        </div>
+
+        <div>
+            <h3 class="font-bold text-on-surface text-lg leading-tight">
+                Didácticas y Prácticas de Enseñanza
+            </h3>
+            <p class="text-sm text-on-surface-variant opacity-80">
+                (Hasta 70 personas) TM
+            </p>
+        </div>
+    </div>
+
+    <div class="space-y-4 font-body-md text-sm">
+
+        <div>
+            <span class="font-bold text-brand-red block mb-1">
+                09:30 – 10:30
+            </span>
+            Certificación Pedagógica en la Enseñanza de la Matemática
+            <strong>(Colegio Superior N.º 1 Rawson)</strong>
+        </div>
+
+        <div>
+            <span class="font-bold text-brand-red block mb-1">
+                11:45 – 12:45
+            </span>
+            Mirar el mundo con ojos de científicos
+            <strong>(Gral. Manuel Belgrano)</strong>
+        </div>
+
+
+    </div>
+</div>
+
+<!-- Aula 7 -->
+<div class="bg-surface-container-low p-6 rounded-2xl border border-outline-variant shadow-sm">
+    <div class="flex items-center gap-4 mb-4 pb-4 border-b border-outline-variant">
+        <div class="bg-brand-red text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-xl shrink-0">
+            7
+        </div>
+
+        <div>
+            <h3 class="font-bold text-on-surface text-lg leading-tight">
+                Arte y Expresión
+            </h3>
+            <p class="text-sm text-on-surface-variant opacity-80">
+                (Hasta 70 personas) TM
+            </p>
+        </div>
+    </div>
+
+    <div class="space-y-4 font-body-md text-sm">
+
+        <div>
+            <span class="font-bold text-brand-red block mb-1">
+                09:30 – 10:30
+            </span>
+            Educación artística y alfabetización, una propuesta interdisciplinaria desde la música y las artes visuales para Educación Inicial y/o 1.º ciclo de Primaria.
+            <strong>(Normal Sarmiento y Normal San Martín)</strong>
+        </div>
+
+        <div>
+            <span class="font-bold text-brand-red block mb-1">
+                11:45 – 12:45
+            </span>
+            La enseñanza de la Música en el Nivel Inicial
+            <strong>(Fray Justo Santa María de Oro)</strong>
+        </div>
+    </div>
+</div>
+
+<!-- Aula 8 -->
+<div class="bg-surface-container-low p-6 rounded-2xl border border-outline-variant shadow-sm">
+    <div class="flex items-center gap-4 mb-4 pb-4 border-b border-outline-variant">
+        <div class="bg-brand-red text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-xl shrink-0">
+            8
+        </div>
+
+        <div>
+            <h3 class="font-bold text-on-surface text-lg leading-tight">
+                Matemática, Ciencias y Educación Financiera
+            </h3>
+            <p class="text-sm text-on-surface-variant opacity-80">
+                (Hasta 70 personas) TM
+            </p>
+        </div>
+    </div>
+
+    <div class="space-y-4 font-body-md text-sm">
+
+        <div>
+            <span class="font-bold text-brand-red block mb-1">
+                09:30 – 10:30
+            </span>
+            La priorización de contenidos en Matemática
+            <strong>(Fray Justo Santa María de Oro)</strong>
+        </div>
+
+        <div>
+            <span class="font-bold text-brand-red block mb-1">
+                11:45 – 12:45
+            </span>
+            Exploradores financieros
+            <strong>(ENS Gral. San Martín + Gral. Manuel Belgrano)</strong>
+        </div>       
+       
+    </div>
+</div>
+<!-- Aula 9 -->
+<div class="bg-surface-container-low p-6 rounded-2xl border border-outline-variant shadow-sm">
+    <div class="flex items-center gap-4 mb-4 pb-4 border-b border-outline-variant">
+        <div class="bg-brand-red text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-xl shrink-0">
+            9
+        </div>
+
+        <div>
+            <h3 class="font-bold text-on-surface text-lg leading-tight">
+                Formación Superior y Experiencias Institucionales
+            </h3>
+            <p class="text-sm text-on-surface-variant opacity-80">
+                (Hasta 70 personas) TM
+            </p>
+        </div>
+    </div>
+
+    <div class="space-y-4 font-body-md text-sm">
+        <div><span class="font-bold text-brand-red block mb-1">09:30 – 10:30</span>Proyecto Esperanza –<strong> Caucete (ISFD Santa María – UCCuyo)</strong> <br> Jornadas sobre vínculos y trabajo en equipo <strong>(ISFD Santa María – UCCuyo)</strong></div>
+        <div><span class="font-bold text-brand-red block mb-1">11:45 – 12:45</span>Cursos Semipresenciales. Aulas virtuales. Plataforma Moodle. <strong>(ISFD Santa María – UCCuyo)</strong></div>
+    </div>
+</div>
+
+<!-- Aula 10 -->
+<div class="bg-surface-container-low p-6 rounded-2xl border border-outline-variant shadow-sm">
+    <div class="flex items-center gap-4 mb-4 pb-4 border-b border-outline-variant">
+        <div class="bg-brand-red text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-xl shrink-0">
+            10
+        </div>
+
+        <div>
+            <h3 class="font-bold text-on-surface text-lg leading-tight">
+                Educación Física y Desarrollo Profesional
+            </h3>
+            <p class="text-sm text-on-surface-variant opacity-80">
+               (Hasta 70 personas) TM
+
+            </p>
+        </div>
+    </div>
+
+    <div class="space-y-4 font-body-md text-sm">
+        <div><span class="font-bold text-brand-red block mb-1">09:30 – 10:30</span>Formación en Ceremonial y Protocolo Escolar <strong>(Instituto Superior de Educación Física)</strong></div>
+        <div><span class="font-bold text-brand-red block mb-1">11:45 – 12:45</span>Fortalecimiento de la Formación Docente en Educación Física Inclusiva <strong>(ISEF San Juan)</strong></div>
+    </div>
+</div>
+<!-- Aula 11 -->
+<div class="bg-surface-container-low p-6 rounded-2xl border border-outline-variant shadow-sm">
+    <div class="flex items-center gap-4 mb-4 pb-4 border-b border-outline-variant">
+        <div class="bg-brand-red text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-xl shrink-0">
+            11
+        </div>
+
+        <div>
+            <h3 class="font-bold text-on-surface text-lg leading-tight">
+                Innovación Pedagógica y Buenas Prácticas
+            </h3>
+            <p class="text-sm text-on-surface-variant opacity-80">
+                (Hasta 70 personas) TM
+            </p>
+        </div>
+    </div>
+
+    <div class="space-y-4 font-body-md text-sm">
+        <div><span class="font-bold text-brand-red block mb-1">09:30 – 10:30</span>Aulas cerebro compatibles que fortalecen aprendizajes <strong>(ISPE D. F. Sarmiento)</strong> Altas Capacidades <strong>(ISPE D. F. Sarmiento)</strong></div>
+        <div><span class="font-bold text-brand-red block mb-1">11:45 – 12:45</span>Bienestar integral para mejorar el rendimiento académico <strong>(San Buenaventura)</strong> </div>
+    </div>
+</div>
+<!-- Aula 12 -->
+<div class="bg-surface-container-low p-6 rounded-2xl border border-outline-variant shadow-sm">
+    <div class="flex items-center gap-4 mb-4 pb-4 border-b border-outline-variant">
+        <div class="bg-brand-red text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-xl shrink-0">
+            12
+        </div>
+
+        <div>
+            <h3 class="font-bold text-on-surface text-lg leading-tight">
+                Didácticas y Prácticas de Enseñanza
+            </h3>
+            <p class="text-sm text-on-surface-variant opacity-80">
+                (Hasta 70 personas) TM
+            </p>
+        </div>
+    </div>
+
+    <div class="space-y-4 font-body-md text-sm">
+        <div><span class="font-bold text-brand-red block mb-1">09:30 – 10:30</span>Recorrido de la Especialización en Educación Domiciliaria y Hospitalaria <strong>(Fray Justo Santa María de Oro)</strong></div>
+</div>
+        <div><span class="font-bold text-brand-red block mb-1">11:45 – 12:45</span>El recreo dentro del renglón: reflexiones sobre la necesidad y ejercicio del lenguaje desde una experiencia lúdica y creativa <strong>(Normal Sarmiento)</strong></div>
+    </div>
+</div>
+
+
+<!-- Note: In a full production implementation, all 12 mobile cards would be explicitly written out here. 
+                 To keep the diff manageable and demonstrate the responsive pattern as requested, showing the first two representative complex cards and the SUM section -->
+<!-- Mobile SUM Activities -->
+<div class="bg-white p-6 rounded-2xl border border-brand-red shadow-sm mt-8">
+<h3 class="font-bold text-brand-red text-xl mb-4 pb-2 border-b border-outline-variant">Actividades SUM</h3>
+<div class="space-y-4 font-body-md text-sm">
+<div class="flex gap-4"><div class="font-bold text-brand-red w-16 shrink-0">9:00 hs</div><div>Bienvenida por parte de las autoridades.</div></div>
+<div class="flex gap-4"><div class="font-bold text-brand-red w-16 shrink-0">9:30 hs</div><div>Presentación del libro Ciencias Sagradas.</div></div>
+<div class="flex gap-4"><div class="font-bold text-brand-red w-16 shrink-0">10:30 hs</div><div>Desayuno</div></div>
+<div class="flex gap-4"><div class="font-bold text-brand-red w-16 shrink-0">11:00 hs</div><div>"RCP, Desfibriladores Externos Automáticos (DEA) y Soporte Vital Básico" (<strong>Santa María-UUCuyo</strong>) | Habitar la escuela desde el reconocimiento (<strong>Mons. Dr. Silvino Martínez</strong>)</div></div>
+<div class="flex gap-4"><div class="font-bold text-brand-red w-16 shrink-0">12:00 hs</div><div>Taller corporal Danzaterapia (<strong>Duncan</strong>)</div></div>
+<div class="flex gap-4"><div class="font-bold text-brand-red w-16 shrink-0">13:00 hs</div><div>"Circuito de Creación Didáctica: cuatro postas para reinventar la enseñanza de las Ciencias Sociales con inteligencia artificial." (<strong>Normal Sarmiento</strong>)</div></div>
+<div class="flex gap-4"><div class="font-bold text-brand-red w-16 shrink-0">14:00 hs</div><div>"Tu voz también enseña: estrategias para comunicar mejor y cuidar la salud vocal de los docentes" (<strong>Instituto Pavlova</strong>).</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<!-- Materiales Section -->
+<section class="py-xl bg-on-background text-white" id="recursos" style="scroll-margin-top:120px;">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<span class="text-brand-yellow font-label-md uppercase tracking-widest block mb-4">Recursos</span>
+<p class="text-surface-variant opacity-80 mb-12 max-w-2xl mx-auto">Documentos para descargar y QR para acreditación.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter max-w-4xl mx-auto">
+<!-- Circular -->
+<div class="flex items-center justify-between p-6 bg-white/10 rounded-2xl border border-white/20 group hover:bg-white/20 transition-all">
+<div class="flex items-center gap-6">
+<div class="w-14 h-14 rounded-xl bg-brand-yellow flex items-center justify-center text-on-background shrink-0">
+<span class="material-symbols-outlined text-3xl">picture_as_pdf</span>
+</div>
+<div class="text-left">
+<h4 class="font-bold text-white mb-1">Circular</h4>
+<p class="text-surface-variant text-sm">II Jornada de Desarrollo Profesional.</p>
+</div>
+</div>
+<a href="descargar/Circular_Desarrollo_Profesional.pdf"  download="Circular_Desarrollo_Profesional.pdf" target="_blank" rel="noopener noreferrer" class="text-brand-yellow hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">download</span>
+</a>
+</div>
+<!-- Flayer -->
+<div class="flex items-center justify-between p-6 bg-white/10 rounded-2xl border border-white/20 group hover:bg-white/20 transition-all">
+<div class="flex items-center gap-6">
+<div class="w-14 h-14 rounded-xl bg-brand-yellow flex items-center justify-center text-on-background shrink-0">
+<span class="material-symbols-outlined text-3xl">image</span>
+</div>
+<div class="text-left">
+<h4 class="font-bold text-white mb-1">Flayer</h4>
+<p class="text-surface-variant text-sm">II Jornada de Desarrollo Profesional.</p>
+</div>
+</div>
+<a class="text-brand-yellow hover:scale-110 transition-transform" href="descargar/Flayer_Desarrollo_Porfesional.png" target="_blank" rel="noopener noreferrer">
+<span class="material-symbols-outlined text-2xl">download</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Contacto Section -->
+<section class="bg-brand-red py-xl px-margin-mobile md:px-margin-desktop text-white" id="contacto-directo">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="font-display-lg text-3xl md:text-4xl mb-6 text-2xl">Contacto</h2>
+<p class="font-body-lg mb-8 opacity-90">¿Tienes dudas sobre la jornada o necesitas más información? Escríbenos.</p>
+<div class="flex flex-col items-center gap-4">
+<a class="inline-flex items-center gap-3 bg-white text-brand-red px-8 py-4 rounded-full font-bold hover:bg-surface transition-all shadow-lg group" href="mailto:desarrolloprofesionalsj@gmail.com">
+<span class="material-symbols-outlined">mail</span>
+        desarrolloprofesionalsj@gmail.com
+      </a>
+</div>
+</div>
+</section>
+<!-- Sede / Map Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-white" id="sede" style="scroll-margin-top:120px;">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-xl items-center px-margin-mobile">
+<div class="w-full lg:w-[40%]">
+<span class="text-brand-red font-label-md uppercase tracking-widest block mb-4">Lugar</span>
+<h2 class="font-display-lg text-on-surface text-3xl md:text-4xl mb-8">Sede del Evento</h2>
+<div class="space-y-8">
+<div class="flex items-start gap-6">
+<div class="bg-brand-red/10 p-4 rounded-2xl">
+<span class="material-symbols-outlined text-brand-red text-2xl">location_on</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface text-lg">Dirección</h4>
+<p class="font-body-md text-on-surface-variant mt-1">Av. Dr. Ignacio de la Roza 1516 (O), Rivadavia.</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="bg-brand-red/10 p-4 rounded-2xl">
+<span class="material-symbols-outlined text-brand-red text-2xl">apartment</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface text-lg">Instalaciones</h4>
+<p class="font-body-md text-on-surface-variant mt-1">ISFD 'Santa María' (UCC)<br/>SUM. Salón de Usos Múltiples</p>
+</div>
+</div>
+<a class="inline-flex items-center gap-2 bg-brand-red text-white px-8 py-3 rounded-full font-bold hover:bg-red-700 transition-all shadow-md group" href="https://maps.app.goo.gl/gM5nZp7753VjEZ128" target="_blank" rel="noopener noreferrer">
+                        VER EN GOOGLE MAPS 
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">open_in_new</span>
+</a>
+</div>
+</div>
+<div class="w-full lg:w-[60%]">
+<div class="bg-white p-4 rounded-3xl shadow-2xl border border-outline-variant overflow-hidden">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.4239216865417!2d-68.58869822467767!3d-31.539978602236427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968140e2dc250afb%3A0x7fe8543041283dae!2sUniversidad%20Cat%C3%B3lica%20de%20Cuyo%20San%20Juan!5e0!3m2!1ses-419!2sar!4v1785815982791!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer: Dark Theme -->
+<footer class="bg-inverse-surface text-on-primary py-12 md:py-16 section-anchor" id="footer">
+<div class="container mx-auto px-4 md:px-margin-desktop">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12">
+<div class="col-span-1 lg:col-span-2">
+<div class="flex flex-col items-start gap-6">
+
+    <img
+        src="imagenes/ME Logotipo Blanco.png"
+        class="w-72 md:w-80 h-auto">
+
+    <img
+        src="imagenes/unnamed.png"
+        class="w-48 md:w-56 h-auto brightness-0 invert opacity-90">
+
+</div><p class="text-inverse-on-surface text-sm leading-relaxed opacity-70">
+                    La Semana de la Educación Superior se posiciona como un dispositivo integral, que articula formación, investigación y proyección del nivel superior, contribuyendo al desarrollo educativo y socio-productivo de la provincia.
+                </p>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4 md:mb-6 text-primary-fixed">Contacto</h4>
+<ul class="space-y-3 md:space-y-4 text-inverse-on-surface text-sm opacity-70">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-fixed text-lg">mail</span>
+                        edusuperior.sj@gmail.com
+                    </li>
+<li class="flex items-center gap-3" id="sede">
+<span class="material-symbols-outlined text-primary-fixed text-lg">location_on</span>
+                       Centro Cívico 
+                    </li>
+<li class="flex items-center gap-3">
+                        Av. Libertador Gral. San Martín, San Juan
+                    </li>
+</ul>
+</div>
+</footer>
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-2 pb-safe bg-surface border-t border-outline-variant shadow-lg md:hidden">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="#proposito">
+<span class="material-symbols-outlined">flag</span>
+<span class="text-[9px] font-bold">Propósito</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="#temas">
+<span class="material-symbols-outlined">topic</span>
+<span class="text-[9px] font-bold">Temáticas</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="#agenda">
+<span class="material-symbols-outlined">event_note</span>
+<span class="text-[9px] font-bold">Agenda</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="#sede">
+<span class="material-symbols-outlined">location_on</span>
+<span class="text-[9px] font-bold">Ubicación</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1" href="index.html#eventos">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="text-[9px] font-bold">Eventos</span>
+</a>
+</nav>
+
+<script>
+    
+    // Simple scroll behavior for yellow nav
+    const yellowNav = document.querySelector('.sticky.top-\\[73px\\]');
+    window.addEventListener('scroll', function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > 100) {
+            yellowNav.classList.add('shadow-lg');
+        } else {
+            yellowNav.classList.remove('shadow-lg');
+        }
+    });
+</script>
+</body></html>
