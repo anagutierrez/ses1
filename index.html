@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="scroll-smooth" lang="es"><head>
+<html class="scroll-smooth" lang="es" style=""><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Semana de la Educación Superior 2026</title>
@@ -92,17 +92,7 @@
                         "display-lg": ["Ubuntu"],
                         "headline-md": ["Ubuntu"],
                         "label-sm": ["Ubuntu"]
-                    },
-                    "fontSize": {
-                    "display-lg-mobile": ["28px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
-                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
-                    "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "700"}],
-                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
-                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}]
-            }
+                    }
                 },
             },
         }
@@ -110,11 +100,6 @@
 <style>
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-        
-        .hero-pattern {
-            background-color: #FBBD40;
-            background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-        }
 
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
@@ -141,9 +126,31 @@
         .section-anchor {
             scroll-margin-top: 80px;
         }
+        
+        /* Carousel Styles */
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+        }
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel-slide {
+            min-width: 100%;
+            flex: 1 0 100%;
+        }
+        .carousel-dots .dot {
+            transition: all 0.10s ease;
+        }
+        .carousel-dots .dot.active {
+            background-color: #ff8200;
+            width: 2rem;
+            border-radius: 1rem;
+        }
     </style>
 </head>
-<body class="font-ubuntu bg-surface text-on-surface">
+<body class="font-ubuntu bg-white text-on-surface">
 <!-- BEGIN: MainHeader -->
 <header class="fixed sticky top-0 w-full z-[60] flex justify-between items-center px-4 md:px-margin-desktop bg-surface border-b border-outline-variant transition-all duration-300 py-2" id="main-header">
 <div class="flex items-center gap-2 md:gap-4">
@@ -162,70 +169,251 @@
 <!-- <button class="bg-secondary text-white px-6 py-2 rounded-lg font-bold uppercase text-sm tracking-widest shadow-sm hover:opacity-90">Inscribirse</button>-->
 </nav>
 </header>
+<!-- Mobile Nav Menu -->
+<div class="hidden lg:hidden bg-white border-t border-gray-100 px-4 py-6 space-y-4 shadow-lg" id="mobile-menu">
+<a class="block font-label-md text-gray-600 hover:text-primary py-2" href="#inicio">Inicio</a>
+<a class="block font-label-md text-gray-600 hover:text-primary py-2" href="#eventos">Eventos</a>
+<a class="block font-label-md text-gray-600 hover:text-primary py-2" href="#cronograma">Cronograma</a>
+<a class="block font-label-md text-gray-600 hover:text-primary py-2" href="#instituciones">Instituciones</a>
+<a class="block font-label-md text-gray-600 hover:text-primary py-2" href="#descargas">Resoluciones</a>
+</div>
+</header>
 <!-- END: MainHeader -->
-<!-- BEGIN: HeroSection -->
-<section class="hero-pattern py-12 md:py-28 lg:py-0 lg:min-h-[600px] flex items-center overflow-hidden section-anchor" id="inicio">
-<div class="container mx-auto px-8 md:px-margin-desktop">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-<!-- Left Side: Content -->
-<div class="text-center lg:text-left order-2 lg:order-1">
-<span class="inline-block px-3 py-1 bg-secondary text-white font-label-sm rounded-full mb-4 md:mb-6 animate-fade-in uppercase tracking-wider">¡Bienvenidos!</span>
-<h1 class="text-display-lg-mobile md:text-display-lg font-bold text-on-background mb-4 mt-16 animate-fade-in leading-tight">
-                    "La educación superior abre caminos: <br class="hidden md:block"/>
-<span class="text-on-background">Formarse hoy, transformar mañana"</span>
+<!-- BEGIN: HeroCarouselSection -->
+<section class="section-anchor relative" id="inicio">
+<div class="carousel-container h-[90vh] md:h-[70vh] lg:h-[80vh] w-full bg-gray-900" id="hero-carousel">
+<div class="carousel-track h-full" id="carousel-track">
+<!-- Slide 1 -->
+<div class="carousel-slide relative h-full flex flex-col-reverse md:flex-row bg-gray-900">
+<div class="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center p-6 md:p-12 lg:p-24 relative z-10 bg-gray-900">
+<div class="text-left max-w-xl">
+<span class="inline-block px-4 py-1.5 bg-primary/20 text-primary-fixed border border-primary/30 font-label-sm rounded-full mb-4 md:mb-6 uppercase tracking-widest text-xs font-bold backdrop-blur-sm">Visita Destacada</span>
+<h1 class="text-3xl md:text-2xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight tracking-tight drop-shadow-md">
+                                Martín Müller <br class="hidden md:block"/>
+<span class="text-primary">Director Ejecutivo del INFoD. Secretaría de Educación de la Nación </span>
 </h1>
-<p class="text-body-md md:text-body-lg text-on-surface-variant mb-8 md:mb-10 max-w-xl lg:mx-0 mx-auto animate-fade-in" style="animation-delay: 0.1s;">
-                    La mayor feria educativa de la región está por comenzar. ¡No pierdas tu lugar para conectar con las mejores instituciones!
-                </p>         
-<!-- Countdown -->
-<div class="flex justify-center lg:justify-start gap-2 md:gap-4 animate-fade-in" id="countdown" style="animation-delay: 0.2s;">
-<div class="flex flex-col items-center bg-white/40 backdrop-blur-md p-2 md:p-4 rounded-xl w-16 md:w-24 shadow-sm border border-white/50">
-<span class="text-xl md:text-3xl font-bold text-on-background" id="days">00</span>
-<span class="text-[8px] md:text-xs uppercase font-medium opacity-70">Días</span>
-</div>
-<div class="flex flex-col items-center bg-white/40 backdrop-blur-md p-2 md:p-4 rounded-xl w-16 md:w-24 shadow-sm border border-white/50">
-<span class="text-xl md:text-3xl font-bold text-on-background" id="hours">00</span>
-<span class="text-[8px] md:text-xs uppercase font-medium opacity-70">Horas</span>
-</div>
-<div class="flex flex-col items-center bg-white/40 backdrop-blur-md p-2 md:p-4 rounded-xl w-16 md:w-24 shadow-sm border border-white/50">
-<span class="text-xl md:text-3xl font-bold text-on-background" id="minutes">00</span>
-<span class="text-[8px] md:text-xs uppercase font-medium opacity-70">Min</span>
-</div>
-<div class="flex flex-col items-center bg-white/40 backdrop-blur-md p-2 md:p-4 rounded-xl w-16 md:w-24 shadow-sm border border-white/50">
-<span class="text-xl md:text-3xl font-bold text-on-background" id="seconds">00</span>
-<span class="text-[8px] md:text-xs uppercase font-medium opacity-70">Seg</span>
-</div>
-</div>
-</div>
-<!-- Right Side: Card -->
-<div class="flex justify-center lg:justify-end animate-fade-in order-1 lg:order-2 mb-8 lg:mb-0" style="animation-delay: 0.3s;">
-<div class="bg-surface-container-lowest p-6 md:p-8 rounded-2xl shadow-2xl max-w-sm md:max-w-md w-full border border-outline-variant relative overflow-hidden">
-<div class="absolute top-0 right-0 bg-secondary text-white text-[10px] font-bold px-4 py-1 rounded-bl-xl uppercase tracking-wider">Próximo Evento</div>
-<div class="flex items-center gap-2 mb-4">
-<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-<h2 class="text-secondary text-xs font-bold uppercase tracking-widest">Próximamente</h2>
-</div>
-<h3  class="text-headline-sm md:text-headline-md font-bold text-on-surface mb-4">18 de Agosto</h3>
-<p class="font-label-md text-sm md:text-base leading-relaxed mb-4">Ingreso del público.</p>
-<div class="space-y-4">
-<div class="flex items-center text-sm text-on-surface-variant">
-<span class="material-symbols-outlined mr-3 text-primary">schedule</span>
-                            11:00 AM - 18 Agosto, 2026
-                        </div>
-<div class="flex items-center text-sm text-on-surface-variant">
-<span class="material-symbols-outlined mr-3 text-primary">location_on</span>
-                            Estadio Aldo Cantoni, San Juan.
-                        </div>
-</div>
-<a class="mt-8 w-full py-3 bg-primary text-on-primary rounded-xl font-bold hover:bg-secondary transition-all shadow-md flex items-center justify-center gap-2" href="oferta.html" target="_blank">
-                        Ver detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
+<p class="text-base md:text-lg lg:text-xl text-gray-200 mb-6 md:mb-8 font-light leading-relaxed drop-shadow">
+                             El día 20 de agosto, participará del Acto de apertura y Presentación del Libro 'Investigar para Transformar: Redes de conocimiento, Educación en Comunidad', en el marco del V Encuentro de Experiencias de Investigación y Pedagógicas en Institutos de Formación Docente y Formación Técnica y del Conversatorio sobre "Los desafíos federales de la formación docente y las políticas nacionales para el sistema formador".
+                            </p>
+<a class="inline-flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 bg-primary text-white rounded-full font-bold hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/30" href="investigacion.html"target="_blank">
+                                Ir al evento <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </a>
 </div>
+</div>
+<div class="w-full md:w-1/2 h-1/2 md:h-full relative">
+<img alt="Visita destacada" class="absolute inset-0 w-full h-full object-cover opacity-80" src="imagenes/martinMuller.png"/>
+<div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-gray-900 via-gray-900/40 to-transparent"></div>
+</div>
+</div>
+<!-- Slide 2 -->
+<div class="carousel-slide relative h-full flex flex-col-reverse md:flex-row bg-gray-900">
+<div class="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center p-6 md:p-12 lg:p-24 relative z-10 bg-gray-900">
+<div class="text-left max-w-xl">
+<span class="inline-block px-4 py-1.5 bg-primary/20 text-primary-fixed border border-primary/30 font-label-sm rounded-full mb-4 md:mb-6 uppercase tracking-widest text-xs font-bold backdrop-blur-sm">Visita Destacada</span>
+<h1 class="text-3xl md:text-5xl lg:text-1xl font-bold text-white mb-4 md:mb-6 leading-tight tracking-tight drop-shadow-md">
+                            Florencia Rodriguez <br class="hidden md:block"/>
+<span class="text-primary">Bruno Freisztav</span>
+</h1>
+<p class="text-base md:text-lg lg:text-xl text-gray-200 mb-6 md:mb-8 font-light leading-relaxed drop-shadow">
+                             El día 20 de Agosto los Coordinadores del Área de Desarrollo Curricular de la Dirección Nacional del Instituto Nacional de Formación Docente (INFoD), participarán de actividades en el marco del I Encuentro de Desarrollo Currricular Docente. 
+                            </p>
+<a class="inline-flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 bg-primary text-white rounded-full font-bold hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/30" href="curricular.html">
+                                Inscribirse <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="w-full md:w-1/2 h-1/2 md:h-full relative">
+<img alt="Talleres de Orientación Vocacional" class="absolute inset-0 w-full h-full object-cover opacity-80" src="imagenes/florencia y bruno.png"/>
+<div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-gray-900 via-gray-900/40 to-transparent"></div>
+</div>
+</div>
+<!-- Slide 3 -->
+<div class="carousel-slide relative h-full flex flex-col-reverse md:flex-row bg-gray-900">
+<div class="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center p-6 md:p-12 lg:p-24 relative z-10 bg-gray-900">
+<div class="text-left max-w-xl">
+<span class="inline-block px-4 py-1.5 bg-primary/20 text-primary-fixed border border-primary/30 font-label-sm rounded-full mb-4 md:mb-6 uppercase tracking-widest text-xs font-bold backdrop-blur-sm">Acto de apertura</span>
+<h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight tracking-tight drop-shadow-md">
+                               Oferta<br class="hidden md:block"/>
+<span class="text-primary">Educativa 2027</span>
+</h1>
+<p class="text-base md:text-lg lg:text-xl text-gray-200 mb-6 md:mb-8 font-light leading-relaxed drop-shadow">
+                               A las 12:00 hs. Se realizará el acto de apertura de la Oferta Educativa 2027, con la distinguida participación de Autoridades del Ministerio de Educación.
+                            </p>
+<a class="inline-flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 bg-primary text-white rounded-full font-bold hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/30" href="oferta.html">
+                                Ver Agenda <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="w-full md:w-1/2 h-1/2 md:h-full relative">
+<img alt="Oferta Educativa 2027" class="absolute inset-0 w-full h-full object-cover opacity-80" src="imagenes/feria.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-gray-900 via-gray-900/40 to-transparent"></div>
+</div>
+</div>
+<!-- Slide 4 -->
+<div class="carousel-slide relative h-full flex flex-col-reverse md:flex-row bg-gray-900">
+<div class="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center p-6 md:p-12 lg:p-24 relative z-10 bg-gray-900">
+<div class="text-left max-w-xl">
+<span class="inline-block px-4 py-1.5 bg-primary/20 text-primary-fixed border border-primary/30 font-label-sm rounded-full mb-4 md:mb-6 uppercase tracking-widest text-xs font-bold backdrop-blur-sm">Reflexión</span>
+<h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight tracking-tight drop-shadow-md">
+                                Talleres de Exploración <br class="hidden md:block"/>
+<span class="text-primary">Vocacional y Proyecto de Vida</span>
+</h1>
+<p class="text-base md:text-lg lg:text-xl text-gray-200 mb-6 md:mb-8 font-light leading-relaxed drop-shadow">
+                                Los días 18 y 19 de agosto, a partir de las 8:30 hs. darán inicio los talleres de orientación vocacional, en el Centro de Formación Docente "Margarita Ferrá de Bartol".
+                            </p>
+<a class="inline-flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 bg-primary text-white rounded-full font-bold hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/30" href="ovo.html">
+                                Conocer Más del Evento <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="w-full md:w-1/2 h-1/2 md:h-full relative">
+<img alt="Orientación Vocacional" class="absolute inset-0 w-full h-full object-cover opacity-80" src="imagenes/ovo.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-gray-900 via-gray-900/40 to-transparent"></div>
+</div>
+</div>
+<!-- Slide 5 -->
+<div class="carousel-slide relative h-full flex flex-col-reverse md:flex-row bg-gray-900">
+<div class="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center p-6 md:p-12 lg:p-24 relative z-10 bg-gray-900">
+<div class="text-left max-w-xl">
+<span class="inline-block px-4 py-1.5 bg-primary/20 text-primary-fixed border border-primary/30 font-label-sm rounded-full mb-4 md:mb-6 uppercase tracking-widest text-xs font-bold backdrop-blur-sm">Formación Técnica</span>
+<h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight tracking-tight drop-shadow-md">
+                                Primer Conversatorio <br class="hidden md:block"/>
+<span class="text-primary">de Institutos Superiores Técnicos</span>
+</h1>
+<p class="text-base md:text-lg lg:text-xl text-gray-200 mb-6 md:mb-8 font-light leading-relaxed drop-shadow">
+                               El 19 de Agosto a las 15:30 tendrá lugar el conversatorio que contará con la participación de actores estratégicos convocados para fomentar el diálogo y la colaboración técnica. Abordarán la temática: "La Educación Técnica Superior frente a los desafíos del desarrollo socioproductivo".
+                            </p>
+<a class="inline-flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 bg-primary text-white rounded-full font-bold hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/30" href="conversatorio.html">
+                                Conocer Más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="w-full md:w-1/2 h-1/2 md:h-full relative">
+<img alt="Primer Conversatorio de Institutos Superiores Técnicos" class="absolute inset-0 w-full h-full object-cover opacity-80" src="imagenes/conversatorio.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-gray-900 via-gray-900/40 to-transparent"></div>
+</div>
+</div>
+<!-- Slide 6 -->
+<div class="carousel-slide relative h-full flex flex-col-reverse md:flex-row bg-gray-900">
+<div class="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center p-6 md:p-12 lg:p-24 relative z-10 bg-gray-900">
+<div class="text-left max-w-xl">
+<span class="inline-block px-4 py-1.5 bg-primary/20 text-primary-fixed border border-primary/30 font-label-sm rounded-full mb-4 md:mb-6 uppercase tracking-widest text-xs font-bold backdrop-blur-sm">Investigación y Experiencias Pedagógicas</span>
+<h1 class="text-3xl md:text-5xl lg:text-1xl font-bold text-white mb-4 md:mb-6 leading-tight tracking-tight drop-shadow-md">
+                               5° Encuentro de Experiencias de Investigación y Pedagógicas  <br class="hidden md:block"/>
+<span class="text-primary">en Institutos Superiores de Formación Docente y Técnica de la Provincia de San Juan</span>
+</h1>
+<p class="text-base md:text-lg lg:text-xl text-gray-200 mb-6 md:mb-8 font-light leading-relaxed drop-shadow">
+                                El 20 de Agosto tendrá lugar este evento, un espacio académico destinado a la socialización, intercambio y 
+reflexión sobre experiencias de investigación, innovación pedagógica y prácticas educativas desarrolladas en los Institutos Superiores de Formación Docente y Técnica de la provincia de San 
+Juan durante 2025-2026.
+                            </p>
+<a class="inline-flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 bg-primary text-white rounded-full font-bold hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/30" href="investigacion.html">
+                                Conocer Más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="w-full md:w-1/2 h-1/2 md:h-full relative">
+<img alt="Investigación y Experiencias Pedagógicas" class="absolute inset-0 w-full h-full object-cover opacity-80" src="imagenes/investigacion.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-gray-900 via-gray-900/40 to-transparent"></div>
+</div>
+</div>
+<!-- Slide 7 -->
+<div class="carousel-slide relative h-full flex flex-col-reverse md:flex-row bg-gray-900">
+<div class="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center p-6 md:p-12 lg:p-24 relative z-10 bg-gray-900">
+<div class="text-left max-w-xl">
+<span class="inline-block px-4 py-1.5 bg-primary/20 text-primary-fixed border border-primary/30 font-label-sm rounded-full mb-4 md:mb-6 uppercase tracking-widest text-xs font-bold backdrop-blur-sm">Innovación</span>
+<h1 class="text-3xl md:text-5xl lg:text-1xl font-bold text-white mb-4 md:mb-6 leading-tight tracking-tight drop-shadow-md">
+                                I Encuentro de Desarrollo Curricular: <br class="hidden md:block"/>
+<span class="text-primary">"Innovación curricular para una educación que transforma"</span>
+</h1>
+<p class="text-base md:text-lg lg:text-xl text-gray-200 mb-6 md:mb-8 font-light leading-relaxed drop-shadow">
+                                Los días 20 y 21 de Agosto tendrá lugar el I Encuentro de Desarrollo Curricular, con la participación de los Coordinadores del Área de Desarrollo Curricular de la Dirección Nacional del Instituto Nacional de Formación Docente (INFoD), Florencia Rodríguez y Bruno Freisztav.
+                            </p>
+<a class="inline-flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 bg-primary text-white rounded-full font-bold hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/30" href="curricular.html">
+                                Conocer Más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="w-full md:w-1/2 h-1/2 md:h-full relative">
+<img alt="Desarrollo Curricular" class="absolute inset-0 w-full h-full object-cover opacity-80" src="imagenes/dc.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-gray-900 via-gray-900/40 to-transparent"></div>
+</div>
+</div>
+<!-- Slide 8 -->
+<div class="carousel-slide relative h-full flex flex-col-reverse md:flex-row bg-gray-900">
+<div class="w-full md:w-1/2 h-1/2 md:h-full flex items-center justify-center p-6 md:p-12 lg:p-24 relative z-10 bg-gray-900">
+<div class="text-left max-w-xl">
+<span class="inline-block px-4 py-1.5 bg-primary/20 text-primary-fixed border border-primary/30 font-label-sm rounded-full mb-4 md:mb-6 uppercase tracking-widest text-xs font-bold backdrop-blur-sm">Cierre</span>
+<h1 class="text-3xl md:text-5xl lg:text-1xl font-bold text-white mb-4 md:mb-6 leading-tight tracking-tight drop-shadow-md">
+                                II jornada de Desarrollo Profesional Docente <br class="hidden md:block"/>
+<span class="text-primary">“Enseñar hoy: reflexionar, investigar y transformar”</span>
+</h1>
+<p class="text-base md:text-lg lg:text-xl text-gray-200 mb-6 md:mb-8 font-light leading-relaxed drop-shadow">
+                              El día 21 de Agosto, a partir de las 8:30 hs. dará inicio este evento donde se presentarán proyectos de Desarrollo Profesional, los mismos serán expuestos en aulas organizadas por ejes temáticos con el propósito de 
+favorecer la convocatoria para cada propuesta.
+                            </p>
+<a class="inline-flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 bg-primary text-white rounded-full font-bold hover:bg-primary/90 transition-all shadow-lg hover:shadow-primary/30" href="profesional.html">
+                                Conocer Más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="w-full md:w-1/2 h-1/2 md:h-full relative">
+<img alt="Desarrollo Profesional" class="absolute inset-0 w-full h-full object-cover opacity-80" src="imagenes/dp.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-gray-900 via-gray-900/40 to-transparent"></div>
+</div>
+</div>
+</div>
+<!-- Carousel Controls -->
+<button class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white p-3 rounded-full transition-all focus:outline-none z-20" id="prev-slide">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white p-3 rounded-full transition-all focus:outline-none z-20" id="next-slide">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+<!-- Carousel Navigation Dots -->
+<div class="absolute bottom-12 left-0 right-0 flex justify-center gap-3 carousel-dots z-20" id="carousel-dots">
+<button class="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all dot active" data-index="0"></button>
+<button class="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all dot" data-index="1"></button>
+<button class="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all dot" data-index="2"></button>
+<button class="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all dot" data-index="3"></button>
+<button class="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all dot" data-index="4"></button>
+<button class="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all dot" data-index="5"></button>
+<button class="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all dot" data-index="6"></button>
+<button class="w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all dot" data-index="7"></button>
+</div>
+</div>
+</section>
+<!-- END: HeroCarouselSection -->
+<!-- BEGIN: Countdown Section -->
+<section class="py-12 bg-white border-b border-gray-100 z-30 relative -mt-6 shadow-sm rounded-t-3xl max-w-5xl mx-auto md:-mt-12 px-4">
+<div class="container mx-auto">
+<div class="text-center mb-6">
+<h3 class="text-sm font-bold uppercase tracking-widest text-gray-500 mb-2">Comienza en</h3>
+</div>
+<div class="flex justify-center gap-4 md:gap-8" id="countdown">
+<div class="flex flex-col items-center">
+<span class="text-3xl md:text-5xl font-bold text-primary mb-1" id="days">07</span>
+<span class="text-xs md:text-sm uppercase font-medium text-gray-500 tracking-wider">Días</span>
+</div>
+<div class="text-3xl md:text-5xl font-bold text-gray-300">:</div>
+<div class="flex flex-col items-center">
+<span class="text-3xl md:text-5xl font-bold text-primary mb-1" id="hours">00</span>
+<span class="text-xs md:text-sm uppercase font-medium text-gray-500 tracking-wider">Horas</span>
+</div>
+<div class="text-3xl md:text-5xl font-bold text-gray-300">:</div>
+<div class="flex flex-col items-center">
+<span class="text-3xl md:text-5xl font-bold text-primary mb-1" id="minutes">18</span>
+<span class="text-xs md:text-sm uppercase font-medium text-gray-500 tracking-wider">Min</span>
+</div>
+<div class="text-3xl md:text-5xl font-bold text-gray-300 hidden sm:block">:</div>
+<div class="flex flex-col items-center hidden sm:flex">
+<span class="text-3xl md:text-5xl font-bold text-primary mb-1" id="seconds">00</span>
+<span class="text-xs md:text-sm uppercase font-medium text-gray-500 tracking-wider">Seg</span>
 </div>
 </div>
 </div>
 </section>
-<!-- END: HeroSection -->
+<!-- END: Countdown Section -->
 <!-- BEGIN: FeaturedEvents (Bento Grid) -->
 <section class="py-12 md:py-20 bg-surface section-anchor" id="eventos">
 <div class="container mx-auto px-4 md:px-margin-desktop">
@@ -376,7 +564,7 @@
 <div class="relative timeline-dot">
 <span class="block text-primary font-bold text-sm md:text-lg mb-2">Siesta de 15:30 a 17:30 hs.</span>
 <div class="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-outline-variant hover:shadow-md transition-all">
-<h5 class="text-base md:text-xl font-bold mb-2">Conversatorio Semana de la Educación Superior</h5>
+<h5 class="text-base md:text-xl font-bold mb-2">Primer Conversatorio de Institutos Superiores Técnicos</h5>
 <p class="text-on-surface-variant text-xs md:text-base">"La Educación Técnica Superior frente a los desafíos del desarrollo socioproductivo".</p>
 <div class="mt-4 flex items-start text-[10px] md:text-xs font-bold text-secondary uppercase tracking-widest"><span class="material-symbols-outlined text-sm mr-2 shrink-0">location_on</span><span>Centro Tecnológico (Ex Conectar Lab))</span></div>
 </div>
@@ -741,6 +929,34 @@ FARÍAS”</span>
     setInterval(updateCountdown, 1000);
     updateCountdown();
 
+    // Mobile Menu Toggle Logic
+    const menuBtn = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if(menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuBtn.querySelector('.material-symbols-outlined');
+            icon.innerText = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+        });
+
+        // Close menu on click outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+                menuBtn.querySelector('.material-symbols-outlined').innerText = 'menu';
+            }
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuBtn.querySelector('.material-symbols-outlined').innerText = 'menu';
+            });
+        });
+    }
+
     // Schedule Tabs Logic
     const tabButtons = document.querySelectorAll('#schedule-tabs button');
     const dayContents = document.querySelectorAll('.schedule-day');
@@ -750,11 +966,11 @@ FARÍAS”</span>
             const targetDay = button.getAttribute('data-day');
 
             tabButtons.forEach(btn => {
-                btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-md');
-                btn.classList.add('text-on-surface-variant', 'hover:bg-surface-container-high');
+                btn.classList.remove('bg-primary', 'text-white', 'shadow-md');
+                btn.classList.add('text-gray-500', 'hover:bg-gray-200');
             });
-            button.classList.add('bg-primary', 'text-on-primary', 'shadow-md');
-            button.classList.remove('text-on-surface-variant', 'hover:bg-surface-container-high');
+            button.classList.add('bg-primary', 'text-white', 'shadow-md');
+            button.classList.remove('text-gray-500', 'hover:bg-gray-200');
 
             dayContents.forEach(content => {
                 if (content.id === `day-${targetDay}`) {
@@ -767,5 +983,57 @@ FARÍAS”</span>
             });
         });
     });
+
+    // Carousel Logic
+    const track = document.getElementById('carousel-track');
+    const slides = Array.from(track.children);
+    const nextButton = document.getElementById('next-slide');
+    const prevButton = document.getElementById('prev-slide');
+    const dotsNav = document.getElementById('carousel-dots');
+    const dots = Array.from(dotsNav.children);
+
+    let currentIndex = 0;
+
+    const updateSlidePosition = () => {
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    };
+
+    const updateDots = () => {
+        dots.forEach((dot, index) => {
+            if (index === currentIndex) {
+                dot.classList.add('active');
+            } else {
+                dot.classList.remove('active');
+            }
+        });
+    };
+
+    const moveToNextSlide = () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSlidePosition();
+        updateDots();
+    };
+
+    const moveToPrevSlide = () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateSlidePosition();
+        updateDots();
+    };
+
+    nextButton.addEventListener('click', moveToNextSlide);
+    prevButton.addEventListener('click', moveToPrevSlide);
+
+    dotsNav.addEventListener('click', e => {
+        const targetDot = e.target.closest('button');
+        if (!targetDot) return;
+        
+        currentIndex = parseInt(targetDot.dataset.index);
+        updateSlidePosition();
+        updateDots();
+    });
+
+    // Auto-advance carousel
+    setInterval(moveToNextSlide, 5000);
+
 </script>
 </body></html>
